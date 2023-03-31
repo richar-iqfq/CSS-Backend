@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Profession; // This also change
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -17,14 +18,19 @@ class ProfessionSeeder extends Seeder
         //     'title' => 'Desarrolador back-end'
         // ]);
 
-        DB::table('professions')->insert([
+        // DB::table('professions')->insert([
+        //     'title' => 'Back-End Developer'
+        // ]);
+
+        Profession::create([
             'title' => 'Back-End Developer'
         ]);
 
-        DB::table('professions')->insert([
+        Profession::create([
             'title' => 'Front-End Developer'
         ]);
-        DB::table('professions')->insert([
+        
+        Profession::create([
             'title' => 'Web Developer'
         ]);
     }

@@ -21,6 +21,7 @@ return new class extends Migration
             $table->unsignedBigInteger('profession_id')->nullable(); // Type for columns created by id()
             $table->foreign('profession_id')->references('id')->on('professions');
             
+            $table->boolean('is_admin')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

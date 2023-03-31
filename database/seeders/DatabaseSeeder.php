@@ -32,10 +32,12 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->truncateTables([
             'professions',
-            'users'
+            'users',
+            'molecule_data'
         ]);
 
         $this->call(ProfessionSeeder::class);
         $this->call(UserSeeder::class);
+        $this->call(MoleculeDataSeeder::class);
     }
 }

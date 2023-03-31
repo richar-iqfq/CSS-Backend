@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -17,15 +18,24 @@ class UserSeeder extends Seeder
         //     'Back-End Developer'
         // ]);
 
-        $professionId = DB::table('professions')
-                        ->select('id', 'title')
-                        ->whereTitle('Front-End Developer') // magic method
+        // $professionId = DB::table('professions')
+                        // ->select('id', 'title')
+                        // ->whereTitle('Front-End Developer') // magic method
                         //->where('title', '=', 'Front-End Developer') // can ignore equals to operator
-                        ->value('id');
+                        // ->value('id');
                         //->first(); // ->take(1)->get();
         //dd($profess);
 
-        DB::table('users')->insert([
+        $professionId = \App\Models\Profession::where('title', 'Front-End Developer')->value('id');
+
+        // DB::table('users')->insert([
+        //     'name' => 'Ricardo Ambriz',
+        //     'email' => '314261416',
+        //     'password' => bcrypt('1234'),
+        //     'profession_id' => $professionId //$profess->id,
+        // ]);
+
+        User::create([
             'name' => 'Ricardo Ambriz',
             'email' => '314261416',
             'password' => bcrypt('1234'),
