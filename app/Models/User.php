@@ -50,6 +50,11 @@ class User extends Authenticatable
 
     public function isAdmin()
     {
-        return $this->email === '314261416';
+        return $this->is_admin;
+    }
+
+    public function profession()
+    {
+        return $this->belongsTo(Profession::class, 'profession_id');
     }
 }

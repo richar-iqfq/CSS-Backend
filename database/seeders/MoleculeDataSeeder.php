@@ -48,7 +48,7 @@ class MoleculeDataSeeder extends Seeder
      */
     public function run(): void
     {   
-        $file = './storage/app/public/data.csv';
+        $file = './public/data.csv';
         $data = $this->build_array_from_csv($file);
 
         foreach ($data as $key => $line) {

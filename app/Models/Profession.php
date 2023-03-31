@@ -14,4 +14,9 @@ class Profession extends Model
     // public $timestamps = false; // for not updating date
 
     protected $fillable = ['title'];
+
+    public function users()
+    {
+        return $this->hasMany(User::class);
+    }
 }
