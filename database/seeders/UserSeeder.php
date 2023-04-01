@@ -43,18 +43,30 @@ class UserSeeder extends Seeder
             'is_admin' => true,
         ]);
 
-        User::create([
-            'name' => 'Miguel Gómez',
-            'email' => '317346543',
-            'password' => bcrypt('4321'),
-            'profession_id' => $professionId //$profess->id,
+        User::factory()->create([
+            'name' => 'Ricardo Ambriz',
+            'password' => bcrypt('1234'),
+            'profession_id' => $professionId, //$profess->id,
         ]);
 
-        User::create([
-            'name' => 'Maria Elena',
-            'email' => '354681426',
-            'password' => bcrypt('5741'),
-            'profession_id' => null
+        User::factory()->create([
+            'profession_id' => $professionId
         ]);
+
+        User::factory(50)->create();
+
+        // User::create([
+        //     'name' => 'Miguel Gómez',
+        //     'email' => '317346543',
+        //     'password' => bcrypt('4321'),
+        //     'profession_id' => $professionId //$profess->id,
+        // ]);
+
+        // User::create([
+        //     'name' => 'Maria Elena',
+        //     'email' => '354681426',
+        //     'password' => bcrypt('5741'),
+        //     'profession_id' => null
+        // ]);
     }
 }
