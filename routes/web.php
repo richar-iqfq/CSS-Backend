@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
@@ -27,3 +28,5 @@ Route::get('/usuarios/{id}', [UserController::class, 'show'])
     ->where('id', '\d+');
 
 Route::get('/saludo/{name}/{nickname?}', [UserController::class, 'welcome']);
+
+Route::get('/about', [AboutController::class, 'show']);

@@ -2,24 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
     function index()
     {
-        if (request()->has('empty')) {
-            $users = [];
-        } else {
-            $users = [
-                'Joel',
-                'Ellie',
-                'Tess',
-                'Tommy',
-                'Bill',
-                '<script>alert("Clicker")</script>'
-            ];    
-        }
+        // $users = DB::table('users')->get();
+        $users = User::all();
 
         $title = 'Listado de Usuarios';
 
@@ -33,7 +25,8 @@ class UserController extends Controller
         //     ->with('title', $title);
         
         // dd(compact('title', 'users'));
-
+        
+        // return view('users')->with('users', $users) Forma alternativa para hacer el llamado
         return view('users', compact('title', 'users'));
     }
 
