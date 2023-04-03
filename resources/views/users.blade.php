@@ -5,11 +5,12 @@
 @section('content')
     <h1>{{ $title }}</h1> <?php // sintaxis alternativa de php?>
 
-    @if (! empty($users))
+    @if (! $users->isEmpty())
+        </ul>
             @foreach ($users as $user)
-                > {{ $user->name }}
-                <br/>
+                <li>{{ $user->name }}</li>
             @endforeach
+        <ul>
     @else
         <p>No hay usuarios registrados.</p>
     @endif

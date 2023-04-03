@@ -1,40 +1,49 @@
-<style>
-    nav {
-      background-color: #333;
-      overflow: hidden;
-    }
-  
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      justify-content: center;
-    }
-  
-    li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-  
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-  
-    li a:hover {
-      background-color: #111;
-    }
-  </style>
-  
-  <nav>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img
+        src="{{ asset('img/50cc9ad5-e8bd-47e3-9866-27ed8230e325.jfif') }}"
+        alt="Logo"
+        width="30"
+        height="30"
+        class="d-inline-block align-text-top"
+        style="margin-right: 5px;"
+      />CSS</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/usuarios">Usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/usuarios/nuevo">Nuevo Usuario</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  {{-- <nav>
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/usuarios">Lista de usuarios</a></li>
       <li><a href="/usuarios/nuevo">Nuevo Usuario</a></li>
     </ul>
-  </nav>
+  </nav> --}}

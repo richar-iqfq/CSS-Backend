@@ -22,6 +22,7 @@ return new class extends Migration
             $table->foreign('profession_id')->references('id')->on('professions');
             
             $table->boolean('is_admin')->default(0);
+            $table->string('website')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
