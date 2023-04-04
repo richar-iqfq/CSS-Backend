@@ -20,12 +20,17 @@ Route::get('/', function()
     return view('home');
 });
 
-Route::get('/usuarios', [UserController::class, 'index']);
-
-Route::get('/usuarios/nuevo', [UserController::class, 'new']);
+Route::get('/usuarios', [UserController::class, 'index'])
+    ->name('users');
 
 Route::get('/usuarios/{id}', [UserController::class, 'show'])
-    ->where('id', '\d+');
+    ->where('id', '\d+')
+    ->name('users.show');
+
+Route::get('/usuarios/nuevo', [UserController::class, 'create'])
+    ->name('users.create');
+
+Route::post('/usuarios', [UserController::class, 'store']);
 
 Route::get('/saludo/{name}/{nickname?}', [UserController::class, 'welcome']);
 

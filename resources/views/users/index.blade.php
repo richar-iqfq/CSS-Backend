@@ -8,7 +8,12 @@
     @if (! $users->isEmpty())
         </ul>
             @foreach ($users as $user)
-                <li>{{ $user->name }}</li>
+                <li>
+
+                    {{ $user->name }}
+                    <a href="{{ route('users.show', ['id' => $user->id]) }}"> Ver detalles</a>
+
+                </li>
             @endforeach
         <ul>
     @else

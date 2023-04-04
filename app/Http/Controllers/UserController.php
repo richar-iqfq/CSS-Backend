@@ -27,23 +27,34 @@ class UserController extends Controller
         // dd(compact('title', 'users'));
         
         // return view('users')->with('users', $users) Forma alternativa para hacer el llamado
-        return view('users', compact('title', 'users'));
+        return view('users.index', compact('title', 'users'));
     }
 
-    function new()
+    function create()
     {
-        return view('new_user');
+        return view('users.new_user');
+    }
+
+    function store()
+    {
+        return 'Procesando información...';
     }
 
     function show($id)
     {
-        return view('show_user', compact('id'));
+        $user = User::findOrFail($id); // Launch errors.404 if fail
+
+        // if ($user == null) {
+        //     return response()->view('errors.404', [], 404);
+        // }
+
+        return view('users.show_user', compact('user'));
     }
 
     function welcome($name, $nickname=null)
     {
         $name = ucfirst($name);
 
-        return view('welcome_user', compact('name', 'nickname'));
+        return view('users.welcome_user', compact('name', 'nickname'));
     }
 }
