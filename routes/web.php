@@ -18,10 +18,10 @@ use App\Http\Controllers\UserController;
 Route::get('/', function()
 {
     return view('home');
-});
+})->name('home');
 
 Route::get('/usuarios', [UserController::class, 'index'])
-    ->name('users');
+    ->name('users.index');
 
 Route::get('/usuarios/{id}', [UserController::class, 'show'])
     ->where('id', '\d+')
@@ -34,4 +34,5 @@ Route::post('/usuarios', [UserController::class, 'store']);
 
 Route::get('/saludo/{name}/{nickname?}', [UserController::class, 'welcome']);
 
-Route::get('/about', [AboutController::class, 'show']);
+Route::get('/about', [AboutController::class, 'show'])
+    ->name('about.index');

@@ -21,5 +21,5 @@
     @endif
 
     <br/>
-    <a href="/usuarios/nuevo">Crear Nuevo Usuario</a>
+    <a href="{{ route('users.create') }}">Crear Nuevo Usuario</a>
 @endsection

@@ -37,7 +37,29 @@ class UserController extends Controller
 
     function store()
     {
-        return 'Procesando información...';
+        $data = request()->validate([
+            'name' => 'required',
+            'email' => 'required',
+            'password' => 'required'
+        ], [
+            'name.required' => 'field name is required'
+        ]);
+
+        // $data = request()->all();
+
+        // if(empty($data['name'])) {
+        //     return redirect()->route('users.create')->withErrors([
+        //         'name' => 'The name field is required'
+        //     ]);
+        // }
+
+        User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => bcrypt($data['password'])
+        ]);
+
+        return redirect()->route('users.index');
     }
 
     function show($id)

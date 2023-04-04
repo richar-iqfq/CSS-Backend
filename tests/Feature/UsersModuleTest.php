@@ -60,4 +60,36 @@ class UsersModuleTest extends TestCase
             ->assertStatus(404)
             ->assertSee('Página no encontrada');
     }
+
+    /** @test */
+    function it_creates_a_new_user()
+    {
+        $this->post('/usuarios/', [
+            'name' => 'Jose Juan',
+            'email' => 'jjuan@example.com',
+            'password' => '654321'
+        ])->assertRedirectToRoute('users.index');
+
+        $this->assertCredentials([
+            'name' => 'Jose Juan',
+            'email' => 'jjuan@example.com',
+            'password' => '654321'
+        ]);
+    }
+
+    /** @test */
+    function the_name_is_required()
+    {
+        $this->from('/usuarios/nuevo')->post('/usuarios/', [
+            'email' => 'jjuan@example.com',
+            'password' => '654321'
+        ])->assertRedirectToRoute('users.create')
+            ->assertSessionHasErrors(['name' => 'field name is required']);
+
+        $this->assertDatabaseMissing('users', [
+            'email' => 'jjuan@example.com'
+        ]);
+
+        // $this->assertEquals(0, User::cout());
+    }
 }   
