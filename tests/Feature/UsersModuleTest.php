@@ -84,12 +84,91 @@ class UsersModuleTest extends TestCase
             'email' => 'jjuan@example.com',
             'password' => '654321'
         ])->assertRedirectToRoute('users.create')
-            ->assertSessionHasErrors(['name' => 'field name is required']);
+            ->assertSessionHasErrors(['name' => 'El campo nombre es obligatorio']);
 
         $this->assertDatabaseMissing('users', [
             'email' => 'jjuan@example.com'
         ]);
 
         // $this->assertEquals(0, User::cout());
+    }
+
+    /** @test */
+    function the_email_is_required()
+    {
+        $this->from('/usuarios/nuevo')->post('/usuarios/', [
+            'name' => 'jjuan',
+            'password' => '654321'
+        ])->assertRedirectToRoute('users.create')
+            ->assertSessionHasErrors(['email' => 'El campo email es obligatorio']);
+
+        $this->assertDatabaseMissing('users', [
+            'name' => 'jjuan'
+        ]);
+    }
+
+    /** @test */
+    function the_password_is_required()
+    {
+        $this->from('/usuarios/nuevo')->post('/usuarios/', [
+            'name' => 'jjuan',
+            'email' => '6543@example.com'
+        ])->assertRedirectToRoute('users.create')
+            ->assertSessionHasErrors(['password' => 'El campo password es obligatorio']);
+
+        $this->assertDatabaseMissing('users', [
+            'name' => 'jjuan'
+        ]);
+    }
+
+    /** @test */
+    function the_email_must_be_valid()
+    {
+        $this->from('/usuarios/nuevo')->post('/usuarios/', [
+            'name' => 'jjuan',
+            'email' => 'correo-no-valido',
+            'password' => '654321'
+        ])->assertRedirectToRoute('users.create')
+            ->assertSessionHasErrors(['email' => 'El correo debe ser válido']);
+
+        $this->assertDatabaseMissing('users', [
+            'name' => 'jjuan'
+        ]);
+    }
+
+    /** @test */
+    function the_email_must_be_unique()
+    {
+        User::create([
+            'name' => 'jjuan',
+            'email' => 'jjuan32@example.com',
+            'password' => '654321'
+        ]);
+
+        $this->from('/usuarios/nuevo')->post('/usuarios/', [
+            'name' => 'gab jjuan',
+            'email' => 'jjuan32@example.com',
+            'password' => '65432fds1'
+        ])->assertRedirectToRoute('users.create')
+            ->assertSessionHasErrors(['email' => 'El correo no está disponible']);
+
+        $this->assertDatabaseMissing('users', [
+            'name' => 'gab jjuan'
+        ]);
+    }
+
+    /** @test */
+    function the_password_must_be_more_than_6_characters()
+    {
+        $this->from('/usuarios/nuevo')->post('/usuarios/', [
+            'name' => 'jjuan',
+            'email' => '6543@example.com',
+            'password' => '54657'
+        ])->assertRedirectToRoute('users.create')
+            ->assertSessionHasErrors(['password' => 'Debe ser mayor a 6 carácteres']);
+
+        $this->assertDatabaseMissing('users', [
+            'name' => 'jjuan'
+        ]);
     }
 }   

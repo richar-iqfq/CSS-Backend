@@ -39,10 +39,15 @@ class UserController extends Controller
     {
         $data = request()->validate([
             'name' => 'required',
-            'email' => 'required',
-            'password' => 'required'
+            'email' => 'required|email|unique:App\Models\User,email',
+            'password' => 'required|min:6' // Could be empty
         ], [
-            'name.required' => 'field name is required'
+            'name.required' => 'El campo nombre es obligatorio',
+            'email.required' => 'El campo email es obligatorio',
+            'email.email' => 'El correo debe ser válido',
+            'email.unique' => 'El correo no está disponible',
+            'password.required' => 'El campo password es obligatorio',
+            'password.min' => 'Debe ser mayor a 6 carácteres'
         ]);
 
         // $data = request()->all();
@@ -60,6 +65,7 @@ class UserController extends Controller
         ]);
 
         return redirect()->route('users.index');
+        // return redirect()->route('users.index')->withInput(); // Para devolver con datos formulario
     }
 
     function show($id)
