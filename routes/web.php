@@ -30,6 +30,12 @@ Route::get('/usuarios/{id}', [UserController::class, 'show'])
 Route::get('/usuarios/nuevo', [UserController::class, 'create'])
     ->name('users.create');
 
+Route::get('/usuarios/{user}/editar', [UserController::class, 'edit'])
+    ->name('users.edit');
+
+Route::put('/usuarios/{user}', [UserController::class, 'update'])
+    ->name('users.update');
+
 Route::post('/usuarios', [UserController::class, 'store']);
 
 Route::get('/saludo/{name}/{nickname?}', [UserController::class, 'welcome']);

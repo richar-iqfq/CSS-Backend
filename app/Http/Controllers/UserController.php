@@ -68,6 +68,22 @@ class UserController extends Controller
         // return redirect()->route('users.index')->withInput(); // Para devolver con datos formulario
     }
 
+    function edit(User $user)
+    {
+        return view('users.edit', ['user' => $user]);
+    }
+
+    function update(User $user)
+    {
+        $data = request()->all();
+
+        $data['password'] = bcrypt($data['password']);
+        
+        $user->update($data);
+
+        return redirect("usuarios/{$user->id}");
+    }
+
     function show($id)
     {
         $user = User::findOrFail($id); // Launch errors.404 if fail

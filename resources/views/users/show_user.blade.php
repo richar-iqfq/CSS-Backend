@@ -14,6 +14,6 @@
         <p>Profesion del usuario: {{ $user->profession->title }}</p>    
     @endif
 
-    <a href="{{ url()->previous() }}">Regresar</a>
+    <a href="{{ url()->previous() }}">Regresar</a> <a href="{{ route('users.edit', ['user' => $user->id]) }}">Editar</a>
 
 @endsection

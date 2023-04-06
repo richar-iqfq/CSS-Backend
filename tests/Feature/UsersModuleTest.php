@@ -171,4 +171,36 @@ class UsersModuleTest extends TestCase
             'name' => 'jjuan'
         ]);
     }
-}   
+
+    /** @test */
+    public function it_displays_the_edit_users_page()
+    {
+        $user = User::factory()->create();
+
+        // usuarios/id/editar
+
+        $this->get("/usuarios/{$user->id}/editar")
+            ->assertStatus(200)
+            ->assertViewIs('users.edit')
+            ->assertSee('Editar Usuario')
+            ->assertViewHas('user', $user);
+    }
+
+    /** @test */
+    function it_updates_a_user()
+    {
+        $user = User::factory()->create();
+    
+        $this->put("/usuarios/{$user->id}", [
+            'name' => 'Jose Juan',
+            'email' => 'jjuan@example.com',
+            'password' => '6543210'
+        ])->assertRedirect("usuarios/{$user->id}");
+
+        $this->assertCredentials([
+            'name' => 'Jose Juan',
+            'email' => 'jjuan@example.com',
+            'password' => '6543210'
+        ]);
+    }
+}
