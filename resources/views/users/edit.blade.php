@@ -17,7 +17,8 @@
         </div>
     @endif
 
-    <form action="{{ url('/usuarios') }}" method="post">
+    <form action="{{ url("usuarios/{$user->id}") }}" method="post">
+        {{ method_field('put') }}        
         {{ csrf_field() }}
 
         <label for="name">Nombre: </label>

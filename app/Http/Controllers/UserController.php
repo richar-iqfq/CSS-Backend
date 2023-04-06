@@ -74,8 +74,12 @@ class UserController extends Controller
     }
 
     function update(User $user)
-    {
-        $data = request()->all();
+    {   
+        $data = request()->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:App\Models\User,email',
+            'password' => 'required|min:6'
+        ]);
 
         $data['password'] = bcrypt($data['password']);
         
