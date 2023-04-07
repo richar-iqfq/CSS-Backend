@@ -244,20 +244,24 @@ class UsersModuleTest extends TestCase
     }
 
     /** @test */
-    function the_password_is_required_when_updating_a_user()
+    function the_password_is_optional_when_updating_a_user()
     {
-        $user = User::factory()->create();
+        $user = User::factory()->create([
+            'password' => bcrypt('clave-anterior')
+        ]);
 
         $this->from("usuarios/{$user->id}/editar")
             ->put("/usuarios/{$user->id}", [
                 'name' => 'jjuan',
-                'email' => '6543@example.com'
+                'email' => '6543@example.com',
+                'password' => ''
             ])
-            ->assertRedirectToRoute('users.edit', ['user' => $user->id])
-            ->assertSessionHasErrors(['password']);
+            ->assertRedirectToRoute('users.show', ['id' => $user->id]);
 
-        $this->assertDatabaseMissing('users', [
-            'name' => 'jjuan'
+        $this->assertCredentials([
+            'name' => 'jjuan',
+            'email' => '6543@example.com',
+            'password' => 'clave-anterior'
         ]);
     }
 
@@ -281,10 +285,35 @@ class UsersModuleTest extends TestCase
     }
 
     /** @test */
+    function the_email_can_stay_the_same_when_updating_a_user()
+    {
+        $user = User::factory()->create([
+            'email' => '6543@example.com'
+        ]);
+
+        $this->from("usuarios/{$user->id}/editar")
+            ->put("/usuarios/{$user->id}", [
+                'name' => 'jjuan',
+                'email' => '6543@example.com',
+                'password' => '1247684'
+            ])
+            ->assertRedirectToRoute('users.show', ['id' => $user->id]);
+
+        $this->assertDatabaseHas('users', [
+            'name' => 'jjuan',
+            'email' => '6543@example.com'
+        ]);
+    }
+
+    /** @test */
     function the_email_must_be_unique_when_updating_a_user()
     {
-        self::markTestIncomplete();
-        return;
+        // self::markTestIncomplete();
+        // return;
+
+        User::factory()->create([
+            'email' => 'existing-email@example.com'
+        ]);
         
         $user = User::factory()->create([
             'email' => 'jjuan32@example.com'
@@ -293,7 +322,7 @@ class UsersModuleTest extends TestCase
         $this->from("usuarios/{$user->id}/editar")
             ->put("/usuarios/{$user->id}", [
                 'name' => 'gab jjuan',
-                'email' => 'jjuan32@example.com',
+                'email' => 'existing-email@example.com',
                 'password' => '65432fds1'
             ])
             ->assertRedirectToRoute('users.edit', ['user' => $user->id])
@@ -305,21 +334,17 @@ class UsersModuleTest extends TestCase
     }
 
     /** @test */
-    function the_password_must_be_more_than_6_characters_when_updating_a_user()
+    function it_deletes_a_user()
     {
         $user = User::factory()->create();
 
-        $this->from("usuarios/{$user->id}/editar")
-            ->put("/usuarios/{$user->id}", [
-                'name' => 'jjuan',
-                'email' => '6543@example.com',
-                'password' => '54657'
-            ])
-            ->assertRedirectToRoute('users.edit', ['user' => $user->id])
-            ->assertSessionHasErrors(['password']);
+        $this->delete("usuarios/{$user->id}")
+            ->assertRedirectToRoute('users.index');
 
         $this->assertDatabaseMissing('users', [
-            'name' => 'jjuan'
+            'id' => $user->id
         ]);
+
+        // $this->assertSame(0, User::count());
     }
 }

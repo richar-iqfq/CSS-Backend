@@ -36,6 +36,9 @@ Route::get('/usuarios/{user}/editar', [UserController::class, 'edit'])
 Route::put('/usuarios/{user}', [UserController::class, 'update'])
     ->name('users.update');
 
+Route::delete('/usuarios/{user}', [UserController::class, 'destroy'])
+    ->name('users.delete');
+
 Route::post('/usuarios', [UserController::class, 'store']);
 
 Route::get('/saludo/{name}/{nickname?}', [UserController::class, 'welcome']);
