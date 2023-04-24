@@ -5,14 +5,18 @@ namespace App\Classes\Search\Filters\IupacAcidConstant;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
-class AssessmentFilter
+class PkTypeFilter
 {
     public static function apply (Builder $query, Request $request)
     {
 
-        if ($request->assessment) {
+        if ($request->pka_type) {
 
-            $query->whereIn('assessment', $request->assessment);
+            if ($request->pka_type != 'All'){
+
+                $query->where('pka_type', $request->pka_type);
+            
+            }
         
         }
 

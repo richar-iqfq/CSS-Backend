@@ -11,9 +11,14 @@ class ConstantsController extends Controller
     public function index()
     {       
         $constants = IupacAcidConstant::all();
-        $oldRequest = null;
+        $filters_applied = [
+            'substring' => null,
+            'entry' => null,
+            'pka_type' => 'All',
+            'assessment' => []
+        ];
         
-        return view('constants.index', compact('constants', 'oldRequest'));
+        return view('constants.index', compact('constants', 'filters_applied'));
     }
 
     public function show($id)
@@ -31,8 +36,29 @@ class ConstantsController extends Controller
 
         $constants = $query->get();
 
-        $oldRequest = $request;
+        $filters_applied = $this->getFiltersList($request->all());
 
-        return view('constants.index', compact('constants', 'oldRequest'));
+        return view('constants.index', compact('constants', 'filters_applied'));
+    }
+
+    private function getFiltersList($request_array)
+    {
+        $filters_applied = [
+            'substring' => null,
+            'entry' => null,
+            'pka_type' => 'All',
+            'assessment' => []
+        ];
+
+        foreach ($filters_applied as $key => $value) {
+
+            if ( array_key_exists($key, $request_array) ){
+
+                    $filters_applied[$key] = $request_array[$key];
+                }
+        
+            }
+        
+        return $filters_applied;
     }
 }

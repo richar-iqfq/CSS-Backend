@@ -5,14 +5,14 @@ namespace App\Classes\Search\Filters\IupacAcidConstant;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
-class AssessmentFilter
+class EntryFilter
 {
     public static function apply (Builder $query, Request $request)
     {
 
-        if ($request->assessment) {
+        if ($request->entry) {
 
-            $query->whereIn('assessment', $request->assessment);
+            $query->where('entry', $request->entry);
         
         }
 
