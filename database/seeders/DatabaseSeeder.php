@@ -33,11 +33,15 @@ class DatabaseSeeder extends Seeder
         $this->truncateTables([
             'professions',
             'users',
-            'molecule_data'
+            'molecule_data',
+            'references',
+            'iupac_acid_constants'
         ]);
 
         $this->call(ProfessionSeeder::class);
         $this->call(UserSeeder::class);
         $this->call(MoleculeDataSeeder::class);
+        $this->call(ReferencesSeeder::class);
+        $this->call(IupacAcidConstantsSeeder::class);
     }
 }

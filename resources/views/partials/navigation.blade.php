@@ -33,6 +33,9 @@
         <li class="nav-item">
           <a class="nav-link active" href="{{ route('users.create') }}">Nuevo Usuario</a>
         </li>
+        <li>
+          <a class="nav-link active" href="{{ route('constants.index') }}">Constants</a>
+        </li>
       </ul>
     </div>
   </div>
