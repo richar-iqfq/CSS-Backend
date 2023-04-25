@@ -4,29 +4,36 @@
 
 @section('content')
     <h1>Search</h1>
-    <br/>
 
     <div>
         <form action="{{ url('/constants') }}" method="post">
             {{ csrf_field() }}
-    
-            <label>
-                Name: <input type="text" name="substring" id="substring" placeholder="methane" value="{{$filters_applied['substring']}}">
-            </label>
-            <br/>
-            <label>
-                Entry: <input type="text" name="entry" id="entry" placeholder="1" value="{{$filters_applied['entry']}}">
-            </label>
-            <br/>
-            <label>Assesment: </label>
             
-            <input type="checkbox" name="assessment[]" value="Uncertain" {{ (in_array('Uncertain', $filters_applied['assessment']))?'checked':''}}> Uncertain
-            <input type="checkbox" name="assessment[]" value="Approximate" {{ (in_array('Approximate', $filters_applied['assessment']))?'checked':''}}> Approximate
-            <input type="checkbox" name="assessment[]" value="Reliable"  {{ (in_array('Reliable', $filters_applied['assessment']))?'checked':''}}> Reliable
+            <div class="row"></div>
+                <div class="col">
+                    Name: <input type="text" class="form-control" name="substring" id="substring" placeholder="methane" value="{{$filters_applied['substring']}}">
+                </div>
+                <div class="col">
+                    Entry: <input type="text" class="form-control" name="entry" id="entry" placeholder="1" value="{{$filters_applied['entry']}}">
+                </div>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="assessment[]" value="Uncertain" {{ (in_array('Uncertain', $filters_applied['assessment']))?'checked':''}}>
+                <label class="form-check-label" for="inlineCheckbox1">Uncertain</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="assessment[]" value="Approximate" {{ (in_array('Approximate', $filters_applied['assessment']))?'checked':''}}>
+                <label class="form-check-label" for="inlineCheckbox2">Approximate</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" name="assessment[]" value="Reliable"  {{ (in_array('Reliable', $filters_applied['assessment']))?'checked':''}}>
+                <label class="form-check-label" for="inlineCheckbox3">Reliable</label>
+            </div>
             <br/>
             
-            <label>PKa Type:</label>
-            <select name="pka_type">
+            <label>PKa Type:
+            <select name="pka_type" class="form-control">
                 <option value="All" {{($filters_applied['pka_type']=='All')?'selected':''}}>All</option>
                 <option value="pKB" {{($filters_applied['pka_type']=='pKB')?'selected':''}}>pKB</option>
                 <option value="pKAH1" {{($filters_applied['pka_type']=='pKAH1')?'selected':''}}>pKAH1</option>
@@ -45,17 +52,15 @@
                 <option value="pK8" {{($filters_applied['pka_type']=='pK8')?'selected':''}}>pK8</option>
             </select>
             <br/>
-            <button type="submit">Filtrar</button>
+            <button type="submit" class="btn btn-secondary">Filtrar</button>
+            </label>
         </form>
-
-        <form action="/constants" method="get">
-            <button type="submit">Restore</button>
-        </form>
-        <br>
     </div>
 
-    <div>
-        Results: {{$constants->count()}}
+    <div class="mb-3">
+        <form action="{{ url('/constants') }}" method="get">
+            Results: {{$constants->count()}} <button type="submit" class="btn btn-secondary">Restore</button>
+        </form>
     </div>
     <br/>
 
