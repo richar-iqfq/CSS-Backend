@@ -35,7 +35,9 @@ class DatabaseSeeder extends Seeder
             'users',
             'molecule_data',
             'references',
-            'iupac_acid_constants'
+            'iupac_acid_constants',
+            'constantes_acidas',
+            'referencias'
         ]);
 
         $this->call(ProfessionSeeder::class);
@@ -43,5 +45,7 @@ class DatabaseSeeder extends Seeder
         $this->call(MoleculeDataSeeder::class);
         $this->call(ReferencesSeeder::class);
         $this->call(IupacAcidConstantsSeeder::class);
+        $this->call(ReferenciasSeeder::class);
+        $this->call(ConstantesAcidasSeeder::class);
     }
 }

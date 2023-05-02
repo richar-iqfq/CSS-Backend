@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ConstantsController;
+use App\Http\Controllers\ConstantesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,7 +50,7 @@ Route::get('/about', [AboutController::class, 'show'])
 
 /**
  * -------------------------------------------------------------------
- * Constants Routes
+ * Constants IUPAC Routes
  * -------------------------------------------------------------------
 */
 Route::get('/constants', [ConstantsController::class, 'index'])
@@ -59,3 +60,16 @@ Route::post('/constants', [ConstantsController::class, 'filter']);
 
 Route::get('/constants/{id}', [ConstantsController::class, 'show'])
     ->name('constants.show');
+
+/**
+ * -------------------------------------------------------------------
+ * Constants CHANG Routes
+ * -------------------------------------------------------------------
+ */
+Route::get('/constantes', [ConstantesController::class, 'index'])
+    ->name('constantes.index');
+
+Route::post('/constantes', [ConstantesController::class, 'filter']);
+
+Route::get('/constantes/{id}', [ConstantesController::class, 'show'])
+    ->name('constantes.show');

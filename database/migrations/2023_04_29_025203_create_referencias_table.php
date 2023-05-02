@@ -11,14 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('acid_constants', function (Blueprint $table) {
+        Schema::create('referencias', function (Blueprint $table) {
+            $table->id();
+            $table->string('nombre', 44);
 
-            $table->unsignedBigInteger('compound_id');
-            $table->foreign('compound_id')->references('id')->on('compounds');
-
-            $table->double('pka1',7, 4);
-            $table->double('pka2',7, 4);
-            $table->double('pka3',7, 4);
             $table->timestamps();
         });
     }
@@ -28,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('acid_constants');
+        Schema::dropIfExists('referencias');
     }
 };
