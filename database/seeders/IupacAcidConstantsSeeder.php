@@ -24,7 +24,7 @@ class IupacAcidConstantsSeeder extends Seeder
      */
     public function run(): void
     {
-        $file = './public/iupac_high-confidence_25.json';
+        $file = database_path('data/iupac_high-confidence_25.json');
         $data = $this->load_json($file);
         
         foreach ($data as $key => $value) {

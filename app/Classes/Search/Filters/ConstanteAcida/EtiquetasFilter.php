@@ -5,16 +5,16 @@ namespace App\Classes\Search\Filters\ConstanteAcida;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
-class EtiquetaFilter
+class EtiquetasFilter
 {
     public static function apply (Builder $query, Request $request)
     {
 
-        if ($request->etiqueta) {
+        if ($request->etiquetas) {
 
-            if ($request->etiqueta != 'All'){
+            if ($request->etiquetas){
 
-                $query->where('etiqueta', $request->etiqueta);
+                $query->where('etiquetas', 'LIKE', '%'.$request->etiquetas.'%');
             
             }
         

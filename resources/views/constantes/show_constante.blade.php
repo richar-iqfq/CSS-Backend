@@ -32,32 +32,32 @@
 
         <tr>
             <th scope="row">Tipo de PKa</th>
-            <td>{{ $constante->tipo_pka }}</td>    
+            <td>{{ $constante->tipo }}</td>    
         </tr>
 
         <tr>
-            <th scope="row">Valor de Pka</th>
-            <td>{{ $constante->valor_pk }}</td>    
+            <th scope="row">Disociación</th>
+            <td>{{ $constante->paso }}</td>    
         </tr>
 
         <tr>
-            <th scope="row">Etiqueta</th>
-            <td>{{ $constante->etiqueta }}</td>    
+            <th scope="row">Valor Ka</th>
+            <td>{{ $constante->valor_ka }}</td>    
         </tr>
 
         <tr>
-            <th scope="row">Ion</th>
-            <td>{{ $constante->ion }}</td>    
+            <th scope="row">Valor pKa</th>
+            <td>{{ $constante->valor_pka }}</td>    
         </tr>
 
         <tr>
-            <th scope="row">Conjugado</th>
-            <td><a href={{ route('constantes.show', ['id' => $constante->conjugado()->first()->id]) }}>{{ $constante->conjugado()->first()->formula }}</a></td>    
+            <th scope="row">Etiquetas</th>
+            <td>{{ $constante->etiquetas }}</td>    
         </tr>
 
         <tr>
             <th scope="row">Referencia</th>
-            <td>{{ $constante->referencia->nombre }}</td>    
+            <td>{{ $constante->referencia->cita }}</td>    
         </tr>
     </tbody>
 </table>

@@ -5,16 +5,16 @@ namespace App\Classes\Search\Filters\ConstanteAcida;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
-class Tipo_pkaFilter
+class AutorFilter
 {
     public static function apply (Builder $query, Request $request)
     {
 
-        if ($request->tipo_pka) {
+        if ($request->referencia != 'All') {
 
-            if ($request->tipo_pka != 'All'){
+            if ($request->referencia){
 
-                $query->where('tipo_pka', $request->tipo_pka);
+                $query->where('referencia_id', $request->referencia);
             
             }
         

@@ -23,7 +23,7 @@ class ConstantesAcidasSeeder extends Seeder
      */
     public function run(): void
     {
-        $file = 'public/constantes_acidasv1.json';
+        $file = database_path('data/constantes_acidasv1.json');
         $data = $this->load_json($file);
 
         foreach ($data as $key => $value) {
@@ -31,11 +31,12 @@ class ConstantesAcidasSeeder extends Seeder
             ConstanteAcida::create([
                 'nombre' => $value['nombre'],
                 'formula' => $value['formula'],
-                'tipo_pka' => $value['tipo_pka'],
-                'valor_pk' => floatval($value['valor_pk']),
-                'etiqueta' => $value['etiqueta'],
-                'ion' => $value['ion'],
-                'conjugado' => $value['conjugado'],
+                'disociacion' => $value['disociacion'],
+                'tipo' => $value['tipo'],
+                'paso' => $value['paso'],
+                'valor_ka' => $value['valor_ka'],
+                'valor_pka' => $value['valor_pka'],
+                'etiquetas' => $value['etiquetas'],
                 'referencia_id' => intval($value['referencia'])
             ]);
 

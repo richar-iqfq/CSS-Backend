@@ -25,12 +25,13 @@ class ReferenciasSeeder extends Seeder
      */
     public function run(): void
     {
-        $file = 'public/referencias.json';
+        $file = database_path('data/referencias.json');
         $data = $this->load_json($file);
 
         foreach ($data as $key => $value) {
             Referencia::create([
-                'nombre' => $value['nombre']
+                'autor' => $value['autor'],
+                'cita' => $value['cita']
             ]);
         }
     }

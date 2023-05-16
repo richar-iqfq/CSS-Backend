@@ -25,7 +25,7 @@ class ReferencesSeeder extends Seeder
      */
     public function run(): void
     {
-        $file = './public/references.json';
+        $file = database_path('data/references.json');
         $data = $this->load_json($file);
 
         foreach ($data as $key => $value) {

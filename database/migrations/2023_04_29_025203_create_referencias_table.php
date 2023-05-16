@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('referencias', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre', 44);
+            $table->string('autor', 13);
+            $table->string('cita', 109);
 
             $table->timestamps();
         });

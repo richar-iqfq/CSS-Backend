@@ -13,8 +13,10 @@ class ConstantesController extends Controller
         $constantes = ConstanteAcida::all();
         $filters_applied = [
             'substring' => null,
-            'etiqueta' => 'All',
-            'tipo_pka' => 'All'
+            'etiquetas' => null,
+            'tipo' => 'All',
+            'paso' => 'All',
+            'referencia' => 'All'
         ];
         
         return view('constantes.index', compact('constantes', 'filters_applied'));
@@ -37,6 +39,8 @@ class ConstantesController extends Controller
 
         $filters_applied = $this->getFiltersList($request->all());
 
+        // dd($filters_applied);
+
         return view('constantes.index', compact('constantes', 'filters_applied'));
     }
 
@@ -44,8 +48,10 @@ class ConstantesController extends Controller
     {
         $filters_applied = [
             'substring' => null,
-            'etiqueta' => 'All',
-            'tipo_pka' => 'All'
+            'etiquetas' => null,
+            'tipo' => 'All',
+            'paso' => 'All',
+            'referencia' => 'All'
         ];
 
         foreach ($filters_applied as $key => $value) {
@@ -60,4 +66,3 @@ class ConstantesController extends Controller
         return $filters_applied;
     }
 }
-

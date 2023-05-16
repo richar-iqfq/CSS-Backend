@@ -42,9 +42,9 @@ class DatabaseSeeder extends Seeder
 
         $this->call(ProfessionSeeder::class);
         $this->call(UserSeeder::class);
-        $this->call(MoleculeDataSeeder::class);
-        $this->call(ReferencesSeeder::class);
-        $this->call(IupacAcidConstantsSeeder::class);
+        // $this->call(MoleculeDataSeeder::class);
+        // $this->call(ReferencesSeeder::class);
+        // $this->call(IupacAcidConstantsSeeder::class);
         $this->call(ReferenciasSeeder::class);
         $this->call(ConstantesAcidasSeeder::class);
     }

@@ -16,9 +16,4 @@ class ConstanteAcida extends Model
         return $this->belongsTo(Referencia::class, 'referencia_id');
     }
 
-    public function conjugado()
-    {
-        return static::where('conjugado', $this->id);
-    }
-
 }
