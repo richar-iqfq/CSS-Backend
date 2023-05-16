@@ -42,12 +42,17 @@
 
         <tr>
             <th scope="row">Valor Ka</th>
-            <td>{{ $constante->valor_ka }}</td>    
+            <td>{{ $constante->ka }}</td>    
         </tr>
 
         <tr>
             <th scope="row">Valor pKa</th>
-            <td>{{ $constante->valor_pka }}</td>    
+            <td>{{ $constante->pka }}</td>    
+        </tr>
+
+        <tr>
+            <th scope="row">Valor Reportado</th>
+            <td>{{ $constante->reportado }}</td>    
         </tr>
 
         <tr>

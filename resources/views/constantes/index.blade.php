@@ -74,6 +74,7 @@
                     <th scope="col">Disociación</th>
                     <th scope="col">Valor Ka</th>
                     <th scope="col">Valor pKa</th>
+                    <th scope="col">Reportado</th>
                     <th scope="col">Etiquetas</th>
                     <th scope="col">Autor</th>
                 </tr>
@@ -88,8 +89,9 @@
                         </td>
                         <td>{{ $constante->tipo }}</a></td>
                         <td>{{ $constante->paso }}</a></td>
-                        <td>{{ $constante->valor_ka }}</td>
-                        <td>{{ $constante->valor_pka }}</td>
+                        <td>{{ $constante->ka }}</td>
+                        <td>{{ $constante->pka }}</td>
+                        <td>{{ $constante->reportado }}</td>
                         <td>{{ $constante->etiquetas }}</td>
                         <td>{{ $constante->referencia->autor }}</td>    
                     </tr>
