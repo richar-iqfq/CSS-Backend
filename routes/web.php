@@ -63,7 +63,7 @@ Route::get('/constants/{id}', [ConstantsController::class, 'show'])
 
 /**
  * -------------------------------------------------------------------
- * Constants CHANG Routes
+ * Constants Compilation Routes
  * -------------------------------------------------------------------
  */
 Route::get('/constantes', [ConstantesController::class, 'index'])

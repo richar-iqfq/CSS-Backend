@@ -61,39 +61,29 @@
         </form>
     </div>
 
-    Results: {{$constantes->count()}} 
+    Results: {{$especies->count()}} 
 
-    @if (! $constantes->isEmpty())
+    @if (! $especies->isEmpty())
         <table class="table">
             <thead class="table-light">
                 <tr>
                     <th scope="col">id</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Fórmula</th>
-                    <th scope="col">Tipo de PKa</th>
-                    <th scope="col">Disociación</th>
-                    <th scope="col">Valor Ka</th>
-                    <th scope="col">Valor pKa</th>
-                    <th scope="col">Reportado</th>
-                    <th scope="col">Etiquetas</th>
-                    <th scope="col">Autor</th>
+                    <th scope="col">Clase Ácido</th>
+                    <th scope="col">Carga</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($constantes as $constante)
+                @foreach ($especies as $especie)
                     <tr>
-                        <th scope="row">{{ $constante->id }}</th>
-                        <td>{{ $constante->nombre }}</td>
-                        <td><a href="{{ route('constantes.show', ['id' => $constante->id]) }}">
-                            {{ $constante->formula }}</a>
+                        <th scope="row">{{ $especie->id }}</th>
+                        <td>{{ $especie->nombre }}</td>
+                        <td><a href="{{ route('constantes.show', ['id' => $especie->id]) }}">
+                            {{ $especie->formula }}</a>
                         </td>
-                        <td>{{ $constante->tipo }}</a></td>
-                        <td>{{ $constante->paso }}</a></td>
-                        <td>{{ $constante->ka }}</td>
-                        <td>{{ $constante->pka }}</td>
-                        <td>{{ $constante->reportado }}</td>
-                        <td>{{ $constante->etiquetas }}</td>
-                        <td>{{ $constante->referencia->autor }}</td>    
+                        <td>{{ $especie->clase_acido->clase }}</a></td>
+                        <td>{{ $especie->clase_carga->clase }}</a></td>
                     </tr>
                 @endforeach
             </tbody>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Detailles')
+@section('title', 'Detalles')
 
 @section('content')
 
@@ -12,35 +12,76 @@
         <tr>
             <th scope="col"></th>
             <th scope="col">Valor</th>
+            <th scope="col">Fuerza Ionica</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col">1</th>
+            <th scope="col">2</th>
+            <th scope="col">3</th>
+            <th scope="col">4</th>
+            <th scope="col">5</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <th scope="row">id</th>
-            <td>{{ $constante->id }}</td>    
+            <td>{{ $especie->id }}</td>    
         </tr>
 
         <tr>
             <th scope="row">Nombre</th>
-            <td>{{ $constante->nombre }}</td>    
+            <td>{{ $especie->nombre }}</td>    
         </tr>
 
         <tr>
             <th scope="row">Fórmula</th>
-            <td>{{ $constante->formula }}</td>    
+            <td>{{ $especie->formula }}</td>    
         </tr>
 
         <tr>
-            <th scope="row">Tipo de PKa</th>
-            <td>{{ $constante->tipo }}</td>    
+            <th scope="row">Ácido</th>
+            <td>{{ $especie->clase_acido->clase }}</td>    
         </tr>
 
         <tr>
-            <th scope="row">Disociación</th>
-            <td>{{ $constante->paso }}</td>    
+            <th scope="row">Carga</th>
+            <td>{{ $especie->clase_carga->clase }}</td>    
+        </tr>
+        
+        <tr>
+            <th scope="row"></th>
+            <td colspan="10"><b>Constantes</b></td>
         </tr>
 
-        <tr>
+        @foreach ($especie->constantes as $constante)
+            <tr>
+                <th scope="row">Referencia</th>
+                <td>{{ $constante->referencia->autor }}</td>
+                <td>{{ $constante->fuerza_ionica }}</td>
+                <td><b>Ka</b></td>
+                <td>{{ $constante->valor_reportado=='ka'?'valor reportado':'' }}</td>
+                @foreach ($constante->ka_values() as $ka_value)
+                    <td>{{ $ka_value }}</td>
+                @endforeach
+            </tr>
+
+            <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td><b>pKa</b></td>
+                <td>{{ $constante->valor_reportado=='pka'?'valor reportado':'' }}</td>
+                @foreach ($constante->pka_values() as $pka_value)
+                    <td>{{ $pka_value }}</td>    
+                @endforeach
+            </tr>
+        @endforeach
+        {{-- <tr>
+            <th scope="row">Valor Reportado</th>
+            <td>{{ $especie->reportado }}</td>    
+        </tr> --}}
+
+        {{-- <tr>
             <th scope="row">Valor Ka</th>
             <td>{{ $constante->ka }}</td>    
         </tr>
@@ -51,19 +92,9 @@
         </tr>
 
         <tr>
-            <th scope="row">Valor Reportado</th>
-            <td>{{ $constante->reportado }}</td>    
-        </tr>
-
-        <tr>
-            <th scope="row">Etiquetas</th>
-            <td>{{ $constante->etiquetas }}</td>    
-        </tr>
-
-        <tr>
             <th scope="row">Referencia</th>
             <td>{{ $constante->referencia->cita }}</td>    
-        </tr>
+        </tr> --}}
     </tbody>
 </table>
 

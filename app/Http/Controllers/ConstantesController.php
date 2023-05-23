@@ -5,12 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\ConstanteAcida;
 use App\Classes\Search\SearchBuilder;
+use App\Models\Especie;
 
 class ConstantesController extends Controller
 {
     public function index()
     {
-        $constantes = ConstanteAcida::all();
+        $especies = Especie::all();
         $filters_applied = [
             'substring' => null,
             'etiquetas' => null,
@@ -19,14 +20,14 @@ class ConstantesController extends Controller
             'referencia' => 'All'
         ];
         
-        return view('constantes.index', compact('constantes', 'filters_applied'));
+        return view('constantes.index', compact('especies', 'filters_applied'));
     }
 
     public function show($id)
     {
-        $constante = ConstanteAcida::findOrFail($id);
+        $especie = Especie::findOrFail($id);
 
-        return view('constantes.show_constante', compact('constante'));
+        return view('constantes.show_constante', compact('especie'));
     }
 
     public function filter(Request $request)

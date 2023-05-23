@@ -11,11 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('referencias', function (Blueprint $table) {
+        Schema::create('clase_cargas', function (Blueprint $table) {
             $table->id();
-            $table->string('autor', 13);
-            $table->string('cita', 109);
-
+            $table->string('clase', 10)->unique();
             $table->timestamps();
         });
     }
@@ -25,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('referencias');
+        Schema::dropIfExists('clase_cargas');
     }
 };

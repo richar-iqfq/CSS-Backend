@@ -6,26 +6,14 @@ use App\Models\Referencia;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ReferenciasSeeder extends Seeder
+class ReferenciaSeeder extends Seeder
 {
     /**
-     * Load array from json
+     * Buil array from csv file
      */
-    private function load_json($file)
+    private function build_array_from_csv($file)
     {
-        $referencia_json = file_get_contents($file);
-
-        $decoded_json = json_decode($referencia_json, true);
-    
-        return $decoded_json;
-    }
-
-    /**
-     * Load array from csv
-     */
-    function build_array_from_csv($file)
-    {
-        // print_r($file);
+        // Open file
         $h = fopen($file, 'r');
         $array_data = [];
 
@@ -36,12 +24,13 @@ class ReferenciasSeeder extends Seeder
 
         fclose($h);
 
+        // Asign column names
         $columns = $array_data[0];
         $columns = array_slice($columns, 1);
+        unset($array_data[0]); // Remove the column names
 
-        unset($array_data[0]);
+        // Build array with congruent keys
         $data = [];
-
         foreach ($array_data as $values) {
             $tmp = [];
             $id = $values[0];
@@ -66,12 +55,10 @@ class ReferenciasSeeder extends Seeder
         $data = $this->build_array_from_csv($file);
 
         foreach ($data as $key => $line) {
-
             Referencia::create([
                 'autor' => $line['autor'],
                 'cita' => $line['cita']
             ]);
-
         }
     }
 }

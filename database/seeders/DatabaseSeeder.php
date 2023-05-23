@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -37,7 +38,8 @@ class DatabaseSeeder extends Seeder
             'references',
             'iupac_acid_constants',
             'constantes_acidas',
-            'referencias'
+            'referencias',
+            'especie_referencia'
         ]);
 
         $this->call(ProfessionSeeder::class);
@@ -45,7 +47,11 @@ class DatabaseSeeder extends Seeder
         // $this->call(MoleculeDataSeeder::class);
         // $this->call(ReferencesSeeder::class);
         // $this->call(IupacAcidConstantsSeeder::class);
-        $this->call(ReferenciasSeeder::class);
-        $this->call(ConstantesAcidasSeeder::class);
+        $this->call(ReferenciaSeeder::class);
+        $this->call(ClaseCargaSeeder::class);
+        $this->call(ClaseAcidoSeeder::class);
+        $this->call(EspecieSeeder::class);
+        $this->call(ConstanteAcidaSeeder::class);
+        $this->call(EspecieReferenciaSeeder::class);
     }
 }

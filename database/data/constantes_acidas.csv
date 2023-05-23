@@ -1,384 +1,272 @@
-﻿id,nombre,formula,disociacion,tipo,paso,ka,pka,reportado,etiquetas,referencia
-1,Ácido fluorhídrico,HF,,Ka,1,7.10E-04,3.149,Ka,ácido débil,1
-2,Ácido nitroso,HNO2,,Ka,1,4.50E-04,3.347,Ka,ácido débil,1
-3,Ácido acetilsalicílico (aspirina),C9H8O4,,Ka,1,3.00E-04,3.523,Ka,ácido débil,1
-4,Ácido fórmico,HCOOH,,Ka,1,1.70E-04,3.770,Ka,ácido débil,1
-5,Ácido ascórbico,C6H8O6,,Ka,1,8.00E-05,4.097,Ka,ácido débil,1
-6,Ácido benzoico,C6H5COOH,,Ka,1,6.50E-05,4.187,Ka,ácido débil,1
-7,Ácido acético,CH3COOH,,Ka,1,1.80E-05,4.745,Ka,ácido débil,1
-8,Ácido cianhídrico,HCN,,Ka,1,4.90E-10,9.310,Ka,ácido débil,1
-9,Fenol,C6H5OH,,Ka,1,1.30E-10,9.886,Ka,ácido débil,1
-10,Ion floruro,F[-],,Kb,1,1.40E-11,10.854,Ka,"base débil, anión",1
-11,Ion nitrito,NO[-]2,,Kb,1,2.20E-11,10.658,Ka,"base débil, anión",1
-12,Ion acetilsalicilato,C9H7O [-]4,,Kb,1,3.30E-11,10.481,Ka,"base débil, anión",1
-13,Ion formato,HCOO[-],,Kb,1,5.90E-11,10.229,Ka,"base débil, anión",1
-14,Ion ascorbato,C6H7O[-]6,,Kb,1,1.30E-10,9.886,Ka,"base débil, anión",1
-15,Ion benzoato,C6H5COO[-],,Kb,1,1.50E-10,9.824,Ka,"base débil, anión",1
-16,Ion acetato,CH3COO[-],,Kb,1,5.60E-10,9.252,Ka,"base débil, anión",1
-17,Ion cianuro,CN[-],,Kb,1,2.00E-05,4.699,Ka,"base débil, anión",1
-18,Ion fenóxido,C6H5O[-],,Kb,1,7.70E-05,4.114,Ka,"base débil, anión",1
-19,Etilamina,C2H5NH2,,Kb,1,5.60E-04,3.252,Ka,base débil,1
-20,Metilamina,CH3NH2,,Kb,1,4.40E-04,3.357,Ka,base débil,1
-21,Amoniaco,NH3,,Kb,1,1.80E-05,4.745,Ka,base débil,1
-22,Piridina,C5H5N,,Kb,1,1.70E-09,8.770,Ka,base débil,1
-23,Anilina,C6H5NH2,,Kb,1,3.80E-10,9.420,Ka,base débil,1
-24,Cafeína,C8H10N4O2,,Kb,1,5.30E-14,13.276,Ka,base débil,1
-25,Urea,(NH2)2CO,,Kb,1,1.50E-14,13.824,Ka,base débil,1
-26,Ion etilamonio,C2H5N[+]H3,,Ka,1,1.80E-11,10.745,Ka,"ácido débil, catión",1
-27,Ion metilamonio,CH3N[+]H3,,Ka,1,2.30E-11,10.638,Ka,"ácido débil, catión",1
-28,Ion amonio,NH[+]4,,Ka,1,5.60E-10,9.252,Ka,"ácido débil, catión",1
-29,Ion piridinio,C5H5N[+]H,,Ka,1,5.90E-06,5.229,Ka,"ácido débil, catión",1
-30,Ion anilinio,C6H5N[+]H3,,Ka,1,2.60E-05,4.585,Ka,"ácido débil, catión",1
-31,Ion de cafeína,C8H11N[+]4O2,,Ka,1,1.90E-01,0.721,Ka,"ácido débil, catión",1
-32,Ion de urea,H2NCON[+]H3,,Ka,1,6.70E-01,0.174,Ka,"ácido débil, catión",1
-33,Ácido sulfúrico,H2SO4,,Ka,1,0.00E+00,0.000,Ka,ácido fuerte,1
-34,Ácido sulfúrico,H2SO5,HSO[-]4,Ka,2,1.30E-02,1.886,Ka,"ácido débil, anión",1
-35,Ácido oxálico,H2C2O4,,Ka,1,6.50E-02,1.187,Ka,ácido débil,1
-36,Ácido oxálico,H2C2O5,HC2O[-]4,Ka,2,6.10E-05,4.215,Ka,"ácido débil, anión",1
-37,Ácido sulfuroso,H2SO3,,Ka,1,1.30E-02,1.886,Ka,ácido débil,1
-38,Ácido sulfuroso,H2SO4,HSO[-]3,Ka,2,6.30E-08,7.201,Ka,"ácido débil, anión",1
-39,Ácido carbónico,H2CO3,,Ka,1,4.20E-07,6.377,Ka,ácido débil,1
-40,Ácido carbónico,H2CO4,HCO[-]3,Ka,2,4.80E-11,10.319,Ka,"ácido débil, anión",1
-41,Ácido sulfhídrico,H2S,,Ka,1,9.50E-08,7.022,Ka,ácido débil,1
-42,Ácido sulfhídrico,H2S,HS[-],Ka,2,1.00E-19,19.000,Ka,"ácido débil, anión",1
-43,Ácido fosfórico,H3PO4,,Ka,1,7.50E-03,2.125,Ka,ácido débil,1
-44,Ácido fosfórico,H3PO5,H2PO[-]4,Ka,2,6.20E-08,7.208,Ka,"ácido débil, anión",1
-45,Ácido fosfórico,H3PO6,HPO[2-]4,Ka,3,4.80E-13,12.319,Ka,"ácido débil, anión",1
-46,Ion hidrogenosulfato,HSO[-]4,,Kb,1,0.00E+00,0.000,Ka,"base débil, anión",1
-47,Ion sulfato,SO[2-]4,,Kb,1,7.70E-13,12.114,Ka,"base débil, anión",1
-48,Ion hidrogenoxalato,HC2O[-]4,,Kb,1,1.50E-13,12.824,Ka,"base débil, anión",1
-49,Ion oxalato,C2O[2-]4,,Kb,1,1.60E-10,9.796,Ka,"base débil, anión",1
-50,Ion hidrogenosulfito,HSO[-]3,,Kb,1,7.70E-13,12.114,Ka,"base débil, anión",1
-51,Ion sulfito,SO[2-]3,,Kb,1,1.60E-07,6.796,Ka,"base débil, anión",1
-52,Ion hidrogenocarbonato,HCO[-]3,,Kb,1,2.40E-08,7.620,Ka,"base débil, anión",1
-53,Ion carbonato,CO[2-]3,,Kb,1,2.10E-04,3.678,Ka,"base débil, anión",1
-54,Ion hidrogenosulfuro,HS[-],,Kb,1,1.10E-07,6.959,Ka,"base débil, anión",1
-55,Ion sulfuro,S[2-],,Kb,1,1.00E+05,-5.000,Ka,"base débil, anión",1
-56,Ion dihidrogenofosfato,H2PO[-]4,,Kb,1,1.30E-12,11.886,Ka,"base débil, anión",1
-57,Ion hidrogenofosfato,HPO[2-]4,,Kb,1,1.60E-07,6.796,Ka,"base débil, anión",1
-58,Ion fosfato,PO[3-]4,,Kb,1,2.10E-02,1.678,Ka,"base débil, anión",1
-59,Ácido acético,CH3COOH,,Ka,1,1.75E-05,4.757,Ka,ácido débil,2
-60,Ion amonio,NH[+]4,,Ka,1,5.70E-10,9.244,Ka,"ácido débil, catión",2
-61,Ion anilinio,C6H5NH[+]3,,Ka,1,2.51E-05,4.600,Ka,"ácido débil, catión",2
-62,Ácido arsénico,H3AsO4,,Ka,1,5.80E-03,2.237,Ka,ácido débil,2
-63,Ácido arsénico,H3AsO4,H2AsO[-]4,Ka,2,1.10E-07,6.959,Ka,"ácido débil, anión",2
-64,Ácido arsénico,H3AsO4,HAsO[2-]4,Ka,3,3.20E-12,11.495,Ka,"ácido débil, anión",2
-65,Ácido arsenioso,H3AsO3,,Ka,1,5.10E-10,9.292,Ka,ácido débil,2
-66,Ácido benzoico,C6H5COOH,,Ka,1,6.28E-05,4.202,Ka,ácido débil,2
-67,Ácido bórico,H3BO3,,Ka,1,5.81E-10,9.236,Ka,ácido débil,2
-68,Ácido 1-butanoico,CH3CH2CH2COOH,,Ka,1,1.52E-05,4.818,Ka,ácido débil,2
-69,Ácido carbónico,H2CO3,,Ka,1,4.45E-07,6.352,Ka,ácido débil,2
-70,Ácido carbónico,H2CO3,HCO[-]3,Ka,2,4.69E-11,10.329,Ka,"ácido débil, anión",2
-71,Dióxido de carbono,CO2 (ac),,Ka,1,4.20E-07,6.377,Ka,ácido débil,2
-72,Dióxido de carbono,CO2 (ac),,Ka,2,4.69E-11,10.329,Ka,ácido débil,2
-73,Ácido cloroacético,ClCH2COOH,,Ka,1,1.36E-03,2.866,Ka,ácido débil,2
-74,Ácido cítrico,HOOC(OH)C(CH2COOH)2,,Ka,1,7.45E-04,3.128,Ka,ácido débil,2
-75,Ácido cítrico,HOOC(OH)C(CH2COOH)2,[-]OOC(OH)C(CH2COOH)2,Ka,2,1.73E-05,4.762,Ka,"ácido débil, anión",2
-76,Ácido cítrico,HOOC(OH)C(CH2COOH)2,[-]OOC(OH)C(CH2)2(COOH)(COO[-]),Ka,3,4.02E-07,6.396,Ka,"ácido débil, anión",2
-77,Ion dimetil amonio,(CH3)2NH[+]2,,Ka,1,1.68E-11,10.775,Ka,"ácido débil, catión",2
-78,Ion etanol amonio,HOC2H4NH[+]3,,Ka,1,3.18E-10,9.498,Ka,"ácido débil, catión",2
-79,Ion etilamonio,C2H5NH[+]3,,Ka,1,2.31E-11,10.636,Ka,"ácido débil, catión",2
-80,Ion etilén amonio,[+]H3NCH2CH2NH[+]3,,Ka,1,1.42E-07,6.848,Ka,"ácido débil, catión",2
-81,Ion etilén amonio,[+]H3NCH2CH2NH[+]3,H2NCH2CH2NH[+]3,Ka,2,1.18E-10,9.928,Ka,"ácido débil, catión",2
-82,Ácido fórmico,HCOOH,,Ka,1,1.80E-04,3.745,Ka,ácido débil,2
-83,Ácido fumárico,trans-HOOCCH:CHCOOH,,Ka,1,8.85E-04,3.053,Ka,ácido débil,2
-84,Ácido fumárico,trans-HOOCCH:CHCOOH,trans-HOOCCH:CHCOO[-],Ka,2,3.21E-05,4.493,Ka,"ácido débil, anión",2
-85,Ácido glicólico,HOCH2COOH,,Ka,1,1.47E-04,3.833,Ka,ácido débil,2
-86,Ion hidrazinio,H2NNH[+]3,,Ka,1,1.05E-08,7.979,Ka,"ácido débil, catión",2
-87,Ácido hidrazoico,HN3,,Ka,1,2.20E-05,4.658,Ka,ácido débil,2
-88,Ácido cianhídrico,HCN,,Ka,1,6.20E-10,9.208,Ka,ácido débil,2
-89,Ácido fluorhídrico,HF,,Ka,1,6.80E-04,3.167,Ka,ácido débil,2
-90,Peróxido de hidrógeno,H2O2,,Ka,1,2.20E-12,11.658,Ka,ácido débil,2
-91,Ácido sulfhídrico,H2S,,Ka,1,9.60E-08,7.018,Ka,ácido débil,2
-92,Ácido sulfhídrico,H2S,HS[-],Ka,2,1.30E-14,13.886,Ka,"ácido débil, anión",2
-93,Ion hidroxil amonio,HONH[+]3,,Ka,1,1.10E-06,5.959,Ka,"ácido débil, catión",2
-94,Ácido hipocloroso,HOCl,,Ka,1,3.00E-08,7.523,Ka,ácido débil,2
-95,Ácido yódico,HIO3,,Ka,1,1.70E-01,0.770,Ka,ácido débil,2
-96,Ácido láctico,CH3CHOHCOOH,,Ka,1,1.38E-04,3.860,Ka,ácido débil,2
-97,Ácido maleico,cis-HOOCCH:CHCOOH,,Ka,1,1.30E-02,1.886,Ka,ácido débil,2
-98,Ácido maleico,cis-HOOCCH:CHCOOH,cis-HOOCCH:CHCOO[-],Ka,2,5.90E-07,6.229,Ka,"ácido débil, anión",2
-99,Ácido málico,HOOCCHOHCH2COOH,,Ka,1,3.48E-04,3.458,Ka,ácido débil,2
-100,Ácido málico,HOOCCHOHCH2COOH,HOOCCHOHCH2COO[-],Ka,2,8.00E-06,5.097,Ka,"ácido débil, anión",2
-101,Ácido malónico,HOOCCH2COOH,,Ka,1,1.42E-03,2.848,Ka,ácido débil,2
-102,Ácido malónico,HOOCCH2COOH,HOOCCH2COO[-],Ka,2,2.01E-06,5.697,Ka,"ácido débil, anión",2
-103,Ácido mandélico,C6H5CHOHCOOH,,Ka,1,4.00E-04,3.398,Ka,ácido débil,2
-104,Ion metilamonio,CH3NH[+]3,,Ka,1,2.30E-11,10.638,Ka,"ácido débil, catión",2
-105,Ácido nitroso,HNO2,,Ka,1,7.10E-04,3.149,Ka,ácido débil,2
-106,Ácido oxálico,HOOCCOOH,,Ka,1,5.60E-02,1.252,Ka,ácido débil,2
-107,Ácido oxálico,HOOCCOOH,HOOCCOO[-],Ka,2,5.42E-05,4.266,Ka,"ácido débil, anión",2
-108,Ácido periódico,H5IO6,,Ka,1,2.00E-02,1.699,Ka,ácido débil,2
-109,Ácido periódico,H5IO6,H4IO[-]6,Ka,2,5.00E-09,8.301,Ka,"ácido débil, anión",2
-110,Fenol,C6H5OH,,Ka,1,1.00E-10,10.000,Ka,ácido débil,2
-111,Ácido fosfórico,H3PO4,,Ka,1,7.11E-03,2.148,Ka,ácido débil,2
-112,Ácido fosfórico,H3PO4,H2PO[-]4,Ka,2,6.32E-08,7.199,Ka,"ácido débil, anión",2
-113,Ácido fosfórico,H3PO4,HPO[2-]4,Ka,3,4.50E-13,12.347,Ka,"ácido débil, anión",2
-114,Ácido fosforoso,H3PO3,,Ka,1,3.00E-02,1.523,Ka,ácido débil,2
-115,Ácido fosforoso,H3PO3,H2PO[-]3,Ka,2,1.62E-07,6.790,Ka,"ácido débil, anión",2
-116,Ácido o-ftálico,C6H4(COOH)2,,Ka,1,1.12E-03,2.951,Ka,ácido débil,2
-117,Ácido o-ftálico,C6H4(COOH)2,C6H4(COOH)(COO[-]),Ka,2,3.91E-06,5.408,Ka,"ácido débil, anión",2
-118,Ácido pícrico,(NO2)3C6H2OH,,Ka,1,4.30E-01,0.367,Ka,ácido débil,2
-119,Ion piperidinio,C5H11NH[+],,Ka,1,7.50E-12,11.125,Ka,"ácido débil, catión",2
-120,Ácido propanoico,CH3CH2COOH,,Ka,1,1.34E-05,4.873,Ka,ácido débil,2
-121,Ion piridinio,C5H5NH[+],,Ka,1,5.90E-06,5.229,Ka,"ácido débil, catión",2
-122,Ácido pirúvico,CH3COCOOH,,Ka,1,3.20E-03,2.495,Ka,ácido débil,2
-123,Ácido salicílico,C6H4(OH)COOH,,Ka,1,1.06E-03,2.975,Ka,ácido débil,2
-124,Ácido succínico,HOOCCH2CH2COOH,,Ka,1,6.21E-05,4.207,Ka,ácido débil,2
-125,Ácido succínico,HOOCCH2CH2COOH,HOOCCH2CH2COO[-],Ka,2,2.31E-06,5.636,Ka,"ácido débil, anión",2
-126,Ácido sulfámico,H2NSO3H,,Ka,1,1.03E-01,0.987,Ka,ácido débil,2
-127,Ácido sulfúrico,H2SO4,,Ka,1,0.00E+00,0.000,Ka,ácido fuerte,2
-128,Ácido sulfúrico,H2SO4,HSO[-]4,Ka,2,1.02E-02,1.991,Ka,"ácido débil, anión",2
-129,Ácido sulfuroso,H2SO3,,Ka,1,1.23E-02,1.910,Ka,ácido débil,2
-130,Ácido sulfuroso,H2SO3,HSO[-]3,Ka,2,6.60E-08,7.180,Ka,"ácido débil, anión",2
-131,Ácido tartárico,HOOC(CHOH)2COOH,,Ka,1,9.20E-04,3.036,Ka,ácido débil,2
-132,Ácido tartárico,HOOC(CHOH)2COOH,HOOC(CHOH)2(COO[-]),Ka,2,4.31E-05,4.366,Ka,"ácido débil, anión",2
-133,Ácido tiociánico,HSCN,,Ka,1,1.30E-01,0.886,Ka,ácido débil,2
-134,Ácido tiosulfúrico,H2S2O3,,Ka,1,3.00E-01,0.523,Ka,ácido débil,2
-135,Ácido tiosulfúrico,H2S2O3,HS2O[-]3,Ka,2,2.50E-02,1.602,Ka,"ácido débil, anión",2
-136,Ácido tricloroacético,Cl3CCOOH,,Ka,1,3.00E+00,-0.477,Ka,ácido débil,2
-137,Ion trimetil amonio,(CH3)3NH[+],,Ka,1,1.58E-10,9.801,Ka,"ácido débil, catión",2
-138,Ácido clorhídrico,HCl,,Ka,1,0.00E+00,0.000,Ka,ácido fuerte,1
-139,Ácido nítrico,HNO3,,Ka,1,0.00E+00,0.000,Ka,ácido fuerte,1
-140,Ácido perclórico,HClO4,,Ka,1,0.00E+00,0.000,Ka,ácido fuerte,1
-141,Hidróxido de sodio,NaOH,,Kb,1,0.00E+00,0.000,Ka,base fuerte,1
-142,Hidróxido de potasio,KOH,,Kb,1,0.00E+00,0.000,Ka,base fuerte,1
-143,Hidróxido de bario,Ba(OH)2,,Kb,1,0.00E+00,0.000,Ka,base fuerte,1
-144,Hidróxido de litio,LiOH,,Kb,1,0.00E+00,0.000,Ka,base fuerte,1
-145,Ácido alumínico,H3AlO3,,Ka,1,6.31E-12,11.200,pKa,ácido débil,3
-146,Ion aluminio,Al[3+],,Ka,1,1.05E-05,4.980,pKa,"ácido débil, catión",3
-147,Ion americio III,Am[3+],,Ka,1,1.20E-06,5.920,pKa,"ácido débil, catión, Mu=0.1",3
-148,Ion amonio,NH[+]4,,Ka,1,5.68E-10,9.246,pKa,"ácido débil, catión",3
-149,Amonio-d3,ND3H[+],,Ka,1,1.75E-10,9.757,pKa,"ácido débil, catión",3
-150,Ácido antimónico,HSb(OH)6,,Ka,1,2.82E-03,2.550,pKa,"ácido débil, Mu=0.5",3
-151,Ion antimonio III,SbO[+],,Ka,1,3.80E-02,1.420,pKa,"ácido débil, catión, Mu=1.0",3
-152,Ion bario,Ba(OH)[+],,Kb,1,2.29E-01,0.640,pKa,"base débil, catión, Mu=0.1",3
-153,Ion berkelio III,Bk[3+],,Ka,1,2.19E-06,5.660,pKa,"ácido débil, catión, hidrólisis, Mu=0.1",3
-154,Ion berilio II,Be[2+],,Ka,1,3.16E-07,6.500,pKa,"ácido débil, catión, Mu=1.0",3
-155,Ion bismuto III,Bi[3+],,Ka,1,2.63E-02,1.580,pKa,"ácido débil, catión, Mu=3.0",3
-156,Ácido tetrabórico,H2B4O7,,Ka,1,1.00E-04,4.000,pKa,ácido débil,3
-157,Ácido tetrabórico,H2B4O7,HB4O[-]7,Ka,2,1.00E-09,9.000,pKa,"ácido débil, catión",3
-158,Bromo,Br2,,Ka,1,1.20E-08,7.920,pKa,ácido débil,3
-159,Ion cadmio,Cd[2+],,Ka,1,6.31E-10,9.200,pKa,"ácido débil, catión, hidrólisis",3
-160,Ion calcio,Ca[2+],,Ka,1,2.14E-13,12.670,pKa,"ácido débil, catión, hidrólisis",3
-161,Ion californio III,Cf[3+],,Ka,1,2.40E-06,5.620,pKa,"ácido débil, catión, hidrólisis, Mu=0.1",3
-162,Dióxido de carbono,CO2 (ac),,Ka,1,4.45E-07,6.352,pKa,ácido débil,3
-163,Dióxido de carbono,CO2 (ac),,Ka,2,4.69E-11,10.329,pKa,ácido débil,3
-164,Dióxido de carbono,CO2 (D2O),,Ka,1,1.70E-07,6.770,pKa,ácido débil,3
-165,Dióxido de carbono,CO2 (D2O),,Ka,2,1.17E-11,10.930,pKa,ácido débil,3
-166,Ion cerio III,Ce[3+],,Ka,1,5.01E-10,9.300,pKa,"ácido débil, catión, hidrólisis",3
-167,Ion cromo III,Cr[3+],,Ka,1,1.12E-04,3.950,pKa,"ácido débil, catión, hidrólisis",3
-168,Ion cobalto II,Co[2+],,Ka,1,1.26E-09,8.900,pKa,"ácido débil, catión, hidrólisis",3
-169,Ion cobalto III,Co[3+],,Ka,1,1.78E-02,1.750,pKa,"ácido débil, catión, hidrólisis, m=1",3
-170,Ion cobre II,Cu[2+],,Ka,1,4.57E-08,7.340,pKa,"ácido débil, catión, hidrólisis",3
-171,Ion curio III,Cm[3+],,Ka,1,4.57E-08,7.340,pKa,"ácido débil, catión, hidrólisis, m=0.1",3
-172,Óxido de deuterio,D2O,,ka,1,1.00E-06,6.000,pKa,"ácido débil, escala molal",3
-173,Ion disprosio III,Dy[3+],,Ka,1,7.94E-09,8.100,pKa,"ácido débil, catión, hidrólisis",3
-174,Ion erbio III,Er[3+],,Ka,1,1.00E-09,9.000,pKa,"ácido débil, catión, hidrólisis, Mu=3",3
-175,Ion europio III,Eu[3+],,Ka,1,9.33E-09,8.030,pKa,"ácido débil, catión, hidrólisis",3
-176,Ion fermio III,Fm[3+],,Ka,1,1.58E-04,3.800,pKa,"ácido débil, catión, hidrólisis, Mu=0.1",3
-177,Ion gadolinio III,Gd[3+],,Ka,1,5.37E-09,8.270,pKa,"ácido débil, catión, hidrólisis",3
-178,Ion galio III,Ga[3+],,Ka,1,1.20E-03,2.920,pKa,"ácido débil, catión, hidrólisis",3
-179,Ion galio III,Ga[3+],Ga(OH)[2+],Ka,2,1.70E-04,3.770,pKa,"ácido débil, catión, hidrólisis",3
-180,Ion galio III,Ga[3+],Ga(OH)2[+],Ka,3,1.78E-05,4.750,pKa,"ácido débil, catión, hidrólisis",3
-181,Ion hafnio IV,Hf[4+],,Ka,1,1.32E+00,-0.120,pKa,"ácido débil, catión, hidrólisis, Mu=1",3
-182,Ion hafnio IV,Hf[4+],Hf(OH)[3+],Ka,2,5.89E-01,0.230,pKa,"ácido débil, catión, hidrólisis, Mu=1",3
-183,Ion holmio III,Ho[3+],,Ka,1,9.12E-09,8.040,pKa,"ácido débil, catión, hidrólisis, Mu=0.3",3
-184,Ion hidrazinio (2+),[+]H3NNH3[+],,Ka,1,5.37E-01,0.270,pKa,"ácido débil, catión",3
-185,Ion hidrazinio (2+),[+]H3NNH3[+],H2NNH3[+],Ka,2,1.15E-08,7.940,pKa,"ácido débil, catión",3
-186,Ion hidrazinio (2+),[+]H3NNH3[+],H2NNH2,Ka,3,3.16E-09,8.500,pKa,"ácido débil, catión",3
-187,Ion amonio,NH[+]4,,Ka,1,5.62E-10,9.250,pKa,"ácido débil, catión, Mu=0",4
-188,Ion amonio,NH[+]4,,Ka,1,4.27E-10,9.370,pKa,"ácido débil, catión, combinada, Mu=0.1",4
-189,Ácido arsénico,H3AsO4,,Ka,1,6.46E-03,2.190,pKa,"ácido débil, Mu=0",4
-190,Ácido arsénico,H3AsO4,H2AsO[-]4,Ka,2,1.15E-07,6.940,pKa,"ácido débil, Mu=0",4
-191,Ácido arsénico,H3AsO4,HAsO[2-]4,Ka,3,3.16E-12,11.500,pKa,"ácido débil, Mu=0",4
-192,Ácido arsénico,H3AsO4,,Ka,1,7.94E-03,2.100,pKa,"ácido débil, combinada, Mu=0.1",4
-193,Ácido arsénico,H3AsO4,H2AsO[-]4,Ka,2,2.00E-07,6.700,pKa,"ácido débil, combinada, Mu=0.1",4
-194,Ácido arsénico,H3AsO4,HAsO[2-]4,Ka,3,6.31E-12,11.200,pKa,"ácido débil, combinada, Mu=0.1",4
-195,Ácido arsenioso,H3AsO3,,Ka,1,6.03E-10,9.220,pKa,"ácido débil, Mu=0",4
-196,Ácido arsenioso,H3AsO3,,Ka,1,7.94E-10,9.100,pKa,"ácido débil, combinada, Mu=0.1",4
-197,Ácido arsenioso,H3AsO3,H2AsO[-]3,Ka,2,7.94E-13,12.100,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-198,Ácido arsenioso,H3AsO3,HAsO[2-]3,Ka,3,3.98E-14,13.400,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-199,Ácido bórico,H3BO3,,Ka,1,5.89E-10,9.230,pKa,"ácido débil, Mu=0",4
-200,Ácido bórico,H3BO3,,Ka,1,7.94E-10,9.100,pKa,"ácido débil, combinada, Mu=0.1",4
-201,Ácido carbónico,H2CO3,,Ka,1,4.27E-07,6.370,pKa,"ácido débil, Mu=0",4
-202,Ácido carbónico,H2CO3,HCO[-]3,Ka,2,4.79E-11,10.320,pKa,"ácido débil, Mu=0",4
-203,Ácido carbónico,H2CO3,,Ka,1,5.01E-07,6.300,pKa,"ácido débil, combinada, Mu=0.1",4
-204,Ácido carbónico,H2CO3,,Ka,2,7.94E-11,10.100,pKa,"ácido débil, combinada, Mu=0.1",4
-205,Ácido crómico,H2CrO4,,Ka,1,1.58E-01,0.800,pKa,"ácido débil, Mu=0",4
-206,Ácido crómico,H2CrO4,HCrO[-]4,Ka,2,3.16E-07,6.500,pKa,"ácido débil, anión, Mu=0",4
-207,Ácido crómico,H2CrO4,,Ka,1,2.00E-01,0.700,pKa,"ácido débil, combinada, Mu=0.1",4
-208,Ácido crómico,H2CrO4,HCrO[-]4,Ka,2,6.31E-07,6.200,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-209,Ácido ciánico,HCNO,,Ka,1,2.19E-04,3.660,pKa,"ácido débil, Mu=0",4
-210,Ácido ciánico,HCNO,,Ka,1,2.51E-04,3.600,pKa,"ácido débil, combinada, Mu=0.1",4
-211,Ácido ferrociánico,H4Fe(CN)6,,Ka,1,1.00E+00,0.000,pKa,"ácido débil, Mu=0, pka<1",4
-212,Ácido ferrociánico,H4Fe(CN)6,H3Fe(CN)[-]6,Ka,2,1.00E+00,0.000,pKa,"ácido débil, anión, Mu=0, pka<1",4
-213,Ácido ferrociánico,H4Fe(CN)6,H2Fe(CN)[2-]6,Ka,3,6.03E-03,2.220,pKa,"ácido débil, anión, Mu=0",4
-214,Ácido ferrociánico,H4Fe(CN)6,HFe(CN)[3-]6,Ka,4,6.76E-05,4.170,pKa,"ácido débil, anión, Mu=0",4
-215,Ácido ferriciánico,H3Fe(CN)6,,Ka,1,1.00E+00,0.000,pKa,"ácido débil, Mu=0, pka<1",4
-216,Ácido ferriciánico,H3Fe(CN)6,,Ka,1,1.00E+00,0.000,pKa,"ácido débil, Mu=0.1, pka<1",4
-217,Ácido germánico,Ge(OH)4,,Ka,1,7.94E-10,9.100,pKa,"ácido débil, combinada, Mu=0.1",4
-218,Ácido germánico,Ge(OH)4,GeO(OH)[-]3,Ka,2,2.00E-13,12.700,pKa,"ácido débil, anión, combinada, Mu=2",4
-219,Ion hidrazonio,N2H[2+]6,,Ka,1,7.59E+00,-0.880,pKa,"ácido débil, catión, Mu=0",4
-220,Ion hidrazonio,N2H[2+]6,N2H[+]5,Ka,2,1.02E-08,7.990,pKa,"ácido débil, catión, Mu=0",4
-221,Ion hidrazonio,N2H[2+]6,,Ka,1,3.98E+00,-0.600,pKa,"ácido débil, catión, combinada, Mu=0.1",4
-222,Ion hidrazonio,N2H[2+]6,N2H[+]5,Ka,2,7.94E-09,8.100,pKa,"ácido débil, catión, combinada, Mu=0.1",4
-223,Ácido hidrazoico,HN3,,Ka,1,1.91E-05,4.720,pKa,"ácido débil, Mu=0",4
-224,Ácido hidrazoico,HN3,,Ka,1,2.51E-05,4.600,pKa,"ácido débil, combinada, Mu=0.1",4
-225,Ácido cianhídrico,HCN,,Ka,1,4.90E-10,9.310,pKa,"ácido débil, Mu=0",4
-226,Ácido cianhídrico,HCN,,Ka,1,6.31E-10,9.200,pKa,"ácido débil, combinada, Mu=0.1",4
-227,Ácido fluorhídrico,HF,,Ka,1,6.76E-04,3.170,pKa,"ácido débil, Mu=0",4
-228,Ácido fluorhídrico,HF,,Ka,1,8.91E-04,3.050,pKa,"ácido débil, combinada, Mu=0.1",4
-229,Peróxido de hidrógeno,H2O2,,Ka,1,1.78E-12,11.750,pKa,"ácido débil, Mu=0",4
-230,Peróxido de hidrógeno,H2O2,,Ka,1,2.51E-12,11.600,pKa,"ácido débil, combinada, Mu=0.1",4
-231,Seleniuro de hidrógeno,H2Se,,Ka,1,1.29E-04,3.890,pKa,"ácido débil, Mu=0",4
-232,Seleniuro de hidrógeno,H2Se,HSe[-],Ka,2,1.00E-11,11.000,pKa,"ácido débil, anión, Mu=0",4
-233,Seleniuro de hidrógeno,H2Se,,Ka,1,1.58E-04,3.800,pKa,"ácido débil, combinada, Mu=0.1",4
-234,Seleniuro de hidrógeno,H2Se,HSe[-],Ka,2,2.00E-11,10.700,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-235,Ácido sulfhídrico,H2S,,Ka,1,8.91E-08,7.050,pKa,"ácido débil, Mu=0",4
-236,Ácido sulfhídrico,H2S,HS[-],Ka,2,1.20E-13,12.920,pKa,"ácido débil, anión, Mu=0",4
-237,Ácido sulfhídrico,H2S,,Ka,1,1.26E-07,6.900,pKa,"ácido débil, combinada, Mu=0.1",4
-238,Ácido sulfhídrico,H2S,HS[-],Ka,2,2.51E-13,12.600,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-239,Ion hidroxil amonio,NH3O[+],,Ka,1,8.13E-07,6.090,pKa,"ácido débil, catión, Mu=0",4
-240,Ion hidroxil amonio,NH3O[+],,Ka,1,6.31E-07,6.200,pKa,"ácido débil, catión, combinada, Mu=0.1",4
-241,Ácido hipocloroso,HClO,,Ka,1,2.95E-08,7.530,pKa,"ácido débil, Mu=0",4
-242,Ácido hipocloroso,HClO,,Ka,1,3.98E-08,7.400,pKa,"ácido débil, combinada, Mu=0.1",4
-243,Ácido molíbdico 1,HMoO[-]4,,Ka,1,7.94E-05,4.100,pKa,"ácido débil, anión, combinada, Mu=3",4
-244,Ácido molíbdico 2,H2Mo7O[4-]24,,Ka,1,2.00E-04,3.700,pKa,"ácido débil, anión, combinada, Mu=3",4
-245,Ácido molíbdico 3,HMo7O[5-]24,,Ka,1,5.01E-05,4.300,pKa,"ácido débil, anión, combinada, Mu=3",4
-246,Ácido nitroso,HNO2,,Ka,1,5.13E-04,3.290,pKa,"ácido débil, Mu=0",4
-247,Ácido nitroso,HNO2,,Ka,1,6.31E-04,3.200,pKa,"ácido débil, combinada, Mu=0.1",4
-248,Ácido fosfórico,H3PO4,,Ka,1,6.92E-03,2.160,pKa,"ácido débil, Mu=0",4
-249,Ácido fosfórico,H3PO4,H2PO[-]4,Ka,2,6.17E-08,7.210,pKa,"ácido débil, anión, Mu=0",4
-250,Ácido fosfórico,H3PO4,HPO[2-]4,Ka,3,4.79E-13,12.320,pKa,"ácido débil, anión, Mu=0",4
-251,Ácido fosfórico,H3PO4,,Ka,1,1.00E-02,2.000,pKa,"ácido débil, combinada, Mu=0.1",4
-252,Ácido fosfórico,H3PO4,H2PO[-]4,Ka,2,1.26E-07,6.900,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-253,Ácido fosfórico,H3PO4,HPO[2-]4,Ka,3,2.00E-12,11.700,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-254,Ácido fosforoso,H3PO3,,Ka,1,7.08E-03,2.150,pKa,"ácido débil, Mu=0",4
-255,Ácido fosforoso,H3PO3,H2PO[-]3,Ka,2,2.00E-07,6.700,pKa,"ácido débil, anión, Mu=0",4
-256,Ácido fosforoso,H3PO3,,Ka,1,1.00E-02,2.000,pKa,"ácido débil, combinada, Mu=0.1",4
-257,Ácido fosforoso,H3PO3,H2PO[-]3,Ka,2,3.98E-07,6.400,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-258,Ácido pirofosfórico,H4P2O7,,Ka,1,1.00E-01,1.000,pKa,"ácido débil, combinada, Mu=0.1",4
-259,Ácido pirofosfórico,H4P2O7,H3P2O[-]7,Ka,2,3.16E-03,2.500,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-260,Ácido pirofosfórico,H4P2O7,H2P2O[2-]7,Ka,3,7.94E-07,6.100,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-261,Ácido pirofosfórico,H4P2O7,HP2O[3-]7,Ka,4,3.16E-09,8.500,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-262,Ácido silícico,Si(OH)4,,Ka,1,2.51E-10,9.600,pKa,"ácido débil, combinada, Mu=0.1",4
-263,Ácido silícico,Si(OH)4,SiO(OH)[-]3,Ka,2,2.00E-13,12.700,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-264,Ácido sulfúrico,H2SO4,,Ka,1,1.00E+03,-3.000,pKa,"ácido débil, Mu=0",4
-265,Ácido sulfúrico,H2SO4,HSO[-]4,Ka,2,1.15E-02,1.940,pKa,"ácido débil, anión, Mu=0",4
-266,Ácido sulfúrico,H2SO4,HSO[-]4,Ka,2,1.58E-02,1.800,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-267,Ácido sulfuroso,H2SO3,,Ka,1,1.29E-02,1.890,pKa,"ácido débil, Mu=0",4
-268,Ácido sulfuroso,H2SO3,HSO[-]3,Ka,2,6.31E-08,7.200,pKa,"ácido débil, Mu=0",4
-269,Ácido sulfuroso,H2SO3,,Ka,1,1.58E-02,1.800,pKa,"ácido débil, combinada, Mu=0.1",4
-270,Ácido sulfuroso,H2SO3,HSO[-]3,Ka,2,1.58E-07,6.800,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-271,Ácido trifosfórico,H5P3O10,,Ka,1,1.00E+00,0.000,pKa,"ácido débil, combinada, Mu=0.1",4
-272,Ácido trifosfórico,H5P3O10,H4P3O[-]10,Ka,2,2.51E-03,2.600,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-273,Ácido trifosfórico,H5P3O10,H3P3O[2-]10,Ka,3,2.00E-03,2.700,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-274,Ácido trifosfórico,H5P3O10,H2P3O[3-]10,Ka,4,2.51E-06,5.600,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-275,Ácido trifosfórico,H5P3O10,HP3O[4-]10,Ka,5,1.26E-08,7.900,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-276,Ácido de vanadio V,HVO[2-]4,,Ka,1,2.00E-13,12.700,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-277,Ácido acético,CH3COOH,,Ka,1,1.74E-05,4.760,pKa,"ácido débil, Mu=0",4
-278,Ácido acético,CH3COOH,,Ka,1,2.24E-05,4.650,pKa,"ácido débil, combinada, Mu=0.1",4
-279,Acitilacetona,CH3COCH2COCH3,,Ka,1,1.00E-09,9.000,pKa,"ácido débil, Mu=0",4
-280,Acitilacetona,CH3COCH2COCH3,,Ka,1,1.26E-09,8.900,pKa,"ácido débil, combinada, Mu=0.1",4
-281,Ion anilinio,C6H5NH[+]3,,Ka,1,2.40E-05,4.620,pKa,"ácido débil, Mu=0",4
-282,Ion anilinio,C6H5NH[+]3,,Ka,1,2.00E-05,4.700,pKa,"ácido débil, combinada, Mu=0.1",4
-283,Ácido ascórbico,C6H8O6,,Ka,1,6.76E-05,4.170,pKa,"ácido débil, Mu=0",4
-284,Ácido ascórbico,C6H8O6,,Ka,2,2.75E-12,11.560,pKa,"ácido débil, Mu=0",4
-285,Ácido ascórbico,C6H8O6,,Ka,1,8.91E-05,4.050,pKa,"ácido débil, combinada, Mu=0.1",4
-286,Ácido ascórbico,C6H8O6,,Ka,2,5.01E-12,11.300,pKa,"ácido débil, combinada, Mu=0.1",4
-287,Ácido benzoico,C6H5NH[+]3,,Ka,1,6.31E-05,4.200,pKa,"ácido débil, Mu=0",4
-288,Ácido benzoico,C6H5NH[+]3,,Ka,1,7.94E-05,4.100,pKa,"ácido débil, combinada, Mu=0.1",4
-289,Ácido cloroacético,CH2ClCOOH,,Ka,1,1.38E-03,2.860,pKa,"ácido débil, Mu=0",4
-290,Ácido cloroacético,CH2ClCOOH,,Ka,1,2.00E-03,2.700,pKa,"ácido débil, combinada, Mu=0.1",4
-291,Ácido cítrico,HOOC(OH)C(CH2COOH)2,,Ka,1,7.41E-04,3.130,pKa,"ácido débil, Mu=0",4
-292,Ácido cítrico,HOOC(OH)C(CH2COOH)2,[-]OOC(OH)C(CH2COOH)2,Ka,2,1.74E-05,4.760,pKa,"ácido débil, anión, Mu=0",4
-293,Ácido cítrico,HOOC(OH)C(CH2COOH)2,[-]OOC(OH)C(CH2)2(COOH)(COO[-]),Ka,3,3.98E-07,6.400,pKa,"ácido débil, anión, Mu=0",4
-294,Ácido cítrico,HOOC(OH)C(CH2COOH)2,,Ka,1,1.00E-03,3.000,pKa,"ácido débil, combinada, Mu=0.1",4
-295,Ácido cítrico,HOOC(OH)C(CH2COOH)2,[-]OOC(OH)C(CH2COOH)2,Ka,2,3.98E-05,4.400,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-296,Ácido cítrico,HOOC(OH)C(CH2COOH)2,[-]OOC(OH)C(CH2)2(COOH)(COO[-]),Ka,3,7.94E-07,6.100,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-297,Ácido dicloroacético,CHCl2COOH,,Ka,1,5.50E-02,1.260,pKa,"ácido débil, Mu=0",4
-298,Ácido dicloroacético,CHCl2COOH,,Ka,1,7.94E-02,1.100,pKa,"ácido débil, combinada, Mu=0.1",4
-299,Ácido fórmico,HCOOH,,Ka,1,1.70E-04,3.770,pKa,"ácido débil, Mu=0",4
-300,Ácido fórmico,HCOOH,,Ka,1,2.24E-04,3.650,pKa,"ácido débil, combinada, Mu=0.1",4
-301,Ácido fumárico,HOOCCH:CHCOOH,,Ka,1,9.55E-04,3.020,pKa,"ácido débil, Mu=0",4
-302,Ácido fumárico,HOOCCH:CHCOOH,HOOCCH:CHCOO[-],Ka,2,4.07E-05,4.390,pKa,"ácido débil, anión, Mu=0",4
-303,Ácido fumárico,HOOCCH:CHCOOH,,Ka,1,1.26E-03,2.900,pKa,"ácido débil, combinada, Mu=0.1",4
-304,Ácido fumárico,HOOCCH:CHCOOH,HOOCCH:CHCOO[-],Ka,2,7.94E-05,4.100,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-305,Ácido glutámico,C3H5NH2(COOH)2,,Ka,1,7.94E-03,2.100,pKa,"ácido débil, Mu=0",4
-306,Ácido glutámico,C3H5NH2(COOH)2,C3H5NH2(COOH)(COO[-]),Ka,2,8.51E-05,4.070,pKa,"ácido débil, anión, Mu=0",4
-307,Ácido glutámico,C3H5NH2(COOH)2,C3H5NH2(COO[-])2,Ka,3,3.39E-10,9.470,pKa,"ácido débil, anión, Mu=0",4
-308,Ácido glutámico,C3H5NH2(COOH)2,,Ka,1,6.31E-03,2.200,pKa,"ácido débil, combinada, Mu=0.1",4
-309,Ácido glutámico,C3H5NH2(COOH)2,C3H5NH2(COOH)(COO[-]),Ka,2,1.12E-04,3.950,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-310,Ácido glutámico,C3H5NH2(COOH)2,C3H5NH2(COO[-])2,Ka,3,6.31E-10,9.200,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-311,Glicina,CH2NH2COOH,,Ka,1,4.47E-03,2.350,pKa,"ácido débil, Mu=0",4
-312,Glicina,CH2NH2COOH,CH2NH2COO[-],Ka,2,1.66E-10,9.780,pKa,"ácido débil, anión, Mu=0",4
-313,Glicina,CH2NH2COOH,,Ka,1,3.16E-03,2.500,pKa,"ácido débil, combinada, Mu=0.1",4
-314,Glicina,CH2NH2COOH,CH2NH2COO[-],Ka,2,2.00E-10,9.700,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-315,Hexametilentetramina (urotropina),C6H12N4,,Ka,1,7.41E-06,5.130,pKa,"ácido débil, Mu=0",4
-316,Hexametilentetramina (urotropina),C6H12N4,,Ka,1,5.62E-06,5.250,pKa,"ácido débil, combinada, Mu=0.1",4
-317,Ácido láctico,CH3CHOHCOOH,,Ka,1,1.32E-04,3.880,pKa,"ácido débil, Mu=0",4
-318,Ácido láctico,CH3CHOHCOOH,,Ka,1,1.74E-04,3.760,pKa,"ácido débil, combinada, Mu=0.1",4
-319,Ácido maleico,C2H2(COOH)2,,Ka,1,1.20E-02,1.920,pKa,"ácido débil, Mu=0",4
-320,Ácido maleico,C2H2(COOH)2,C2H2(COOH)(COO[-]),Ka,2,6.03E-07,6.220,pKa,"ácido débil, anión, Mu=0",4
-321,Ácido maleico,C2H2(COOH)2,,Ka,1,1.58E-02,1.800,pKa,"ácido débil, combinada, Mu=0.1",4
-322,Ácido maleico,C2H2(COOH)2,C2H2(COOH)(COO[-]),Ka,2,1.26E-06,5.900,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-323,Ácido malónico,CH(COOH)2,,Ka,1,1.41E-03,2.850,pKa,"ácido débil, Mu=0",4
-324,Ácido malónico,CH(COOH)2,CH(COOH)(COO[-]),Ka,2,2.19E-06,5.660,pKa,"ácido débil, anión, Mu=0",4
-325,Ácido malónico,CH(COOH)2,,Ka,1,2.00E-03,2.700,pKa,"ácido débil, combinada, Mu=0.1",4
-326,Ácido malónico,CH(COOH)2,CH(COOH)(COO[-]),Ka,2,3.98E-06,5.400,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-327,Ácido oxálico,HOOCCOOH,,Ka,1,5.62E-02,1.250,pKa,"ácido débil, Mu=0",4
-328,Ácido oxálico,HOOCCOOH,HOOCCOO[-],Ka,2,5.13E-05,4.290,pKa,"ácido débil, anión, Mu=0",4
-329,Ácido oxálico,HOOCCOOH,,Ka,1,7.94E-02,1.100,pKa,"ácido débil, combinada, Mu=0.1",4
-330,Ácido oxálico,HOOCCOOH,HOOCCOO[-],Ka,2,1.00E-04,4.000,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-331,Fenol,C6H5OH,,Ka,1,1.12E-10,9.950,pKa,"ácido débil, Mu=0",4
-332,Fenol,C6H5OH,,Ka,1,1.58E-10,9.800,pKa,"ácido débil, combinada, Mu=0.1",4
-333,Ácido ftálico,C6H4(COOH)2,,Ka,1,1.20E-03,2.920,pKa,"ácido débil, Mu=0",4
-334,Ácido ftálico,C6H4(COOH)2,C6H4(COOH)(COO[-]),Ka,2,3.89E-06,5.410,pKa,"ácido débil, anión, Mu=0",4
-335,Ácido ftálico,C6H4(COOH)2,,Ka,1,1.58E-03,2.800,pKa,"ácido débil, combinada, Mu=0.1",4
-336,Ácido ftálico,C6H4(COOH)2,C6H4(COOH)(COO[-]),Ka,2,7.94E-06,5.100,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-337,Ácido pícrico,(NO2)3C6H2OH,,Ka,1,5.01E-03,2.300,pKa,"ácido débil, combinada, Mu=0.1",4
-338,Ácido picolínico,C5H4NCOOH,,Ka,1,3.24E-06,5.490,pKa,"ácido débil, Mu=0",4
-339,Ácido picolínico,C5H4NCOOH,,Ka,1,3.98E-06,5.400,pKa,"ácido débil, combinada, Mu=0.1",4
-340,Ácido salicílico,C6H4OHCOOH,,Ka,1,1.05E-03,2.980,pKa,"ácido débil, Mu=0",4
-341,Ácido salicílico,C6H4OHCOOH,,Ka,1,1.26E-03,2.900,pKa,"ácido débil, combinada, Mu=0.1",4
-342,Ácido salicílico,C6H4OHCOOH,C6H4OHCOO[-],Ka,2,7.94E-14,13.100,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-343,Ácido sulfosalicílico,C6H3OHSO3HCOOH,,Ka,1,2.51E-03,2.600,pKa,"ácido débil, combinada, Mu=0.1",4
-344,Ácido sulfosalicílico,C6H3OHSO3HCOOH,C6H3OHSO3HCOO[-],Ka,2,2.51E-12,11.600,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-345,Ácido tartárico,HOOC(CHOH)2COOH,,Ka,1,9.12E-04,3.040,pKa,"ácido débil, Mu=0",4
-346,Ácido tartárico,HOOC(CHOH)2COOH,HOOC(CHOH)2COO[-],Ka,2,4.27E-05,4.370,pKa,"ácido débil, anión, Mu=0",4
-347,Ácido tartárico,HOOC(CHOH)2COOH,,Ka,1,1.26E-03,2.900,pKa,"ácido débil, combinada, Mu=0.1",4
-348,Ácido tartárico,HOOC(CHOH)2COOH,HOOC(CHOH)2COO[-],Ka,2,7.94E-05,4.100,pKa,"ácido débil, anión, combinada, Mu=0.1",4
-349,Ácido tricloroacético,CCl3COOH,,Ka,1,2.19E-01,0.660,pKa,"ácido débil, Mu=0",4
-350,Ácido tricloroacético,CCl3COOH,,Ka,1,3.16E-01,0.500,pKa,"ácido débil, combinada, Mu=0.1",4
-351,Ácido amidodisulfónico,HNSO(OH)2,,Ka,3,3.16E-09,8.500,pKa,ácido débil,3
-352,Ácido amidofosfórico,H2NPO(OH)2,,Ka,1,1.82E-03,2.739,pKa,"ácido débil, 26°C",3
-353,Ácido amidofosfórico,H2NPO(OH)2,,Ka,2,7.91E-09,8.102,pKa,"ácido débil, anión, 26°C",3
-354,Ácido orto hipo arsenioso,H3AsO2,,Ka,1,5.98E-03,2.223,pKa,ácido débil,3
-355,Ácido orto hipo arsenioso,H3AsO2,H2AsO[-]2,Ka,2,1.74E-07,6.760,pKa,"ácido débil, anión",3
-356,Ácido arsénico-d3,D3AsO4,,Ka,1,2.54E-03,2.596,pKa,ácido débil,3
-357,Ácido dioxoarsénico (III),HAsO2,,Ka,1,5.25E-10,9.280,pKa,ácido débil,3
-358,Ácido hidrazoico,HN3,,Ka,1,2.40E-05,4.620,pKa,ácido débil,3
-359,Ácido hidrazoico-d3,DN3,,Ka,1,7.67E-06,5.115,pKa,"ácido débil, D2O",3
-360,Ácido bórico,H3BO3,,ka,1,5.81E-10,9.236,pKa,ácido débil,3
-361,Ácido brómico,HBrO3,,Ka,1,9.55E-02,1.020,pKa,"ácido débil, formamida",3
-362,Ácido bromhídrico,HBr,,Ka,1,5.25E+08,-8.720,pKa,ácido débil,3
-363,Ácido cloroso,HClO2,,Ka,1,5.01E+02,-2.700,pKa,"ácido débil, teórico",3
-364,Ácido clorhídrico,HCl,,Ka,1,1.58E+06,-6.200,pKa,ácido débil,3
-365,Ácido clorhídrico-d,DCl,,Ka,1,2.63E-04,3.580,pKa,"ácido débil, dimetilformamida",3
-366,Ácido crómico,H2CrO4,,Ka,1,1.82E-01,0.740,pKa,ácido débil,3
-367,Ácido crómico,H2CrO4,HCrO[-]4,Ka,2,3.25E-07,6.488,pKa,"ácido débil, anión",3
-368,Ácido ciánico,HOCN,,Ka,1,3.47E-04,3.460,pKa,ácido débil,3
-369,Ácido cianhídrico,HCN,,Ka,1,6.17E-10,9.210,pKa,ácido débil,3
-370,Ácido cianhídrico-d,DCN,,Ka,1,1.07E-09,8.970,pKa,"ácido débil, Mu=0.11, D2O",3
-371,Ácido diamidofosfórico,(NH2)2PO(OH),,Ka,1,5.26E-02,1.279,pKa,"ácido débil, 30°C",3
-372,Ácido diamidofosfórico,(NH2)2PO(OH),,Ka,2,1.29E-05,4.889,pKa,"ácido débil, anión, 30°C",3
-373,Ácido diamidotiofosfórico,(NH2)2PO(SH),,Ka,1,1.00E-02,2.000,pKa,"ácido débil, 20°C",3
-374,Ácido diamidotiofosfórico,(NH2)2PO(SH),,Ka,2,5.01E-05,4.300,pKa,"ácido débil, anión, 20°C",3
-375,Diimidotrifosfáto de hidrógeno,(HO)2PO(NH)PO(OH)(NH)PO(OH)2,,Ka,1,1.00E-01,1.000,pKa,"ácido débil, aprox, Mu=0.1",3
-376,Diimidotrifosfáto de hidrógeno,(HO)2PO(NH)PO(OH)(NH)PO(OH)2,,Ka,2,1.00E-02,2.000,pKa,"ácido débil, anión, aprox, Mu=0.1",3
-377,Diimidotrifosfáto de hidrógeno,(HO)2PO(NH)PO(OH)(NH)PO(OH)2,,Ka,3,9.33E-04,3.030,pKa,"ácido débil, anión, Mu=0.1",3
-378,Diimidotrifosfáto de hidrógeno,(HO)2PO(NH)PO(OH)(NH)PO(OH)2,,Ka,4,2.45E-07,6.610,pKa,"ácido débil, anión, Mu=0.1",3
-379,Diimidotrifosfáto de hidrógeno,(HO)2PO(NH)PO(OH)(NH)PO(OH)2,,Ka,5,1.45E-10,9.840,pKa,"ácido débil, anión, Mu=0.1",3
-380,Ácido pirofosfórico,H4P2O7,,Ka,1,1.23E-01,0.910,pKa,ácido débil,3
-381,Ácido pirofosfórico,H4P2O7,H3P2O[-]7,Ka,2,7.94E-03,2.100,pKa,"ácido débil, anión",3
-382,Ácido pirofosfórico,H4P2O7,H2P2O[2-]7,Ka,3,2.00E-07,6.700,pKa,"ácido débil, anión",3
-383,Ácido pirofosfórico,H4P2O7,HP2O[3-]7,Ka,4,4.47E-10,9.350,pKa,"ácido débil, anión",3
+﻿id,especie_id,valor_reportado,ka1,ka2,ka3,ka4,ka5,pka1,pka2,pka3,pka4,pka5,fuerza_ionica,nota,referencia_id
+1,1,ka,7.10E-04,,,,,3.15,,,,,0,,1
+2,2,ka,4.50E-04,,,,,3.35,,,,,0,,1
+3,3,ka,3.00E-04,,,,,3.52,,,,,0,,1
+4,4,ka,1.70E-04,,,,,3.77,,,,,0,,1
+5,5,ka,8.00E-05,,,,,4.10,,,,,0,,1
+6,6,ka,6.50E-05,,,,,4.19,,,,,0,,1
+7,7,ka,1.80E-05,,,,,4.74,,,,,0,,1
+8,8,ka,4.90E-10,,,,,9.31,,,,,0,,1
+9,9,ka,1.30E-10,,,,,9.89,,,,,0,,1
+10,10,ka,1.40E-11,,,,,10.85,,,,,0,,1
+11,11,ka,2.20E-11,,,,,10.66,,,,,0,,1
+12,12,ka,3.30E-11,,,,,10.48,,,,,0,,1
+13,13,ka,5.90E-11,,,,,10.23,,,,,0,,1
+14,14,ka,1.30E-10,,,,,9.89,,,,,0,,1
+15,15,ka,1.50E-10,,,,,9.82,,,,,0,,1
+16,16,ka,5.60E-10,,,,,9.25,,,,,0,,1
+17,17,ka,2.00E-05,,,,,4.70,,,,,0,,1
+18,18,ka,7.70E-05,,,,,4.11,,,,,0,,1
+19,19,ka,5.60E-04,,,,,3.25,,,,,0,,1
+20,20,ka,4.40E-04,,,,,3.36,,,,,0,,1
+21,21,ka,1.80E-05,,,,,4.74,,,,,0,,1
+22,22,ka,1.70E-09,,,,,8.77,,,,,0,,1
+23,23,ka,3.80E-10,,,,,9.42,,,,,0,,1
+24,24,ka,5.30E-14,,,,,13.28,,,,,0,,1
+25,25,ka,1.50E-14,,,,,13.82,,,,,0,,1
+26,26,ka,1.80E-11,,,,,10.74,,,,,0,,1
+27,27,ka,2.30E-11,,,,,10.64,,,,,0,,1
+28,28,ka,5.60E-10,,,,,9.25,,,,,0,,1
+29,29,ka,5.90E-06,,,,,5.23,,,,,0,,1
+30,30,ka,2.60E-05,,,,,4.59,,,,,0,,1
+31,31,ka,1.90E-01,,,,,0.72,,,,,0,,1
+32,32,ka,6.70E-01,,,,,0.17,,,,,0,,1
+33,33,ka,0.00E+00,1.30E-02,,,,0.00,1.89,,,,0,,1
+34,34,ka,6.50E-02,6.10E-05,,,,1.19,4.21,,,,0,,1
+35,35,ka,1.30E-02,6.30E-08,,,,1.89,7.20,,,,0,,1
+36,36,ka,4.20E-07,4.80E-11,,,,6.38,10.32,,,,0,,1
+37,37,ka,9.50E-08,1.00E-19,,,,7.02,19.00,,,,0,,1
+38,38,ka,7.50E-03,6.20E-08,4.80E-13,,,2.12,7.21,12.32,,,0,,1
+39,39,ka,0.00E+00,,,,,0.00,,,,,0,,1
+40,40,ka,7.70E-13,,,,,12.11,,,,,0,,1
+41,41,ka,1.50E-13,,,,,12.82,,,,,0,,1
+42,42,ka,1.60E-10,,,,,9.80,,,,,0,,1
+43,43,ka,7.70E-13,,,,,12.11,,,,,0,,1
+44,44,ka,1.60E-07,,,,,6.80,,,,,0,,1
+45,45,ka,2.40E-08,,,,,7.62,,,,,0,,1
+46,46,ka,2.10E-04,,,,,3.68,,,,,0,,1
+47,47,ka,1.10E-07,,,,,6.96,,,,,0,,1
+48,48,ka,1.00E+05,,,,,-5.00,,,,,0,,1
+49,49,ka,1.30E-12,,,,,11.89,,,,,0,,1
+50,50,ka,1.60E-07,,,,,6.80,,,,,0,,1
+51,51,ka,2.10E-02,,,,,1.68,,,,,0,,1
+52,7,ka,1.75E-05,,,,,4.76,,,,,0,,2
+53,28,ka,5.70E-10,,,,,9.24,,,,,0,,2
+54,30,ka,2.51E-05,,,,,4.60,,,,,0,,2
+55,52,ka,5.80E-03,1.10E-07,3.20E-12,,,2.24,6.96,11.49,,,0,,2
+56,53,ka,5.10E-10,,,,,9.29,,,,,0,,2
+57,6,ka,6.28E-05,,,,,4.20,,,,,0,,2
+58,54,ka,5.81E-10,,,,,9.24,,,,,0,,2
+59,55,ka,1.52E-05,,,,,4.82,,,,,0,,2
+60,36,ka,4.45E-07,4.69E-11,,,,6.35,10.33,,,,0,,2
+61,56,ka,4.20E-07,4.69E-11,,,,6.38,10.33,,,,0,,2
+62,57,ka,1.36E-03,,,,,2.87,,,,,0,,2
+63,58,ka,7.45E-04,1.73E-05,4.02E-07,,,3.13,4.76,6.40,,,0,,2
+64,59,ka,1.68E-11,,,,,10.77,,,,,0,,2
+65,60,ka,3.18E-10,,,,,9.50,,,,,0,,2
+66,26,ka,2.31E-11,,,,,10.64,,,,,0,,2
+67,61,ka,1.42E-07,1.18E-10,,,,6.85,9.93,,,,0,,2
+68,4,ka,1.80E-04,,,,,3.74,,,,,0,,2
+69,62,ka,8.85E-04,3.21E-05,,,,3.05,4.49,,,,0,,2
+70,63,ka,1.47E-04,,,,,3.83,,,,,0,,2
+71,64,ka,1.05E-08,,,,,7.98,,,,,0,,2
+72,65,ka,2.20E-05,,,,,4.66,,,,,0,,2
+73,8,ka,6.20E-10,,,,,9.21,,,,,0,,2
+74,1,ka,6.80E-04,,,,,3.17,,,,,0,,2
+75,66,ka,2.20E-12,,,,,11.66,,,,,0,,2
+76,37,ka,9.60E-08,1.30E-14,,,,7.02,13.89,,,,0,,2
+77,67,ka,1.10E-06,,,,,5.96,,,,,0,,2
+78,68,ka,3.00E-08,,,,,7.52,,,,,0,,2
+79,69,ka,1.70E-01,,,,,0.77,,,,,0,,2
+80,70,ka,1.38E-04,,,,,3.86,,,,,0,,2
+81,71,ka,1.30E-02,5.90E-07,,,,1.89,6.23,,,,0,,2
+82,72,ka,3.48E-04,8.00E-06,,,,3.46,5.10,,,,0,,2
+83,73,ka,1.42E-03,2.01E-06,,,,2.85,5.70,,,,0,,2
+84,74,ka,4.00E-04,,,,,3.40,,,,,0,,2
+85,27,ka,2.30E-11,,,,,10.64,,,,,0,,2
+86,2,ka,7.10E-04,,,,,3.15,,,,,0,,2
+87,34,ka,5.60E-02,5.42E-05,,,,1.25,4.27,,,,0,,2
+88,75,ka,2.00E-02,5.00E-09,,,,1.70,8.30,,,,0,,2
+89,9,ka,1.00E-10,,,,,10.00,,,,,0,,2
+90,38,ka,7.11E-03,6.32E-08,4.50E-13,,,2.15,7.20,12.35,,,0,,2
+91,76,ka,3.00E-02,1.62E-07,,,,1.52,6.79,,,,0,,2
+92,77,ka,1.12E-03,3.91E-06,,,,2.95,5.41,,,,0,,2
+93,78,ka,4.30E-01,,,,,0.37,,,,,0,,2
+94,79,ka,7.50E-12,,,,,11.12,,,,,0,,2
+95,80,ka,1.34E-05,,,,,4.87,,,,,0,,2
+96,29,ka,5.90E-06,,,,,5.23,,,,,0,,2
+97,81,ka,3.20E-03,,,,,2.49,,,,,0,,2
+98,82,ka,1.06E-03,,,,,2.97,,,,,0,,2
+99,83,ka,6.21E-05,2.31E-06,,,,4.21,5.64,,,,0,,2
+100,84,ka,1.03E-01,,,,,0.99,,,,,0,,2
+101,33,ka,0.00E+00,1.02E-02,,,,0.00,1.99,,,,0,,2
+102,35,ka,1.23E-02,6.60E-08,,,,1.91,7.18,,,,0,,2
+103,85,ka,9.20E-04,4.31E-05,,,,3.04,4.37,,,,0,,2
+104,86,ka,1.30E-01,,,,,0.89,,,,,0,,2
+105,87,ka,3.00E-01,2.50E-02,,,,0.52,1.60,,,,0,,2
+106,88,ka,3.00E+00,,,,,-0.48,,,,,0,,2
+107,89,ka,1.58E-10,,,,,9.80,,,,,0,,2
+108,90,ka,0.00E+00,,,,,0.00,,,,,0,,1
+109,91,ka,0.00E+00,,,,,0.00,,,,,0,,1
+110,92,ka,0.00E+00,,,,,0.00,,,,,0,,1
+111,93,ka,0.00E+00,,,,,0.00,,,,,0,,1
+112,94,ka,0.00E+00,,,,,0.00,,,,,0,,1
+113,95,ka,0.00E+00,,,,,0.00,,,,,0,,1
+114,96,ka,0.00E+00,,,,,0.00,,,,,0,,1
+115,97,pka,6.31E-12,,,,,11.20,,,,,0,,3
+116,98,pka,1.05E-05,,,,,4.98,,,,,0,,3
+117,99,pka,1.20E-06,,,,,5.92,,,,,0.1,,3
+118,28,pka,5.68E-10,,,,,9.25,,,,,0,,3
+119,100,pka,1.75E-10,,,,,9.76,,,,,0,,3
+120,101,pka,2.82E-03,,,,,2.55,,,,,0.5,,3
+121,102,pka,3.80E-02,,,,,1.42,,,,,1,,3
+122,103,pka,2.29E-01,,,,,0.64,,,,,0.1,,3
+123,104,pka,2.19E-06,,,,,5.66,,,,,0.1,hidrólisis,3
+124,105,pka,3.16E-07,,,,,6.50,,,,,1,,3
+125,106,pka,2.63E-02,,,,,1.58,,,,,3,,3
+126,107,pka,1.00E-04,1.00E-09,,,,4.00,9.00,,,,0,,3
+127,108,pka,1.20E-08,,,,,7.92,,,,,0,,3
+128,109,pka,6.31E-10,,,,,9.20,,,,,0,hidrólisis,3
+129,110,pka,2.14E-13,,,,,12.67,,,,,0,hidrólisis,3
+130,111,pka,2.40E-06,,,,,5.62,,,,,0.1,hidrólisis,3
+131,56,pka,4.45E-07,4.69E-11,,,,6.35,10.33,,,,0,,3
+132,112,pka,1.70E-07,1.17E-11,,,,6.77,10.93,,,,0,,3
+133,113,pka,5.01E-10,,,,,9.30,,,,,0,hidrólisis,3
+134,114,pka,1.12E-04,,,,,3.95,,,,,0,hidrólisis,3
+135,115,pka,1.26E-09,,,,,8.90,,,,,0,hidrólisis,3
+136,116,pka,1.78E-02,,,,,1.75,,,,,0,"hidrólisis, m=1",3
+137,117,pka,4.57E-08,,,,,7.34,,,,,0,hidrólisis,3
+138,118,pka,4.57E-08,,,,,7.34,,,,,0,"hidrólisis, m=0.1",3
+139,119,pka,1.00E-06,,,,,6.00,,,,,0,escala molal,3
+140,120,pka,7.94E-09,,,,,8.10,,,,,0,hidrólisis,3
+141,121,pka,1.00E-09,,,,,9.00,,,,,3,hidrólisis,3
+142,122,pka,9.33E-09,,,,,8.03,,,,,0,hidrólisis,3
+143,123,pka,1.58E-04,,,,,3.80,,,,,0.1,hidrólisis,3
+144,124,pka,5.37E-09,,,,,8.27,,,,,0,hidrólisis,3
+145,125,pka,1.20E-03,1.70E-04,1.78E-05,,,2.92,3.77,4.75,,,0,hidrólisis,3
+146,126,pka,1.32E+00,5.89E-01,,,,-0.12,0.23,,,,1,hidrólisis,3
+147,127,pka,9.12E-09,,,,,8.04,,,,,0.3,hidrólisis,3
+148,128,pka,5.37E-01,1.15E-08,3.16E-09,,,0.27,7.94,8.50,,,0,,3
+149,28,pka,5.62E-10,,,,,9.25,,,,,0,,4
+150,28,pka,4.27E-10,,,,,9.37,,,,,0.1,,4
+151,52,pka,6.46E-03,1.15E-07,3.16E-12,,,2.19,6.94,11.50,,,0,,4
+152,52,pka,7.94E-03,2.00E-07,6.31E-12,,,2.10,6.70,11.20,,,0.1,,4
+153,53,pka,6.03E-10,,,,,9.22,,,,,0,,4
+154,53,pka,7.94E-10,7.94E-13,3.98E-14,,,9.10,12.10,13.40,,,0.1,,4
+155,54,pka,5.89E-10,,,,,9.23,,,,,0,,4
+156,54,pka,7.94E-10,,,,,9.10,,,,,0.1,,4
+157,36,pka,4.27E-07,4.79E-11,,,,6.37,10.32,,,,0,,4
+158,36,pka,5.01E-07,7.94E-11,,,,6.30,10.10,,,,0.1,,4
+159,129,pka,1.58E-01,3.16E-07,,,,0.80,6.50,,,,0,,4
+160,129,pka,2.00E-01,6.31E-07,,,,0.70,6.20,,,,0.1,,4
+161,130,pka,2.19E-04,,,,,3.66,,,,,0,,4
+162,130,pka,2.51E-04,,,,,3.60,,,,,0.1,,4
+163,131,pka,1.00E+00,1.00E+00,6.03E-03,6.76E-05,,0.00,0.00,2.22,4.17,,0,"pka1<1, pka2<1",4
+164,132,pka,1.00E+00,,,,,0.00,,,,,0,pka1<1,4
+165,132,pka,1.00E+00,,,,,0.00,,,,,0.1,pka<1,4
+166,133,pka,7.94E-10,,,,,9.10,,,,,0.1,,4
+167,133,pka,,2.00E-13,,,,,12.70,,,,2,,4
+168,134,pka,7.59E+00,1.02E-08,,,,-0.88,7.99,,,,0,,4
+169,134,pka,3.98E+00,7.94E-09,,,,-0.60,8.10,,,,0.1,,4
+170,65,pka,1.91E-05,,,,,4.72,,,,,0,,4
+171,65,pka,2.51E-05,,,,,4.60,,,,,0.1,,4
+172,8,pka,4.90E-10,,,,,9.31,,,,,0,,4
+173,8,pka,6.31E-10,,,,,9.20,,,,,0.1,,4
+174,1,pka,6.76E-04,,,,,3.17,,,,,0,,4
+175,1,pka,8.91E-04,,,,,3.05,,,,,0.1,,4
+176,66,pka,1.78E-12,,,,,11.75,,,,,0,,4
+177,66,pka,2.51E-12,,,,,11.60,,,,,0.1,,4
+178,135,pka,1.29E-04,1.00E-11,,,,3.89,11.00,,,,0,,4
+179,135,pka,1.58E-04,2.00E-11,,,,3.80,10.70,,,,0.1,,4
+180,37,pka,8.91E-08,1.20E-13,,,,7.05,12.92,,,,0,,4
+181,37,pka,1.26E-07,2.51E-13,,,,6.90,12.60,,,,0.1,,4
+182,67,pka,8.13E-07,,,,,6.09,,,,,0,,4
+183,67,pka,6.31E-07,,,,,6.20,,,,,0.1,,4
+184,68,pka,2.95E-08,,,,,7.53,,,,,0,,4
+185,68,pka,3.98E-08,,,,,7.40,,,,,0.1,,4
+186,136,pka,7.94E-05,,,,,4.10,,,,,3,,4
+187,137,pka,2.00E-04,,,,,3.70,,,,,3,,4
+188,138,pka,5.01E-05,,,,,4.30,,,,,3,,4
+189,2,pka,5.13E-04,,,,,3.29,,,,,0,,4
+190,2,pka,6.31E-04,,,,,3.20,,,,,0.1,,4
+191,38,pka,6.92E-03,6.17E-08,4.79E-13,,,2.16,7.21,12.32,,,0,,4
+192,38,pka,1.00E-02,1.26E-07,2.00E-12,,,2.00,6.90,11.70,,,0.1,,4
+193,76,pka,7.08E-03,2.00E-07,,,,2.15,6.70,,,,0,,4
+194,76,pka,1.00E-02,3.98E-07,,,,2.00,6.40,,,,0.1,,4
+195,139,pka,1.00E-01,3.16E-03,7.94E-07,3.16E-09,,1.00,2.50,6.10,8.50,,0.1,,4
+196,140,pka,2.51E-10,2.00E-13,,,,9.60,12.70,,,,0.1,,4
+197,33,pka,1.00E+03,1.15E-02,,,,-3.00,1.94,,,,0,,4
+198,33,pka,,1.58E-02,,,,,1.80,,,,0.1,,4
+199,35,pka,1.29E-02,6.31E-08,,,,1.89,7.20,,,,0,,4
+200,35,pka,1.58E-02,1.58E-07,,,,1.80,6.80,,,,0.1,,4
+201,141,pka,1.00E+00,2.51E-03,2.00E-03,2.51E-06,1.26E-08,0.00,2.60,2.70,5.60,7.90,0.1,,4
+202,142,pka,2.00E-13,,,,,12.70,,,,,0.1,,4
+203,7,pka,1.74E-05,,,,,4.76,,,,,0,,4
+204,7,pka,2.24E-05,,,,,4.65,,,,,0.1,,4
+205,143,pka,1.00E-09,,,,,9.00,,,,,0,,4
+206,143,pka,1.26E-09,,,,,8.90,,,,,0.1,,4
+207,30,pka,2.40E-05,,,,,4.62,,,,,0,,4
+208,30,pka,2.00E-05,,,,,4.70,,,,,0.1,,4
+209,5,pka,6.76E-05,2.75E-12,,,,4.17,11.56,,,,0,,4
+210,5,pka,8.91E-05,5.01E-12,,,,4.05,11.30,,,,0.1,,4
+211,6,pka,6.31E-05,,,,,4.20,,,,,0,,4
+212,6,pka,7.94E-05,,,,,4.10,,,,,0.1,,4
+213,57,pka,1.38E-03,,,,,2.86,,,,,0,,4
+214,57,pka,2.00E-03,,,,,2.70,,,,,0.1,,4
+215,58,pka,7.41E-04,1.74E-05,3.98E-07,,,3.13,4.76,6.40,,,0,,4
+216,58,pka,1.00E-03,3.98E-05,7.94E-07,,,3.00,4.40,6.10,,,0.1,,4
+217,144,pka,5.50E-02,,,,,1.26,,,,,0,,4
+218,144,pka,7.94E-02,,,,,1.10,,,,,0.1,,4
+219,4,pka,1.70E-04,,,,,3.77,,,,,0,,4
+220,4,pka,2.24E-04,,,,,3.65,,,,,0.1,,4
+221,62,pka,9.55E-04,4.07E-05,,,,3.02,4.39,,,,0,,4
+222,62,pka,1.26E-03,7.94E-05,,,,2.90,4.10,,,,0.1,,4
+223,145,pka,7.94E-03,8.51E-05,3.39E-10,,,2.10,4.07,9.47,,,0,,4
+224,145,pka,6.31E-03,1.12E-04,6.31E-10,,,2.20,3.95,9.20,,,0.1,,4
+225,146,pka,4.47E-03,1.66E-10,,,,2.35,9.78,,,,0,,4
+226,146,pka,3.16E-03,2.00E-10,,,,2.50,9.70,,,,0.1,,4
+227,147,pka,7.41E-06,,,,,5.13,,,,,0,,4
+228,147,pka,5.62E-06,,,,,5.25,,,,,0.1,,4
+229,70,pka,1.32E-04,,,,,3.88,,,,,0,,4
+230,70,pka,1.74E-04,,,,,3.76,,,,,0.1,,4
+231,71,pka,1.20E-02,6.03E-07,,,,1.92,6.22,,,,0,,4
+232,71,pka,1.58E-02,1.26E-06,,,,1.80,5.90,,,,0.1,,4
+233,73,pka,1.41E-03,2.19E-06,,,,2.85,5.66,,,,0,,4
+234,73,pka,2.00E-03,3.98E-06,,,,2.70,5.40,,,,0.1,,4
+235,34,pka,5.62E-02,5.13E-05,,,,1.25,4.29,,,,0,,4
+236,34,pka,7.94E-02,1.00E-04,,,,1.10,4.00,,,,0.1,,4
+237,9,pka,1.12E-10,,,,,9.95,,,,,0,,4
+238,9,pka,1.58E-10,,,,,9.80,,,,,0.1,,4
+239,77,pka,1.20E-03,3.89E-06,,,,2.92,5.41,,,,0,,4
+240,77,pka,1.58E-03,7.94E-06,,,,2.80,5.10,,,,0.1,,4
+241,78,pka,5.01E-03,,,,,2.30,,,,,0.1,,4
+242,148,pka,3.24E-06,,,,,5.49,,,,,0,,4
+243,148,pka,3.98E-06,,,,,5.40,,,,,0.1,,4
+244,82,pka,1.05E-03,,,,,2.98,,,,,0,,4
+245,82,pka,1.26E-03,7.94E-14,,,,2.90,13.10,,,,0.1,,4
+246,149,pka,2.51E-03,2.51E-12,,,,2.60,11.60,,,,0.1,,4
+247,85,pka,9.12E-04,4.27E-05,,,,3.04,4.37,,,,0,,4
+248,85,pka,1.26E-03,7.94E-05,,,,2.90,4.10,,,,0.1,,4
+249,88,pka,2.19E-01,,,,,0.66,,,,,0,,4
+250,88,pka,3.16E-01,,,,,0.50,,,,,0.1,,4
+251,150,pka,,,3.16E-09,,,,,8.50,,,0,,3
+252,151,pka,1.82E-03,7.91E-09,,,,2.74,8.10,,,,0,26°C,3
+253,152,pka,5.98E-03,1.74E-07,,,,2.22,6.76,,,,0,,3
+254,153,pka,2.54E-03,,,,,2.60,,,,,0,,3
+255,154,pka,5.25E-10,,,,,9.28,,,,,0,,3
+256,65,pka,2.40E-05,,,,,4.62,,,,,0,,3
+257,155,pka,7.67E-06,,,,,5.12,,,,,0,D2O,3
+258,54,pka,5.81E-10,,,,,9.24,,,,,0,,3
+259,156,pka,9.55E-02,,,,,1.02,,,,,0,en formamida,3
+260,157,pka,5.25E+08,,,,,-8.72,,,,,0,,3
+261,158,pka,5.01E+02,,,,,-2.70,,,,,0,valor teórico,3
+262,90,pka,1.58E+06,,,,,-6.20,,,,,0,,3
+263,159,pka,2.63E-04,,,,,3.58,,,,,0,en dimetilformamida,3
+264,129,pka,1.82E-01,3.25E-07,,,,0.74,6.49,,,,0,,3
+265,130,pka,3.47E-04,,,,,3.46,,,,,0,,3
+266,8,pka,6.17E-10,,,,,9.21,,,,,0,,3
+267,160,pka,1.07E-09,,,,,8.97,,,,,0.11,D2O,3
+268,161,pka,5.26E-02,1.29E-05,,,,1.28,4.89,,,,0,30°C,3
+269,162,pka,1.00E-02,5.01E-05,,,,2.00,4.30,,,,0,20°C,3
+270,163,pka,1.00E-01,1.00E-02,9.33E-04,2.45E-07,1.45E-10,1.00,2.00,3.03,6.61,9.84,0.1,k1 y k2 aprox,3
+271,139,pka,1.23E-01,7.94E-03,2.00E-07,4.47E-10,,0.91,2.10,6.70,9.35,,0,,3

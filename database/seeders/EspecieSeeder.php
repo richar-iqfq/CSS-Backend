@@ -2,28 +2,18 @@
 
 namespace Database\Seeders;
 
-use App\Models\ConstanteAcida;
+use App\Models\Especie;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ConstantesAcidasSeeder extends Seeder
+class EspecieSeeder extends Seeder
 {
     /**
-     * Load array from json
+     * Buil array from csv file
      */
-    private function load_json($file)
+    private function build_array_from_csv($file)
     {
-        $chang_json = file_get_contents($file);
-
-        return json_decode($chang_json, true);
-    }
-
-    /**
-     * Load array from csv
-     */
-    function build_array_from_csv($file)
-    {
-        // print_r($file);
+        // Open file
         $h = fopen($file, 'r');
         $array_data = [];
 
@@ -34,12 +24,13 @@ class ConstantesAcidasSeeder extends Seeder
 
         fclose($h);
 
+        // Asign column names
         $columns = $array_data[0];
         $columns = array_slice($columns, 1);
+        unset($array_data[0]); // Remove the column names
 
-        unset($array_data[0]);
+        // Build array with congruent keys
         $data = [];
-
         foreach ($array_data as $values) {
             $tmp = [];
             $id = $values[0];
@@ -54,30 +45,22 @@ class ConstantesAcidasSeeder extends Seeder
 
         return $data;
     }
-    
+
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $file = database_path('data/constantes_acidas.csv');
+        $file = database_path('data/especies.csv');
         $data = $this->build_array_from_csv($file);
 
         foreach ($data as $key => $line) {
-
-            ConstanteAcida::create([
+            Especie::create([
                 'nombre' => $line['nombre'],
                 'formula' => $line['formula'],
-                'disociacion' => $line['disociacion'],
-                'tipo' => $line['tipo'],
-                'paso' => $line['paso'],
-                'ka' => $line['ka'],
-                'pka' => $line['pka'],
-                'reportado' => $line['reportado'],
-                'etiquetas' => $line['etiquetas'],
-                'referencia_id' => $line['referencia']
+                'clase_acido_id' => $line['clase_acido_id'],
+                'clase_carga_id' => $line['clase_carga_id']
             ]);
-
         }
     }
 }

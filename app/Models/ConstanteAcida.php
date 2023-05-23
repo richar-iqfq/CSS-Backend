@@ -8,12 +8,47 @@ use Illuminate\Database\Eloquent\Model;
 class ConstanteAcida extends Model
 {
     use HasFactory;
-
+    
     protected $table = 'constantes_acidas';
 
     public function referencia()
     {
         return $this->belongsTo(Referencia::class, 'referencia_id');
+    }
+
+    public function especie()
+    {
+        return $this->belongsTo(Especie::class, 'especie_id');
+    }
+
+    public function ka_values()
+    {   
+        $values = array(
+            $this->ka1,
+            $this->ka2,
+            $this->ka3,
+            $this->ka4,
+            $this->ka5,
+        );
+
+        $ka = array_filter($values, fn($n) => !is_null($n));
+
+        return $ka;
+    }
+
+    public function pka_values()
+    {
+        $values = array(
+            $this->pka1,
+            $this->pka2,
+            $this->pka3,
+            $this->pka4,
+            $this->pka5,
+        );
+
+        $pka = array_filter($values, fn($n) => !is_null($n));
+
+        return $pka;
     }
 
 }
