@@ -9,16 +9,16 @@ use App\Models\Especie;
 
 class ConstantesController extends Controller
 {
+    protected $filters = [
+        'substring' => null,
+        'clase_acido' => 'All',
+        'clase_carga' => 'All'
+    ];
+
     public function index()
     {
         $especies = Especie::all();
-        $filters_applied = [
-            'substring' => null,
-            'etiquetas' => null,
-            'tipo' => 'All',
-            'paso' => 'All',
-            'referencia' => 'All'
-        ];
+        $filters_applied = $this->filters;
         
         return view('constantes.index', compact('especies', 'filters_applied'));
     }
@@ -32,28 +32,22 @@ class ConstantesController extends Controller
 
     public function filter(Request $request)
     {
-        $builder = new SearchBuilder('ConstanteAcida', $request);
+        $builder = new SearchBuilder('Especie', $request);
 
         $query = $builder->filter();
 
-        $constantes = $query->get();
+        $especies = $query->get();
 
         $filters_applied = $this->getFiltersList($request->all());
 
         // dd($filters_applied);
 
-        return view('constantes.index', compact('constantes', 'filters_applied'));
+        return view('constantes.index', compact('especies', 'filters_applied'));
     }
 
     private function getFiltersList($request_array)
     {
-        $filters_applied = [
-            'substring' => null,
-            'etiquetas' => null,
-            'tipo' => 'All',
-            'paso' => 'All',
-            'referencia' => 'All'
-        ];
+        $filters_applied = $this->filters;
 
         foreach ($filters_applied as $key => $value) {
 

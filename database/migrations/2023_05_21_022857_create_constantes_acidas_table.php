@@ -23,8 +23,7 @@ return new class extends Migration
             for ($i=1; $i <=5 ; $i++) { 
                 $table->float('pka'.$i, 30, 15)->nullable();
             }
-
-            $table->float('fuerza_ionica', 5, 4);
+            
             $table->string('nota', 30);
             $table->unsignedBigInteger('referencia_id');
 

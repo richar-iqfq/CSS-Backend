@@ -20,7 +20,6 @@ class SearchBuilder
     public function filter() 
     {
         $query = $this->applyFilters();
-
         return $query;
     }
 
@@ -58,7 +57,7 @@ class SearchBuilder
         foreach ($filters as $key =>$filter) {
             
             $filterClass = __NAMESPACE__ . '\\Filters\\' . $this->modelName . '\\' . $filter;
-
+            
             if (class_exists($filterClass)) {
                 
                 $query = $filterClass::apply($query, $this->request);

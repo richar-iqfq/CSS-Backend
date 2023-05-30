@@ -12,7 +12,6 @@
         <tr>
             <th scope="col"></th>
             <th scope="col">Valor</th>
-            <th scope="col">Fuerza Ionica</th>
             <th scope="col"></th>
             <th scope="col"></th>
             <th scope="col">1</th>
@@ -47,32 +46,25 @@
             <th scope="row">Carga</th>
             <td>{{ $especie->clase_carga->clase }}</td>    
         </tr>
-        
-        <tr>
-            <th scope="row"></th>
-            <td colspan="10"><b>Constantes</b></td>
-        </tr>
-
+       
         @foreach ($especie->constantes as $constante)
             <tr>
                 <th scope="row">Referencia</th>
                 <td>{{ $constante->referencia->autor }}</td>
-                <td>{{ $constante->fuerza_ionica }}</td>
+                <td>{{ $constante->valor_reportado=='ka'?'valor reportado':'valor calculado' }}</td>
                 <td><b>Ka</b></td>
-                <td>{{ $constante->valor_reportado=='ka'?'valor reportado':'' }}</td>
                 @foreach ($constante->ka_values() as $ka_value)
-                    <td>{{ $ka_value }}</td>
+                    <td>{{ sprintf("%1.2e", $ka_value) }}</td>
                 @endforeach
             </tr>
 
             <tr>
                 <th scope="row"></th>
                 <td></td>
-                <td></td>
+                <td>{{ $constante->valor_reportado=='pka'?'valor reportado':'valor calculado' }}</td>
                 <td><b>pKa</b></td>
-                <td>{{ $constante->valor_reportado=='pka'?'valor reportado':'' }}</td>
                 @foreach ($constante->pka_values() as $pka_value)
-                    <td>{{ $pka_value }}</td>    
+                    <td>{{ sprintf("%01.3f", $pka_value) }}</td>    
                 @endforeach
             </tr>
         @endforeach

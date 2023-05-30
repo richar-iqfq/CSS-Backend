@@ -68,7 +68,6 @@ class ConstanteAcidaSeeder extends Seeder
                 'pka3' => $line['pka3']=="" ? null : floatval($line['pka3']),
                 'pka4' => $line['pka4']=="" ? null : floatval($line['pka4']),
                 'pka5' => $line['pka5']=="" ? null : floatval($line['pka5']),
-                'fuerza_ionica' => $line['fuerza_ionica'],
                 'nota' => $line['nota'],
                 'referencia_id' => $line['referencia_id']
             ]);

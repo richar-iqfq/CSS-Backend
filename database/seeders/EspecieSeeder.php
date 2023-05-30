@@ -56,6 +56,7 @@ class EspecieSeeder extends Seeder
 
         foreach ($data as $key => $line) {
             Especie::create([
+                'id' => $key,
                 'nombre' => $line['nombre'],
                 'formula' => $line['formula'],
                 'clase_acido_id' => $line['clase_acido_id'],
