@@ -7,7 +7,7 @@
     <title>CSS - @yield('title')</title>
     <link
       rel="icon"
-      href="{{ asset('img/50cc9ad5-e8bd-47e3-9866-27ed8230e325.jfif') }}"
+      href="{{ asset('img/ico.jfif') }}"
       type="image/x-icon"
     />
     <link
@@ -16,7 +16,9 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="{{ asset('CSS/style.css') }}" />
+    
+    @vite(['resources/css/app.css'])
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

@@ -3,7 +3,7 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
       <img
-        src="{{ asset('img/50cc9ad5-e8bd-47e3-9866-27ed8230e325.jfif') }}"
+        src="{{ asset('img/ico.jfif') }}"
         alt="Logo"
         width="30"
         height="30"
