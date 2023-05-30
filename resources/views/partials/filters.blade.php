@@ -19,7 +19,6 @@
         <option value=3 {{($filters_applied['clase_acido']==3)?'selected':''}}>base débil</option>
         <option value=4 {{($filters_applied['clase_acido']==4)?'selected':''}}>base fuerte</option>
     </select>
-    <br/>
 
     Carga:
     <select name="clase_carga" class="form-control">
@@ -28,7 +27,15 @@
         <option value=2 {{($filters_applied['clase_carga']==2)?'selected':''}}>anión</option>
         <option value=3 {{($filters_applied['clase_carga']==3)?'selected':''}}>catión</option>
     </select>
-    <br/>
+
+    Autor:
+    <select name="autor" class="form-control">
+        <option value="All" {{($filters_applied['autor']=='All')?'selected':''}}>All</option>
+        <option value=1 {{($filters_applied['autor']==1)?'selected':''}}>Chang, R.</option>
+        <option value=2 {{($filters_applied['autor']==2)?'selected':''}}>Skoog, D.</option>
+        <option value=3 {{($filters_applied['autor']==3)?'selected':''}}>Speight, J.</option>
+        <option value=4 {{($filters_applied['autor']==4)?'selected':''}}>Montuenga, C.</option>
+    </select>
 
     <button type="submit" class="btn btn-secondary">Filtrar</button>
 </form>

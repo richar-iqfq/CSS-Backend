@@ -12,7 +12,8 @@ class ConstantesController extends Controller
     protected $filters = [
         'substring' => null,
         'clase_acido' => 'All',
-        'clase_carga' => 'All'
+        'clase_carga' => 'All',
+        'autor' => 'All'
     ];
 
     public function index()
@@ -35,7 +36,7 @@ class ConstantesController extends Controller
         $builder = new SearchBuilder('Especie', $request);
 
         $query = $builder->filter();
-
+        
         $especies = $query->get();
 
         $filters_applied = $this->getFiltersList($request->all());
