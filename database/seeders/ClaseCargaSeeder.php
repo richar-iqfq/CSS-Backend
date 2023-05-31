@@ -14,9 +14,9 @@ class ClaseCargaSeeder extends Seeder
     public function run(): void
     {
         $charge_classes = [
-            'neutro',
-            'anión',
-            'catión'
+            'Neutro',
+            'Anión',
+            'Catión'
         ];
         
         foreach ($charge_classes as $key => $class) {

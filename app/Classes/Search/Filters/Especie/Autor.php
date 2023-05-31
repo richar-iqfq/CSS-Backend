@@ -13,7 +13,7 @@ class Autor
 
         if ($request->autor != 'All') {
 
-                $especies = DB::table('especie_referencia')->where('referencia_id', 1)->select('especie_id')->get();
+                $especies = DB::table('especie_referencia')->where('referencia_id', $request['autor'])->select('especie_id')->get();
                 
                 $id =[];
                 foreach ($especies as $especie) {

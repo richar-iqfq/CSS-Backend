@@ -14,10 +14,10 @@ class ClaseAcidoSeeder extends Seeder
     public function run(): void
     {
         $acid_classes = [
-            'ácido débil',
-            'ácido fuerte',
-            'base débil',
-            'base fuerte'
+            'Ácido Débil',
+            'Ácido Fuerte',
+            'Base Débil',
+            'Base Fuerte'
         ];
         
         foreach ($acid_classes as $key => $class) {
