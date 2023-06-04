@@ -38,6 +38,26 @@
         </tr>
 
         <tr>
+            <th scope="row">Masa Molar [g/mol]</th>
+            <td>{{ $especie->masa_molar }}</td>    
+        </tr>
+
+        <tr>
+            <th scope="row">Densidad [g/cm3]</th>
+            <td>{{ $especie->densidad }}</td>    
+        </tr>
+
+        <tr>
+            <th scope="row">Fusión [°C]</th>
+            <td>{{ $especie->fusion }}</td>    
+        </tr>
+
+        <tr>
+            <th scope="row">Ebullición [°C]</th>
+            <td>{{ $especie->ebullicion }}</td>    
+        </tr>
+
+        <tr>
             <th scope="row">Ácido</th>
             <td>{{ $especie->clase_acido->clase }}</td>    
         </tr>

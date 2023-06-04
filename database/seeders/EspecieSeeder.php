@@ -59,6 +59,10 @@ class EspecieSeeder extends Seeder
                 'id' => $key,
                 'nombre' => $line['nombre'],
                 'formula' => $line['formula'],
+                'masa_molar' => $line['masa_molar']=='' ? null : floatval($line['masa_molar']),
+                'densidad' => $line['densidad']=='' ? null : floatval($line['densidad']),
+                'fusion' => $line['fusion']=='' ? null : floatval($line['fusion']),
+                'ebullicion' => $line['ebullicion']=='' ? null : floatval($line['ebullicion']),
                 'clase_acido_id' => $line['clase_acido_id'],
                 'clase_carga_id' => $line['clase_carga_id']
             ]);
