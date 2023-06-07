@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class ConstanteAcida extends Model
 {
@@ -11,12 +12,12 @@ class ConstanteAcida extends Model
     
     protected $table = 'constantes_acidas';
 
-    public function referencia()
+    public function referencia(): BelongsTo
     {
         return $this->belongsTo(Referencia::class, 'referencia_id');
     }
 
-    public function especie()
+    public function especie(): BelongsTo
     {
         return $this->belongsTo(Especie::class, 'especie_id');
     }

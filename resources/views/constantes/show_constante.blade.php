@@ -38,33 +38,33 @@
         </tr>
 
         <tr>
-            <th scope="row">Masa Molar [g/mol]</th>
-            <td>{{ $especie->masa_molar }}</td>    
+            <th scope="row">Masa Molar</th>
+            <td>{{ $especie->masa_molar }} g/mol</td>    
         </tr>
 
         <tr>
-            <th scope="row">Densidad [g/cm3]</th>
-            <td>{{ $especie->densidad }}</td>    
+            <th scope="row">Densidad</th>
+            <td>{{ $especie->densidad }} g/cm3</td>    
         </tr>
 
         <tr>
-            <th scope="row">Fusión [°C]</th>
-            <td>{{ $especie->fusion }}</td>    
+            <th scope="row">P. Fusión</th>
+            <td>{{ $especie->fusion }} °C</td>    
         </tr>
 
         <tr>
-            <th scope="row">Ebullición [°C]</th>
-            <td>{{ $especie->ebullicion }}</td>    
+            <th scope="row">P. Ebullición</th>
+            <td>{{ $especie->ebullicion }} °C</td>    
         </tr>
 
         <tr>
-            <th scope="row">Ácido</th>
-            <td>{{ $especie->clase_acido->clase }}</td>    
+            <th scope="row">Clasificación</th>
+            <td>{{ $especie->claseAcido->clase }}</td>    
         </tr>
 
         <tr>
             <th scope="row">Carga</th>
-            <td>{{ $especie->clase_carga->clase }}</td>    
+            <td>{{ $especie->claseCarga->clase }}</td>    
         </tr>
        
         @foreach ($especie->constantes as $constante)

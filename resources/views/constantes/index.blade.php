@@ -35,8 +35,8 @@
                         <td>{{ $especie->densidad }}</a></td>
                         <td>{{ $especie->fusion }}</a></td>
                         <td>{{ $especie->ebullicion }}</a></td>
-                        <td>{{ $especie->clase_acido->clase }}</a></td>
-                        <td>{{ $especie->clase_carga->clase }}</a></td>
+                        <td>{{ $especie->claseAcido->clase }}</a></td>
+                        <td>{{ $especie->clasecarga->clase }}</a></td>
                     </tr>
                 @endforeach
             </tbody>

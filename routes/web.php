@@ -3,8 +3,8 @@
 use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\ConstantsController;
 use App\Http\Controllers\ConstantesController;
+use App\Http\Controllers\EspeciesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,26 +45,14 @@ Route::post('/usuarios', [UserController::class, 'store']);
 
 Route::get('/saludo/{name}/{nickname?}', [UserController::class, 'welcome']);
 
+/**
+ * About Routes
+ */
 Route::get('/about', [AboutController::class, 'show'])
     ->name('about.index');
 
 /**
- * -------------------------------------------------------------------
- * Constants IUPAC Routes
- * -------------------------------------------------------------------
-*/
-Route::get('/constants', [ConstantsController::class, 'index'])
-    ->name('constants.index');
-
-Route::post('/constants', [ConstantsController::class, 'filter']);
-
-Route::get('/constants/{id}', [ConstantsController::class, 'show'])
-    ->name('constants.show');
-
-/**
- * -------------------------------------------------------------------
  * Constants Compilation Routes
- * -------------------------------------------------------------------
  */
 Route::get('/constantes', [ConstantesController::class, 'index'])
     ->name('constantes.index');
@@ -73,3 +61,13 @@ Route::post('/constantes', [ConstantesController::class, 'filter']);
 
 Route::get('/constantes/{id}', [ConstantesController::class, 'show'])
     ->name('constantes.show');
+
+/**
+ * Especie to json Routes
+ */
+Route::get('/especies', [EspeciesController::class, 'index']);
+
+Route::post('/especies', [EspeciesController::class, 'filter']);
+
+Route::get('/especies/{id}', [EspeciesController::class, 'show'])
+    ->name('especies.show');

@@ -17,9 +17,6 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-
-            $table->unsignedBigInteger('profession_id')->nullable(); // Type for columns created by id()
-            $table->foreign('profession_id')->references('id')->on('professions');
             
             $table->boolean('is_admin')->default(0);
             $table->string('website')->nullable();

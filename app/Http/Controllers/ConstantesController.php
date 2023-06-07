@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\ConstanteAcida;
 use App\Classes\Search\SearchBuilder;
 use App\Models\Especie;
 
 class ConstantesController extends Controller
 {
+    /**
+     * Used filters
+     */
     protected $filters = [
         'substring' => null,
         'clase_acido' => 'All',
@@ -16,6 +18,11 @@ class ConstantesController extends Controller
         'autor' => 'All'
     ];
 
+    /**
+     * Shows all the especies table
+     * 
+     * @return View
+     */
     public function index()
     {
         $especies = Especie::all();
@@ -24,6 +31,11 @@ class ConstantesController extends Controller
         return view('constantes.index', compact('especies', 'filters_applied'));
     }
 
+    /**
+     * Shows an Specie's details
+     * 
+     * @return View
+     */
     public function show($id)
     {
         $especie = Especie::findOrFail($id);
@@ -31,6 +43,11 @@ class ConstantesController extends Controller
         return view('constantes.show_constante', compact('especie'));
     }
 
+    /**
+     * Filters the Especies table
+     * 
+     * @return View
+     */
     public function filter(Request $request)
     {
         $builder = new SearchBuilder('Especie', $request);
@@ -41,11 +58,15 @@ class ConstantesController extends Controller
 
         $filters_applied = $this->getFiltersList($request->all());
 
-        // dd($filters_applied);
-
         return view('constantes.index', compact('especies', 'filters_applied'));
     }
 
+    /**
+     * Builds the filter list implemented in last request
+     * 
+     * @var $request_array
+     * @return array
+     */
     private function getFiltersList($request_array)
     {
         $filters_applied = $this->filters;
