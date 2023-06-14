@@ -74,7 +74,7 @@
                 <td>{{ $constante->valor_reportado=='ka'?'Valor Reportado':'Valor Calculado' }}</td>
                 <td><b>Ka</b></td>
                 @foreach ($constante->ka_values() as $ka_value)
-                    <td>{{ sprintf("%1.2e", $ka_value) }}</td>
+                    <td>{{ $ka_value ? sprintf("%1.2e", $ka_value) : "" }}</td>
                 @endforeach
             </tr>
 
@@ -84,7 +84,7 @@
                 <td>{{ $constante->valor_reportado=='pka'?'Valor Reportado':'Valor Calculado' }}</td>
                 <td><b>pKa</b></td>
                 @foreach ($constante->pka_values() as $pka_value)
-                    <td>{{ sprintf("%01.3f", $pka_value) }}</td>    
+                    <td>{{ $pka_value ? sprintf("%01.3f", $pka_value) : "" }}</td>    
                 @endforeach
             </tr>
         @endforeach

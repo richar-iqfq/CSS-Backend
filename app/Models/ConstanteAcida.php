@@ -32,9 +32,9 @@ class ConstanteAcida extends Model
             $this->ka5,
         );
 
-        $ka = array_filter($values, fn($n) => !is_null($n));
+        // $ka = array_filter($values, fn($n) => !is_null($n));
 
-        return $ka;
+        return $values;
     }
 
     public function pka_values()
@@ -47,9 +47,9 @@ class ConstanteAcida extends Model
             $this->pka5,
         );
 
-        $pka = array_filter($values, fn($n) => !is_null($n));
+        // $pka = array_filter($values, fn($n) => !is_null($n));
 
-        return $pka;
+        return $values;
     }
 
 }

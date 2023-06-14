@@ -4,7 +4,6 @@ use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ConstantesController;
-use App\Http\Controllers\EspeciesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,13 +60,3 @@ Route::post('/constantes', [ConstantesController::class, 'filter']);
 
 Route::get('/constantes/{id}', [ConstantesController::class, 'show'])
     ->name('constantes.show');
-
-/**
- * Especie to json Routes
- */
-Route::get('/especies', [EspeciesController::class, 'index']);
-
-Route::post('/especies', [EspeciesController::class, 'filter']);
-
-Route::get('/especies/{id}', [EspeciesController::class, 'show'])
-    ->name('especies.show');

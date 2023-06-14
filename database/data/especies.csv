@@ -1,22 +1,22 @@
 ﻿id,nombre,formula,masa_molar,densidad,fusion,ebullicion,clase_acido_id,clase_carga_id
-1,Ácido Fluorhídrico,HF,20.01,0.922,-83.57,19.52,1,1
-2,Ácido Nitroso,HNO2,47.01,1.44,271,320,1,1
-3,Ácido Acetilsalicílico (Aspirina),C9H8O4,180.16,1.4,135,140,1,1
-4,Ácido Fórmico,HCOOH,46.025,1.22,8.3,101,1,1
-5,Ácido Ascórbico,C6H8O6,176.12,1.65,191,552.67,1,1
-6,Ácido Benzoico,C6H5COOH,122.12,1.316,122.4,249.2,1,1
-7,Ácido Acético,CH3COOH,60.05,1.0446,16.635,117.9,1,1
-8,Ácido Cianhídrico,HCN,27.03,0.687,-13.4,25.6,1,1
+1,Ácido fluorhídrico,HF,20.01,0.922,-83.57,19.52,1,1
+2,Ácido nitroso,HNO2,47.01,1.44,271,320,1,1
+3,Ácido acetilsalicílico (Aspirina),C9H8O4,180.16,1.4,135,140,1,1
+4,Ácido fórmico,HCOOH,46.025,1.22,8.3,101,1,1
+5,Ácido ascórbico,C6H8O6,176.12,1.65,191,552.67,1,1
+6,Ácido benzoico,C6H5COOH,122.12,1.316,122.4,249.2,1,1
+7,Ácido acético,CH3COOH,60.05,1.0446,16.635,117.9,1,1
+8,Ácido cianhídrico,HCN,27.03,0.687,-13.4,25.6,1,1
 9,Fenol,C6H5OH,94.11,1.071,109,360,1,1
-10,Ion Floruro,F[-],,,,,3,2
-11,Ion Nitrito,NO[-]2,,,,,3,2
-12,Ion Acetilsalicilato,C9H7O [-]4,,,,,3,2
-13,Ion Formato,HCOO[-],,,,,3,2
-14,Ion Ascorbato,C6H7O[-]6,,,,,3,2
-15,Ion Benzoato,C6H5COO[-],,,,,3,2
-16,Ion Acetato,CH3COO[-],,,,,3,2
-17,Ion Cianuro,CN[-],,,,,3,2
-18,Ion Fenóxido,C6H5O[-],,,,,3,2
+10,Ion floruro,F[-],,,,,3,2
+11,Ion nitrito,NO[-]2,,,,,3,2
+12,Ion acetilsalicilato,C9H7O [-]4,,,,,3,2
+13,Ion formato,HCOO[-],,,,,3,2
+14,Ion ascorbato,C6H7O[-]6,,,,,3,2
+15,Ion benzoato,C6H5COO[-],,,,,3,2
+16,Ion acetato,CH3COO[-],,,,,3,2
+17,Ion cianuro,CN[-],,,,,3,2
+18,Ion fenóxido,C6H5O[-],,,,,3,2
 19,Etilamina,C2H5NH2,45.08,0.689,-81.2,16.6,3,1
 20,Metilamina,CH3NH2,31.057,0.6624,-93.42,-6.4,3,1
 21,Amoniaco,NH3,17.03,0.6818,-77.75,-33.35,3,1
@@ -24,120 +24,120 @@
 23,Anilina,C6H5NH2,93.13,1.0217,-6,184.1,3,1
 24,Cafeína,C8H10N4O2,194.19,1.23,236.2,178,3,1
 25,Urea,(NH2)2CO,60.056,1.323,132.7,,3,1
-26,Ion Etilamonio,C2H5N[+]H3,,,,,1,3
-27,Ion Metilamonio,CH3N[+]H3,,,,,1,3
-28,Ion Amonio,NH[+]4,,,,,1,3
-29,Ion Piridinio,C5H5N[+]H,,,,,1,3
-30,Ion Anilinio,C6H5N[+]H3,,,,,1,3
-31,Ion de Cafeína,C8H11N[+]4O2,,,,,1,3
-32,Ion de Urea,H2NCON[+]H3,,,,,1,3
-33,Ácido Sulfúrico,H2SO4,98.08,1.8318,10.38,333.5,2,1
-34,Ácido Oxálico,HOOCCOOH,90.03,1.9,189.5,,1,1
-35,Ácido Sulfuroso,H2SO3,82.08,1.03,,,1,1
-36,Ácido Carbónico,H2CO3,62.025,,,,1,1
-37,Ácido Sulfhídrico,H2S,34.08,1.5392,-85.49,-60.33,1,1
-38,Ácido Fosfórico,H3PO4,98,1.868,42.35,213,1,1
-39,Ion Hidrogenosulfato,HSO[-]4,,,,,3,2
-40,Ion Sulfato,SO[2-]4,,,,,3,2
-41,Ion Hidrogenoxalato,HC2O[-]4,,,,,3,2
-42,Ion Oxalato,C2O[2-]4,,,,,3,2
-43,Ion Hidrogenosulfito,HSO[-]3,,,,,3,2
-44,Ion Sulfito,SO[2-]3,,,,,3,2
-45,Ion Hidrogenocarbonato,HCO[-]3,,,,,3,2
-46,Ion Carbonato,CO[2-]3,,,,,3,2
-47,Ion Hidrogenosulfuro,HS[-],,,,,3,2
-48,Ion Sulfuro,S[2-],,,,,3,2
-49,Ion Dihidrogenofosfato,H2PO[-]4,,,,,3,2
-50,Ion Hidrogenofosfato,HPO[2-]4,,,,,3,2
-51,Ion Fosfato,PO[3-]4,,,,,3,2
-52,Ácido Arsénico,H3AsO4,141.943,2.2,35,160,1,1
-53,Ácido Arsenioso,H3AsO3,125.944,,,465,1,1
-54,Ácido Bórico,H3BO3,61.83,1.435,171,357,1,1
-55,Ácido 1-Butanoico,CH3CH2CH2COOH,88.11,0.959,-7.9,163.5,1,1
-56,Dióxido de Carbono (ac),CO2,44.01,1.975,-78.44,,1,1
-57,Ácido Cloroacético,ClCH2COOH,94.5,1.58,50,189.1,1,1
-58,Ácido Cítrico,HOOC(OH)C(CH2COOH)2,192.12,1.665,153,,1,1
-59,Ion Dimetil Amonio,(CH3)2NH[+]2,,,,,1,3
-60,Ion Etanol Amonio,HOC2H4NH[+]3,,,,,1,3
-61,Ion Etilén Amonio,[+]H3NCH2CH2NH[+]3,,,,,1,3
-62,Ácido Fumárico,trans-HOOCCH:CHCOOH,116.07,1.635,287,522,1,1
-63,Ácido Glicólico,HOCH2COOH,76.05,1.49,79.5,100,1,1
-64,Ion Hidrazinio,H2NNH[+]3,,,,,1,3
-65,Ácido Hidrazoico,HN3,43.03,1.126,-80,37,1,1
-66,Peróxido de Hidrógeno,H2O2,34.01,1.463,-0.43,152,1,1
-67,Ion Hidroxil Amonio,HONH[+]3,,,,,1,3
-68,Ácido Hipocloroso,HClO,52.46,1.4,,,1,1
-69,Ácido Yódico,HIO3,175.91,4.629,110,220,1,1
-70,Ácido Láctico,CH3CHOHCOOH,90.08,1.206,16.8,122,1,1
-71,Ácido Maleico,cis-HOOCCH:CHCOOH,116.07,1.59,132.5,355,1,1
-72,Ácido Málico,HOOCCHOHCH2COOH,134.09,1.601,130.97,225,1,1
-73,Ácido Malónico,CH2(COOH)2,104.06,1.619,135,140,1,1
-74,Ácido Mandélico,C6H5CHOHCOOH,152.15,,,,1,1
-75,Ácido Periódico,H5IO6,227.94,,130,,1,1
-76,Ácido Fosforoso,H3PO3,81.996,,,,1,1
-77,Ácido Ftálico,C6H4(COOH)2,166.13,1.593,230,,1,1
-78,Ácido Pícrico,(NO2)3C6H2OH,229.1,1.763,121,,1,1
-79,Ion Piperidinio,C5H11NH[+],,,,,1,3
-80,Ácido Propanoico,CH3CH2COOH,74.08,0.995,-21.5,141.1,1,1
-81,Ácido Pirúvico,CH3COCOOH,88.06,1.26,13.8,54,1,1
-82,Ácido Salicílico,C6H4OHCOOH,138.12,1.443,159,211,1,1
-83,Ácido Succínico,HOOCCH2CH2COOH,118.09,1.572,188,235,1,1
-84,Ácido Sulfámico,H2NSO3H,97.1,2.15,205,,1,1
-85,Ácido Tartárico,HOOC(CHOH)2COOH,150.09,1.984,206,,1,1
-86,Ácido Tiociánico,HSCN,59.09,,5,,1,1
-87,Ácido Tiosulfúrico,H2S2O3,114.15,1.9,48,100,1,1
-88,Ácido Tricloroacético,Cl3CCOOH,163.38,1.6,57.5,195.5,1,1
-89,Ion Trimetil Amonio,(CH3)3NH[+],,,,,1,3
-90,Ácido Clorhídrico,HCl,36.46,1.526,-114.18,-85.05,2,1
-91,Ácido Nítrico,HNO3,63.02,1.5492,-41.59,83,2,1
-92,Ácido Perclórico,HClO4,100.46,1.768,-112,19,2,1
-93,Hidróxido de Sodio,NaOH,40,2.13,323,1388,4,1
-94,Hidróxido de Potasio,KOH,56.11,2.044,406,1323,4,1
-95,Hidróxido de Bario,Ba(OH)2,315.48,2.18,78,,4,1
-96,Hidróxido de Litio,LiOH,23.95,1.45,471.2,1626,4,1
-97,Ácido Alumínico,H3AlO3,78.004,,,,1,1
-98,Ion Aluminio,Al[3+],,,,,1,3
+26,Ion etilamonio,C2H5N[+]H3,,,,,1,3
+27,Ion metilamonio,CH3N[+]H3,,,,,1,3
+28,Ion amonio,NH[+]4,,,,,1,3
+29,Ion piridinio,C5H5N[+]H,,,,,1,3
+30,Ion anilinio,C6H5N[+]H3,,,,,1,3
+31,Ion de cafeína,C8H11N[+]4O2,,,,,1,3
+32,Ion de urea,H2NCON[+]H3,,,,,1,3
+33,Ácido sulfúrico,H2SO4,98.08,1.8318,10.38,333.5,2,1
+34,Ácido oxálico,HOOCCOOH,90.03,1.9,189.5,,1,1
+35,Ácido sulfuroso,H2SO3,82.08,1.03,,,1,1
+36,Ácido carbónico,H2CO3,62.025,,,,1,1
+37,Ácido sulfhídrico,H2S,34.08,1.5392,-85.49,-60.33,1,1
+38,Ácido fosfórico,H3PO4,98,1.868,42.35,213,1,1
+39,Ion hidrogenosulfato,HSO[-]4,,,,,3,2
+40,Ion sulfato,SO[2-]4,,,,,3,2
+41,Ion hidrogenoxalato,HC2O[-]4,,,,,3,2
+42,Ion oxalato,C2O[2-]4,,,,,3,2
+43,Ion hidrogenosulfito,HSO[-]3,,,,,3,2
+44,Ion sulfito,SO[2-]3,,,,,3,2
+45,Ion hidrogenocarbonato,HCO[-]3,,,,,3,2
+46,Ion carbonato,CO[2-]3,,,,,3,2
+47,Ion hidrogenosulfuro,HS[-],,,,,3,2
+48,Ion sulfuro,S[2-],,,,,3,2
+49,Ion dihidrogenofosfato,H2PO[-]4,,,,,3,2
+50,Ion hidrogenofosfato,HPO[2-]4,,,,,3,2
+51,Ion fosfato,PO[3-]4,,,,,3,2
+52,Ácido arsénico,H3AsO4,141.943,2.2,35,160,1,1
+53,Ácido arsenioso,H3AsO3,125.944,,,465,1,1
+54,Ácido bórico,H3BO3,61.83,1.435,171,357,1,1
+55,Ácido 1-butanoico,CH3CH2CH2COOH,88.11,0.959,-7.9,163.5,1,1
+56,Dióxido de carbono (ac),CO2,44.01,1.975,-78.44,,1,1
+57,Ácido cloroacético,ClCH2COOH,94.5,1.58,50,189.1,1,1
+58,Ácido cítrico,HOOC(OH)C(CH2COOH)2,192.12,1.665,153,,1,1
+59,Ion dimetil amonio,(CH3)2NH[+]2,,,,,1,3
+60,Ion etanol amonio,HOC2H4NH[+]3,,,,,1,3
+61,Ion etilén amonio,[+]H3NCH2CH2NH[+]3,,,,,1,3
+62,Ácido fumárico,trans-HOOCCH:CHCOOH,116.07,1.635,287,522,1,1
+63,Ácido glicólico,HOCH2COOH,76.05,1.49,79.5,100,1,1
+64,Ion hidrazinio,H2NNH[+]3,,,,,1,3
+65,Ácido hidrazoico,HN3,43.03,1.126,-80,37,1,1
+66,Peróxido de hidrógeno,H2O2,34.01,1.463,-0.43,152,1,1
+67,Ion hidroxil amonio,HONH[+]3,,,,,1,3
+68,Ácido hipocloroso,HClO,52.46,1.4,,,1,1
+69,Ácido yódico,HIO3,175.91,4.629,110,220,1,1
+70,Ácido láctico,CH3CHOHCOOH,90.08,1.206,16.8,122,1,1
+71,Ácido maleico,cis-HOOCCH:CHCOOH,116.07,1.59,132.5,355,1,1
+72,Ácido málico,HOOCCHOHCH2COOH,134.09,1.601,130.97,225,1,1
+73,Ácido malónico,CH2(COOH)2,104.06,1.619,135,140,1,1
+74,Ácido mandélico,C6H5CHOHCOOH,152.15,,,,1,1
+75,Ácido periódico,H5IO6,227.94,,130,,1,1
+76,Ácido fosforoso,H3PO3,81.996,,,,1,1
+77,Ácido ftálico,C6H4(COOH)2,166.13,1.593,230,,1,1
+78,Ácido pícrico,(NO2)3C6H2OH,229.1,1.763,121,,1,1
+79,Ion piperidinio,C5H11NH[+],,,,,1,3
+80,Ácido propanoico,CH3CH2COOH,74.08,0.995,-21.5,141.1,1,1
+81,Ácido pirúvico,CH3COCOOH,88.06,1.26,13.8,54,1,1
+82,Ácido salicílico,C6H4OHCOOH,138.12,1.443,159,211,1,1
+83,Ácido succínico,HOOCCH2CH2COOH,118.09,1.572,188,235,1,1
+84,Ácido sulfámico,H2NSO3H,97.1,2.15,205,,1,1
+85,Ácido tartárico,HOOC(CHOH)2COOH,150.09,1.984,206,,1,1
+86,Ácido tiociánico,HSCN,59.09,,5,,1,1
+87,Ácido tiosulfúrico,H2S2O3,114.15,1.9,48,100,1,1
+88,Ácido tricloroacético,Cl3CCOOH,163.38,1.6,57.5,195.5,1,1
+89,Ion trimetil amonio,(CH3)3NH[+],,,,,1,3
+90,Ácido clorhídrico,HCl,36.46,1.526,-114.18,-85.05,2,1
+91,Ácido nítrico,HNO3,63.02,1.5492,-41.59,83,2,1
+92,Ácido perclórico,HClO4,100.46,1.768,-112,19,2,1
+93,Hidróxido de sodio,NaOH,40,2.13,323,1388,4,1
+94,Hidróxido de potasio,KOH,56.11,2.044,406,1323,4,1
+95,Hidróxido de bario,Ba(OH)2,315.48,2.18,78,,4,1
+96,Hidróxido de litio,LiOH,23.95,1.45,471.2,1626,4,1
+97,Ácido alumínico,H3AlO3,78.004,,,,1,1
+98,Ion aluminio,Al[3+],,,,,1,3
 100,Amonio-D3,ND3H[+],,,,,1,3
-107,Ácido Tetrabórico,H2B4O7,157.3,,,,1,1
+107,Ácido tetrabórico,H2B4O7,157.3,,,,1,1
 108,Bromo,Br2,159.808,3.1023,-7.25,58.8,1,1
-109,Ion Cadmio,Cd[2+],,,,,1,3
-110,Ion Calcio,Ca[2+],,,,,1,3
-112,Dióxido de Carbono (D2O),CO2,44.01,1.975,-78.44,,1,1
-113,Ion Cerio III,Ce[3+],,,,,1,3
-114,Ion Cromo III,Cr[3+],,,,,1,3
-115,Ion Cobalto II,Co[2+],,,,,1,3
-116,Ion Cobalto III,Co[3+],,,,,1,3
-117,Ion Cobre II,Cu[2+],,,,,1,3
-118,Ion Curio III,Cm[3+],,,,,1,3
-119,Óxido de Beuterio,D2O,20.03,1.1056,3.82,101.43,1,1
-120,Ion Disprosio III,Dy[3+],,,,,1,3
-122,Ion Europio III,Eu[3+],,,,,1,3
-124,Ion Gadolinio III,Gd[3+],,,,,1,3
-125,Ion Galio III,Ga[3+],,,,,1,3
-128,Ion Hidrazinio (2+),[+]H3NNH3[+],,,,,1,3
-129,Ácido Crómico,H2CrO4,118.01,1.67,196,250,1,1
-130,Ácido Ciánico,HCNO,43.03,1.14,-86,23.5,1,1
-131,Ácido Ferrociánico,H4Fe(CN)6,,,,,1,1
-132,Ácido Ferriciánico,H3Fe(CN)6,,,,,1,1
-134,Ion Hidrazonio,N2H[2+]6,,,,,1,3
-135,Seleniuro de Hidrógeno,H2Se,80.98,2.12,-65.73,-41.4,1,1
-139,Ácido Pirofosfórico,H4P2O7,,,,,1,1
+109,Ion cadmio,Cd[2+],,,,,1,3
+110,Ion calcio,Ca[2+],,,,,1,3
+112,Dióxido de carbono (D2O),CO2,44.01,1.975,-78.44,,1,1
+113,Ion cerio III,Ce[3+],,,,,1,3
+114,Ion cromo III,Cr[3+],,,,,1,3
+115,Ion cobalto II,Co[2+],,,,,1,3
+116,Ion cobalto III,Co[3+],,,,,1,3
+117,Ion cobre II,Cu[2+],,,,,1,3
+118,Ion curio III,Cm[3+],,,,,1,3
+119,Óxido de deuterio,D2O,20.03,1.1056,3.82,101.43,1,1
+120,Ion disprosio III,Dy[3+],,,,,1,3
+122,Ion europio III,Eu[3+],,,,,1,3
+124,Ion gadolinio III,Gd[3+],,,,,1,3
+125,Ion galio III,Ga[3+],,,,,1,3
+128,Ion hidrazinio (2+),[+]H3NNH3[+],,,,,1,3
+129,Ácido crómico,H2CrO4,118.01,1.67,196,250,1,1
+130,Ácido ciánico,HCNO,43.03,1.14,-86,23.5,1,1
+131,Ácido ferrociánico,H4Fe(CN)6,,,,,1,1
+132,Ácido ferriciánico,H3Fe(CN)6,,,,,1,1
+134,Ion hidrazonio,N2H[2+]6,,,,,1,3
+135,Seleniuro de hidrógeno,H2Se,80.98,2.12,-65.73,-41.4,1,1
+139,Ácido pirofosfórico,H4P2O7,,,,,1,1
 143,Acitilacetona,CH3COCH2COCH3,,,,,1,1
-144,Ácido Dicloroacético,Cl2CHCOOH,,,,,1,1
-145,Ácido Glutámico,C3H5NH2(COOH)2,,,,,1,1
+144,Ácido dicloroacético,Cl2CHCOOH,,,,,1,1
+145,Ácido glutámico,C3H5NH2(COOH)2,,,,,1,1
 146,Glicina,CH2NH2COOH,,,,,1,1
 147,Hexametilentetramina (Urotropina),C6H12N4,,,,,1,1
-148,Ácido Picolínico,C5H4NCOOH,,,,,1,1
-150,Ácido Amidodisulfónico,HNSO(OH)2,,,,,1,1
-151,Ácido Amidofosfórico,H2NPO(OH)2,,,,,1,1
-152,Ácido Orto Hipo Arsenioso,H3AsO2,,,,,1,1
-153,Ácido Arsénico-D3,D3AsO4,,,,,1,1
-154,Ácido Dioxoarsénico (III),HAsO2,,,,,1,1
-155,Ácido Hidrazoico-D3,DN3,,,,,1,1
-156,Ácido Brómico,HBrO3,,,,,1,1
-157,Ácido Bromhídrico,HBr,80.91,3.388,-86.87,-66.71,1,1
-158,Ácido Cloroso,HClO2,,,,,1,1
-159,Ácido Clorhídrico-d,DCl,,,,,1,1
-161,Ácido Diamidofosfórico,(NH2)2PO(OH),,,,,1,1
-162,Ácido Diamidotiofosfórico,(NH2)2PO(SH),,,,,1,1
-163,Ion Aluminio III (Hidratado),(Al(H2O)6)[3+],,,,,1,3
+148,Ácido picolínico,C5H4NCOOH,,,,,1,1
+150,Ácido amidodisulfónico,HNSO(OH)2,,,,,1,1
+151,Ácido amidofosfórico,H2NPO(OH)2,,,,,1,1
+152,Ácido orto hipo arsenioso,H3AsO2,,,,,1,1
+153,Ácido arsénico-D3,D3AsO4,,,,,1,1
+154,Ácido dioxoarsénico (III),HAsO2,,,,,1,1
+155,Ácido hidrazoico-D3,DN3,,,,,1,1
+156,Ácido brómico,HBrO3,,,,,1,1
+157,Ácido bromhídrico,HBr,80.91,3.388,-86.87,-66.71,1,1
+158,Ácido cloroso,HClO2,,,,,1,1
+159,Ácido clorhídrico-d,DCl,,,,,1,1
+161,Ácido diamidofosfórico,(NH2)2PO(OH),,,,,1,1
+162,Ácido diamidotiofosfórico,(NH2)2PO(SH),,,,,1,1
+163,Ion aluminio III (hidratado),(Al(H2O)6)[3+],,,,,1,3

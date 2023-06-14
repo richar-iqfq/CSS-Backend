@@ -14,7 +14,7 @@ class EspeciesController extends Controller
      */
     public function index()
     {
-        return new EspecieCollection(Especie::all());
+        return EspecieResource::collection(Especie::all());
     }
 
     /**
@@ -25,7 +25,6 @@ class EspeciesController extends Controller
     public function show($id)
     {
         $especies = Especie::with(relations: 'constantes')->findOrFail($id);
-
         return new EspecieResource($especies);
     }
 }
