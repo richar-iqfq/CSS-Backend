@@ -18,12 +18,12 @@ class EspecieResource extends JsonResource
             'id' => $this->id,
             'nombre' => $this->nombre,
             'formula' => $this->formula,
-            'masa_molar' => $this->masa_molar,
-            'densidad' => $this->densidad,
-            'fusion' => $this->fusion,
+            'masaMolar' => round($this->masa_molar, 3),
+            'densidad' => round($this->densidad, 3),
+            'fusion' => round($this->fusion, 2),
             'ebullicion' => $this->ebullicion,
-            'clase_acido' => $this->claseAcido->clase,
-            'clase_carga' => $this->claseCarga->clase,
+            'claseAcido' => $this->claseAcido->clase,
+            'claseCarga' => $this->claseCarga->clase,
             'constantes' => ConstanteAcidaResource::collection($this->whenLoaded('constantes'))
         ];
     }

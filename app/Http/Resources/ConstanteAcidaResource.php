@@ -15,12 +15,12 @@ class ConstanteAcidaResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'valor_reportado' => $this->valor_reportado,
-            'ka_values' => $this->ka_values(),
-            'pka_values' => $this->pka_values(),
+            'valorReportado' => $this->valor_reportado,
+            'kaValues' => $this->ka_values(),
+            'pkaValues' => $this->pka_values(),
             'referencia' => [
-                'Autor' => $this->referencia->autor,
-                'Cita' => $this->referencia->cita
+                'autor' => $this->referencia->autor,
+                'cita' => $this->referencia->cita
             ],
         ];
     }

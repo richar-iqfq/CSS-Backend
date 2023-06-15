@@ -12,6 +12,19 @@ class ConstanteAcida extends Model
     
     protected $table = 'constantes_acidas';
 
+    protected $casts = [
+        'ka1' => 'string',
+        'ka2' => 'string',
+        'ka3' => 'string',
+        'ka4' => 'string',
+        'ka5' => 'string',
+        'pka1' => 'decimal:2',
+        'pka2' => 'decimal:2',
+        'pka3' => 'decimal:2',
+        'pka4' => 'decimal:2',
+        'pka5' => 'decimal:2'
+    ];
+
     public function referencia(): BelongsTo
     {
         return $this->belongsTo(Referencia::class, 'referencia_id');
