@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('nombre', 50)->unique();
             $table->string('formula', 40);
-            $table->float('masa_molar', 8, 4)->nullable();
+            $table->boolean('masa_molar_calculada');
+            $table->float('masa_molar', 8, 4);
             $table->float('densidad', 8, 4)->nullable();
             $table->float('fusion', 8, 4)->nullable();
             $table->float('ebullicion', 8, 4)->nullable();

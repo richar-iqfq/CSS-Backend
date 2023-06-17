@@ -47,34 +47,80 @@ class MolecularWeightTest extends TestCase
 
         foreach ($atoms as $key => $atom) {
             $w = $atomic_weights[$atom];
-            $coeff = $coefficients[$key] ? $coefficients[$key] : 1;
+            $coeff = $coefficients[$key] ? intval($coefficients[$key]) : 1;
 
             $final_weight += $w * $coeff;
         }
 
         return $final_weight;
     }
+    
+    /**
+     * Computes the weight of the parenthesis matches
+     */
+    private function compute_parenthesis_weight($parenthesis_matches)
+    {
+        $parenthesis_mols = $parenthesis_matches[1];
+        $parenthesis_coeff = $parenthesis_matches[2];
+
+        $final_weight = 0; // Final weight for the imput molecules
+        
+        foreach ($parenthesis_mols as $key => $mol) {
+            $coeff = $parenthesis_coeff[$key] ? intval($parenthesis_coeff[$key]) : 1;
+            
+            $mol_weight = $this->compute_weigh($mol);
+            $final_weight += $mol_weight * $coeff;
+        }
+
+        return $final_weight;
+    }
+
+    /**
+     * Computes the molecular weights of the free matches
+     */
+    private function compute_free_matches($free_matches)
+    {
+        $final_weight = 0; // Final weight for the imput molecules
+        foreach ($free_matches as $mol) {
+            $final_weight += $this->compute_weigh($mol);
+        }
+
+        return $final_weight;
+    }
+
+    /**
+     * Clean incoming string
+     */
+    private function clean_string($string)
+    {
+        $cleaned_string = str_replace(' ', '', $string);
+        
+        // Cleaning charge
+        $cleaned_string = preg_replace(self::clean_pattern, '', $cleaned_string);
+
+        return $cleaned_string;
+    }
 
     /**
      * @test
      */
-    public function get_molecular_weight(): void
+    public function get_molecular_weight()
     {
-        $test_string = 'HO3OC(CHOH)2C4OOH[+]';
-
-        // Cleaning charge
-        $cleaned_string = preg_replace(self::clean_pattern, '', $test_string);
+        $test_string = 'C9H7O [-]4';
+        $cleaned_string = $this->clean_string($test_string);
         
         // Get Molecules inside parenthesis
-        preg_match_all(self::parenthesis, $test_string, $parenthesis_molecules);
+        preg_match_all(self::parenthesis, $test_string, $parenthesis_matches);
+        $parenthesis_weight = $this->compute_parenthesis_weight($parenthesis_matches);
 
         // Get Molecules outside parenthesis
-        $free_molecules = array_filter(preg_split(self::parenthesis, $cleaned_string));
-        
-        foreach ($parenthesis_molecules as $mol) {
-            dd($mol);
-        }
+        $free_matches = array_filter(preg_split(self::parenthesis, $cleaned_string));
+        $free_weight = $this->compute_free_matches($free_matches);
 
-        $this->compute_weigh($free_molecules[1]);
+        // Sum the weight components 
+        $molecular_weight = $parenthesis_weight + $free_weight;
+
+        dd($molecular_weight);
+        return $molecular_weight;
     }
 }
