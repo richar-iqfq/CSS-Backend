@@ -18,6 +18,7 @@ class EspecieResource extends JsonResource
             'id' => $this->id,
             'nombre' => $this->nombre,
             'formula' => $this->formula,
+            'masaMolarCalculada' => $this->masa_molar_calculada,
             'masaMolar' => round($this->masa_molar, 3),
             'densidad' => round($this->densidad, 3),
             'fusion' => round($this->fusion, 2),

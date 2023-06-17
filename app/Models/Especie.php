@@ -14,6 +14,10 @@ class Especie extends Model
 
     protected $hidden = ['updated_at', 'created_at'];
 
+    protected $casts = [
+        'masa_molar_calculada' => 'bool'
+    ];
+
     public function claseAcido(): BelongsTo
     {
         return $this->belongsTo(ClaseAcido::class, 'clase_acido_id');
