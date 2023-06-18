@@ -11,15 +11,16 @@ class Autor
     public static function apply (Builder $query, Request $request)
     {
 
-        if ($request->autor != 'All') {
+        if ($request->autor) {
 
-                $especies = DB::table('especie_referencia')->where('referencia_id', $request['autor'])->select('especie_id')->get();
+                $especies = DB::table('especie_referencia')
+                    ->where('referencia_id', $request->autor)
+                    ->select('especie_id')
+                    ->get()
+                    ->toArray();
                 
-                $id =[];
-                foreach ($especies as $especie) {
-                    $id[] = $especie->especie_id;
-                }
-
+                $id = array_column($especies, 'especie_id'); 
+                
                 $query->whereIn('id', $id);
         }
 

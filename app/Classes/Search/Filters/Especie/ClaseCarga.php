@@ -10,9 +10,9 @@ class ClaseCarga
     public static function apply (Builder $query, Request $request)
     {
 
-        if ($request->clase_carga != 'All') {
+        if ($request->claseCarga) {
 
-                $query->where('clase_carga_id', $request->clase_carga);
+                $query->where('clase_carga_id', $request->claseCarga);
                     
         }
 

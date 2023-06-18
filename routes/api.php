@@ -22,8 +22,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 /**
  * Especie to json Routes
  */
-Route::get('/especies', [EspeciesController::class, 'index']);
-
-Route::post('/especies', [EspeciesController::class, 'filter']);
+Route::get('/especies/filter', [EspeciesController::class, 'filter']);
 
 Route::get('/especies/{id}', [EspeciesController::class, 'show']);
+
+Route::get('/especies', [EspeciesController::class, 'index']);

@@ -2,6 +2,9 @@
 
 namespace App\Classes\Loader;
 
+/**
+ * Loads the csv file and returns a customized Array for database seeding
+ */
 class CsvLoader
 {
     public static function load($file)

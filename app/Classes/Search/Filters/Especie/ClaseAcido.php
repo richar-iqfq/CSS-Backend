@@ -10,9 +10,9 @@ class ClaseAcido
     public static function apply (Builder $query, Request $request)
     {
 
-        if ($request->clase_acido != 'All') {
+        if ($request->claseAcido) {
 
-                $query->where('clase_acido_id', $request->clase_acido);
+                $query->where('clase_acido_id', $request->claseAcido);
                     
         }
 
