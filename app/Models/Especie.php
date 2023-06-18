@@ -15,7 +15,11 @@ class Especie extends Model
     protected $hidden = ['updated_at', 'created_at'];
 
     protected $casts = [
-        'masa_molar_calculada' => 'bool'
+        'masa_molar_calculada' => 'bool',
+        'masa_molar' => 'decimal:3',
+        'densidad' => 'decimal:3',
+        'fusion' => 'decimal:2',
+        'ebullicion' => 'decimal:2'
     ];
 
     public function claseAcido(): BelongsTo
