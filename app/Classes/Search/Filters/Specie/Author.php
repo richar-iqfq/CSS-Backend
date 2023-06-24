@@ -1,25 +1,25 @@
 <?php
 
-namespace App\Classes\Search\Filters\Especie;
+namespace App\Classes\Search\Filters\Specie;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class Autor
+class Author
 {
     public static function apply (Builder $query, Request $request)
     {
 
-        if ($request->autor) {
+        if ($request->author) {
 
-                $especies = DB::table('especie_referencia')
-                    ->where('referencia_id', $request->autor)
-                    ->select('especie_id')
+                $species = DB::table('reference_specie')
+                    ->where('reference_id', $request->author)
+                    ->select('specie_id')
                     ->get()
                     ->toArray();
                 
-                $id = array_column($especies, 'especie_id'); 
+                $id = array_column($species, 'specie_id'); 
                 
                 $query->whereIn('id', $id);
         }

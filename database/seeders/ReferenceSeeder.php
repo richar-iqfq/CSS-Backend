@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\Referencia;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Classes\Loader\CsvLoader;
+use App\Models\Reference;
 
-class ReferenciaSeeder extends Seeder
+class ReferenceSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,9 +18,9 @@ class ReferenciaSeeder extends Seeder
         $data = CsvLoader::load($file);
         
         foreach ($data as $key => $line) {
-            Referencia::create([
-                'autor' => $line['autor'],
-                'cita' => $line['cita']
+            Reference::create([
+                'author' => $line['autor'],
+                'citation' => $line['cita']
             ]);
         }
     }

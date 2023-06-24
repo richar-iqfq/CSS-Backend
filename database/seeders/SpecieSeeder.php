@@ -2,13 +2,13 @@
 
 namespace Database\Seeders;
 
-use App\Models\Especie;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Classes\Compute\WeightComputer;
 use App\Classes\Loader\CsvLoader;
+use App\Models\Specie;
 
-class EspecieSeeder extends Seeder
+class SpecieSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -30,17 +30,17 @@ class EspecieSeeder extends Seeder
                 $PM_bool = true;
             }
 
-            Especie::create([
+            Specie::create([
                 'id' => $key,
-                'nombre' => $line['nombre'],
+                'name' => $line['nombre'],
                 'formula' => $line['formula'],
-                'masa_molar_calculada' => $PM_bool,
-                'masa_molar' => round($masa_molar, 3),
-                'densidad' => $line['densidad']=='' ? null : floatval($line['densidad']),
-                'fusion' => $line['fusion']=='' ? null : floatval($line['fusion']),
-                'ebullicion' => $line['ebullicion']=='' ? null : floatval($line['ebullicion']),
-                'clase_acido_id' => $line['clase_acido_id'],
-                'clase_carga_id' => $line['clase_carga_id']
+                'calculatedMolarWeight' => $PM_bool,
+                'molarWeight' => round($masa_molar, 3),
+                'density' => $line['densidad']=='' ? null : floatval($line['densidad']),
+                'meltingPoint' => $line['fusion']=='' ? null : floatval($line['fusion']),
+                'boilingPoint' => $line['ebullicion']=='' ? null : floatval($line['ebullicion']),
+                'acidType_id' => $line['clase_acido_id'],
+                'chargeType_id' => $line['clase_carga_id']
             ]);
         }
     }

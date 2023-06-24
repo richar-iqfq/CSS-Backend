@@ -6,12 +6,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class ClaseCarga extends Model
+class ChargeType extends Model
 {
     use HasFactory;
 
-    public function especies(): HasMany
+    protected $table = 'chargeTypes';
+
+    public function species(): HasMany
     {
-        return $this->hasMany(Especie::class);
+        return $this->hasMany(Specie::class);
     }
 }

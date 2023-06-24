@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\SpeciesController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EspeciesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,8 +22,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 /**
  * Especie to json Routes
  */
-Route::get('/especies/filter', [EspeciesController::class, 'filter']);
+Route::get('/especies/{id}', [SpeciesController::class, 'show'])
+    ->where('id', '\d+');
 
-Route::get('/especies/{id}', [EspeciesController::class, 'show']);
+Route::get('/especies/filter', [SpeciesController::class, 'filter']);
 
-Route::get('/especies', [EspeciesController::class, 'index']);
+Route::get('/especies', [SpeciesController::class, 'index']);

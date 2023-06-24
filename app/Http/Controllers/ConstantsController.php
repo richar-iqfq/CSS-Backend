@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Classes\Search\SearchBuilder;
-use App\Models\Especie;
+use App\Models\Specie;
 
-class ConstantesController extends Controller
+class ConstantsController extends Controller
 {
     /**
      * Used filters
@@ -25,10 +25,10 @@ class ConstantesController extends Controller
      */
     public function index()
     {
-        $especies = Especie::all();
+        $species = Specie::all();
         $filters_applied = $this->filters;
         
-        return view('constantes.index', compact('especies', 'filters_applied'));
+        return view('constants.index', compact('species', 'filters_applied'));
     }
 
     /**
@@ -38,9 +38,9 @@ class ConstantesController extends Controller
      */
     public function show($id)
     {
-        $especie = Especie::findOrFail($id);
+        $specie = Specie::findOrFail($id);
 
-        return view('constantes.show_constante', compact('especie'));
+        return view('constants.show_constant', compact('specie'));
     }
 
     /**
@@ -50,15 +50,17 @@ class ConstantesController extends Controller
      */
     public function filter(Request $request)
     {
-        $builder = new SearchBuilder('Especie', $request);
+        $builder = new SearchBuilder('Specie', $request);
 
         $query = $builder->filter();
         
-        $especies = $query->get();
+        dd($query);
+
+        $species = $query->get();
 
         $filters_applied = $this->getFiltersList($request->all());
 
-        return view('constantes.index', compact('especies', 'filters_applied'));
+        return view('constants.index', compact('species', 'filters_applied'));
     }
 
     /**

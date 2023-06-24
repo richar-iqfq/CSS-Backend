@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Classes\Search\Filters\Especie;
+namespace App\Classes\Search\Filters\Specie;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
-class ClaseCarga
+class ChargeType
 {
     public static function apply (Builder $query, Request $request)
     {
 
-        if ($request->claseCarga) {
+        if ($request->chargeType) {
 
-                $query->where('clase_carga_id', $request->claseCarga);
+                $query->where('chargeType_id', $request->chargeType);
                     
         }
 

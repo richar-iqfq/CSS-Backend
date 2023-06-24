@@ -24,54 +24,54 @@
     <tbody>
         <tr>
             <th scope="row">id</th>
-            <td>{{ $especie->id }}</td>    
+            <td>{{ $specie->id }}</td>    
         </tr>
 
         <tr>
             <th scope="row">Nombre</th>
-            <td>{{ $especie->nombre }}</td>    
+            <td>{{ $specie->name }}</td>    
         </tr>
 
         <tr>
             <th scope="row">Fórmula</th>
-            <td>{{ $especie->formula }}</td>    
+            <td>{{ $specie->formula }}</td>    
         </tr>
 
         <tr>
             <th scope="row">Masa Molar</th>
-            <td>{{ $especie->masa_molar }} g/mol</td>    
+            <td>{{ $specie->molarWeight }} g/mol</td>    
         </tr>
 
         <tr>
             <th scope="row">Densidad</th>
-            <td>{{ $especie->densidad }} g/cm3</td>    
+            <td>{{ $specie->density }} g/cm3</td>    
         </tr>
 
         <tr>
             <th scope="row">P. Fusión</th>
-            <td>{{ $especie->fusion }} °C</td>    
+            <td>{{ $specie->meltingPoint }} °C</td>    
         </tr>
 
         <tr>
             <th scope="row">P. Ebullición</th>
-            <td>{{ $especie->ebullicion }} °C</td>    
+            <td>{{ $specie->boilingPoint }} °C</td>    
         </tr>
 
         <tr>
             <th scope="row">Clasificación</th>
-            <td>{{ $especie->claseAcido->clase }}</td>    
+            <td>{{ $specie->acidType->type }}</td>    
         </tr>
 
         <tr>
             <th scope="row">Carga</th>
-            <td>{{ $especie->claseCarga->clase }}</td>    
+            <td>{{ $specie->chargeType->type }}</td>    
         </tr>
        
-        @foreach ($especie->constantes as $constante)
+        @foreach ($specie->constants as $constante)
             <tr>
                 <th scope="row">Referencia</th>
-                <td>{{ $constante->referencia->autor }}</td>
-                <td>{{ $constante->valor_reportado=='ka'?'Valor Reportado':'Valor Calculado' }}</td>
+                <td>{{ $constante->reference->author }}</td>
+                <td>{{ $constante->reportedValue=='ka'?'Valor Reportado':'Valor Calculado' }}</td>
                 <td><b>Ka</b></td>
                 @foreach ($constante->ka_values() as $ka_value)
                     <td>{{ $ka_value ? sprintf("%1.2e", $ka_value) : "" }}</td>
@@ -81,7 +81,7 @@
             <tr>
                 <th scope="row"></th>
                 <td></td>
-                <td>{{ $constante->valor_reportado=='pka'?'Valor Reportado':'Valor Calculado' }}</td>
+                <td>{{ $constante->reportedValue=='pka'?'Valor Reportado':'Valor Calculado' }}</td>
                 <td><b>pKa</b></td>
                 @foreach ($constante->pka_values() as $pka_value)
                     <td>{{ $pka_value ? sprintf("%01.3f", $pka_value) : "" }}</td>    
@@ -90,7 +90,7 @@
         @endforeach
         {{-- <tr>
             <th scope="row">Valor Reportado</th>
-            <td>{{ $especie->reportado }}</td>    
+            <td>{{ $specie->reportado }}</td>    
         </tr> --}}
 
         {{-- <tr>

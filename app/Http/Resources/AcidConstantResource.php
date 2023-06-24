@@ -5,7 +5,7 @@ namespace App\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class ConstanteAcidaResource extends JsonResource
+class AcidConstantResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -15,12 +15,12 @@ class ConstanteAcidaResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'valorReportado' => $this->valor_reportado,
+            'reportedValue' => $this->reportedValue,
             'kaValues' => $this->ka_values(),
             'pkaValues' => $this->pka_values(),
-            'referencia' => [
-                'autor' => $this->referencia->autor,
-                'cita' => $this->referencia->cita
+            'references' => [
+                'author' => $this->reference->author,
+                'citation' => $this->reference->citation
             ],
         ];
     }

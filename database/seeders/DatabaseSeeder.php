@@ -30,17 +30,17 @@ class DatabaseSeeder extends Seeder
     {
         $this->truncateTables([
             'users',
-            'constantes_acidas',
-            'referencias',
-            'especie_referencia'
+            'acidConstants',
+            'references',
+            'reference_specie'
         ]);
 
         $this->call(UserSeeder::class);
-        $this->call(ReferenciaSeeder::class);
-        $this->call(ClaseCargaSeeder::class);
-        $this->call(ClaseAcidoSeeder::class);
-        $this->call(EspecieSeeder::class);
-        $this->call(ConstanteAcidaSeeder::class);
-        $this->call(EspecieReferenciaSeeder::class);
+        $this->call(ReferenceSeeder::class);
+        $this->call(ChargeTypeSeeder::class);
+        $this->call(AcidTypeSeeder::class);
+        $this->call(SpecieSeeder::class);
+        $this->call(AcidConstantSeeder::class);
+        $this->call(ReferenceSpecieSeeder::class);
     }
 }

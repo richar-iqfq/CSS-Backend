@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('constantes_acidas', function (Blueprint $table) {
+        Schema::create('acidConstants', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('especie_id');
-            $table->string('valor_reportado', 3);
+            $table->unsignedBigInteger('specie_id');
+            $table->string('reportedValue', 3);
             
             for ($i=1; $i <=5 ; $i++) { 
                 $table->float('ka'.$i, 30, 15)->nullable();
@@ -24,21 +24,21 @@ return new class extends Migration
                 $table->float('pka'.$i, 30, 15)->nullable();
             }
             
-            $table->string('nota', 30);
-            $table->unsignedBigInteger('referencia_id');
+            $table->string('note', 30);
+            $table->unsignedBigInteger('reference_id');
 
             /**
              * Foreign keys
              */
             // Especie
-            $table->foreign('especie_id')
+            $table->foreign('specie_id')
                 ->references('id')
-                ->on('especies');
+                ->on('species');
 
             // Referencia
-            $table->foreign('referencia_id')
+            $table->foreign('reference_id')
                 ->references('id')
-                ->on('referencias');
+                ->on('references');
 
             $table->timestamps();
         });
@@ -49,6 +49,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('constante_acidas');
+        Schema::dropIfExists('acidConstants');
     }
 };

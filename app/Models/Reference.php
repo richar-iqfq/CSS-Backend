@@ -7,17 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Referencia extends Model
+class Reference extends Model
 {
     use HasFactory;
 
-    public function constantes(): HasMany
+    public function constants(): HasMany
     {
-        return $this->hasMany(ConstanteAcida::class);
+        return $this->hasMany(AcidConstant::class);
     }
 
-    public function especies(): BelongsToMany
+    public function species(): BelongsToMany
     {
-        return $this->belongsToMany(Especie::class);
+        return $this->belongsToMany(Specie::class);
     }
 }

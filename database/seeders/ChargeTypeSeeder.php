@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\ClaseCarga;
+use App\Models\ChargeType;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ClaseCargaSeeder extends Seeder
+class ChargeTypeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -20,8 +20,8 @@ class ClaseCargaSeeder extends Seeder
         ];
         
         foreach ($charge_classes as $key => $class) {
-            ClaseCarga::create([
-                'clase' => $class
+            ChargeType::create([
+                'type' => $class
             ]);
         }
     }

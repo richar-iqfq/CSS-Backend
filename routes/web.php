@@ -3,7 +3,7 @@
 use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\ConstantesController;
+use App\Http\Controllers\ConstantsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,10 +53,10 @@ Route::get('/about', [AboutController::class, 'show'])
 /**
  * Constants Compilation Routes
  */
-Route::get('/constantes', [ConstantesController::class, 'index'])
-    ->name('constantes.index');
+Route::get('/constantes', [ConstantsController::class, 'index'])
+    ->name('constants.index');
 
-Route::post('/constantes', [ConstantesController::class, 'filter']);
+Route::post('/constantes', [ConstantsController::class, 'filter']);
 
-Route::get('/constantes/{id}', [ConstantesController::class, 'show'])
-    ->name('constantes.show');
+Route::get('/constantes/{id}', [ConstantsController::class, 'show'])
+    ->name('constants.show');

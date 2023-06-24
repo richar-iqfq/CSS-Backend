@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\ConstanteAcida;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Classes\Loader\CsvLoader;
+use App\Models\AcidConstant;
 
-class ConstanteAcidaSeeder extends Seeder
+class AcidConstantSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,9 +18,9 @@ class ConstanteAcidaSeeder extends Seeder
         $data = CsvLoader::load($file);
         
         foreach ($data as $key => $line) {
-            ConstanteAcida::create([
-                'especie_id' => $line['especie_id'],
-                'valor_reportado' => $line['valor_reportado'],
+            AcidConstant::create([
+                'specie_id' => $line['especie_id'],
+                'reportedValue' => $line['valor_reportado'],
                 'ka1' => $line['ka1']=="" ? null : floatval($line['ka1']),
                 'ka2' => $line['ka2']=="" ? null : floatval($line['ka2']),
                 'ka3' => $line['ka3']=="" ? null : floatval($line['ka3']),
@@ -31,8 +31,8 @@ class ConstanteAcidaSeeder extends Seeder
                 'pka3' => $line['pka3']=="" ? null : floatval($line['pka3']),
                 'pka4' => $line['pka4']=="" ? null : floatval($line['pka4']),
                 'pka5' => $line['pka5']=="" ? null : floatval($line['pka5']),
-                'nota' => $line['nota'],
-                'referencia_id' => $line['referencia_id']
+                'note' => $line['nota'],
+                'reference_id' => $line['referencia_id']
             ]);
         }
     }

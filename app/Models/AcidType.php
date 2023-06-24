@@ -6,12 +6,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class ClaseAcido extends Model
+class AcidType extends Model
 {
     use HasFactory;
 
-    public function especies(): HasMany
+    protected $table = 'acidTypes';
+
+    public function species(): HasMany
     {
-        return $this->hasMany(Especie::class);
+        return $this->hasMany(Specie::class);
     }
 }

@@ -11,9 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('clase_cargas', function (Blueprint $table) {
+        Schema::create('references', function (Blueprint $table) {
             $table->id();
-            $table->string('clase', 10)->unique();
+            $table->string('author', 20)->unique();
+            $table->string('citation', 130);
             $table->timestamps();
         });
     }
@@ -23,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('clase_cargas');
+        Schema::dropIfExists('references');
     }
 };

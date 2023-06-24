@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('clase_acidos', function (Blueprint $table) {
+        Schema::create('chargeTypes', function (Blueprint $table) {
             $table->id();
-            $table->string('clase', 20)->unique();
+            $table->string('type', 10)->unique();
             $table->timestamps();
         });
     }
@@ -23,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('clase_acidos');
+        Schema::dropIfExists('chargeTypes');
     }
 };

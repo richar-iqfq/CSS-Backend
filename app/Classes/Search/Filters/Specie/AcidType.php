@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Classes\Search\Filters\Especie;
+namespace App\Classes\Search\Filters\Specie;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
-class SubstringFilter
+class AcidType
 {
     public static function apply (Builder $query, Request $request)
     {
 
-        if ($request->substring) {
-            
-            $query->where('nombre', 'LIKE', '%'.$request->substring.'%');
-        
+        if ($request->acidType) {
+
+                $query->where('acidType_id', $request->acidType);
+                
         }
 
         return $query;

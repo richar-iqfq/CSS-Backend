@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class ConstanteAcida extends Model
+class AcidConstant extends Model
 {
     use HasFactory;
     
-    protected $table = 'constantes_acidas';
+    protected $table = 'acidConstants';
 
     protected $casts = [
         'ka1' => 'string',
@@ -25,14 +25,14 @@ class ConstanteAcida extends Model
         'pka5' => 'decimal:2'
     ];
 
-    public function referencia(): BelongsTo
+    public function reference(): BelongsTo
     {
-        return $this->belongsTo(Referencia::class, 'referencia_id');
+        return $this->belongsTo(Reference::class, 'reference_id');
     }
 
-    public function especie(): BelongsTo
+    public function specie(): BelongsTo
     {
-        return $this->belongsTo(Especie::class, 'especie_id');
+        return $this->belongsTo(Specie::class, 'specie_id');
     }
 
     public function ka_values()

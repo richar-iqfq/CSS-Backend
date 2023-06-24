@@ -6,9 +6,9 @@
 
     @include('partials.filters', $filters_applied)
 
-    Results: {{$especies->count()}} 
+    Results: {{$species->count()}} 
 
-    @if (! $especies->isEmpty())
+    @if (! $species->isEmpty())
         <table class="table">
             <thead class="table-light">
                 <tr>
@@ -24,19 +24,19 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($especies as $especie)
+                @foreach ($species as $specie)
                     <tr>
-                        <th scope="row">{{ $especie->id }}</th>
-                        <td>{{ $especie->nombre }}</td>
-                        <td><a href="{{ route('constantes.show', ['id' => $especie->id]) }}">
-                            {{ $especie->formula }}</a>
+                        <th scope="row">{{ $specie->id }}</th>
+                        <td>{{ $specie->name }}</td>
+                        <td><a href="{{ route('constants.show', ['id' => $specie->id]) }}">
+                            {{ $specie->formula }}</a>
                         </td>
-                        <td>{{ $especie->masa_molar }}</a></td>
-                        <td>{{ $especie->densidad }}</a></td>
-                        <td>{{ $especie->fusion }}</a></td>
-                        <td>{{ $especie->ebullicion }}</a></td>
-                        <td>{{ $especie->claseAcido->clase }}</a></td>
-                        <td>{{ $especie->clasecarga->clase }}</a></td>
+                        <td>{{ $specie->molarWeight }}</a></td>
+                        <td>{{ $specie->density }}</a></td>
+                        <td>{{ $specie->meltingPoint }}</a></td>
+                        <td>{{ $specie->boilingPoint }}</a></td>
+                        <td>{{ $specie->acidType->type }}</a></td>
+                        <td>{{ $specie->chargeType->type }}</a></td>
                     </tr>
                 @endforeach
             </tbody>

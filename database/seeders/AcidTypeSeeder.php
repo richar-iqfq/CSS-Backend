@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\ClaseAcido;
+use App\Models\AcidType;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ClaseAcidoSeeder extends Seeder
+class AcidTypeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -21,8 +21,8 @@ class ClaseAcidoSeeder extends Seeder
         ];
         
         foreach ($acid_classes as $key => $class) {
-            ClaseAcido::create([
-                'clase' => $class
+            AcidType::create([
+                'type' => $class
             ]);
         }
 
