@@ -18,7 +18,7 @@ class AcidConstantResource extends JsonResource
             'reportedValue' => $this->reportedValue,
             'kaValues' => $this->ka_values(),
             'pkaValues' => $this->pka_values(),
-            'references' => [
+            'reference' => [
                 'author' => $this->reference->author,
                 'citation' => $this->reference->citation
             ],
